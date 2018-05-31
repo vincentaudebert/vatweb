@@ -76,7 +76,7 @@ p {
   display: none; }
 
 .show-md {
-  display: block !important; }
+  display: block; }
 
 .d-block {
   display: block !important; }
