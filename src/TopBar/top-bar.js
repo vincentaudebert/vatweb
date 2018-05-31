@@ -11,7 +11,7 @@ export const TopBar = props => {
 
   return (
     <div className="top-bar row">
-      <div className="col-4-sm left top-bar__btn-group">
+      <div className="col-4-sm left ml-spacing top-bar__item">
         <button
           type="button"
           onClick={() => props.toggleEditor(false)}
@@ -34,7 +34,9 @@ export const TopBar = props => {
           <FaExpand />
         </button>
       </div>
-      <div className="col-4-sm center">{name && `${name} - `}vatweb.fr</div>
+      <div className="col-4-sm center top-bar__item">
+        {name && `${name} - `}vatweb.fr
+      </div>
     </div>
   );
 };

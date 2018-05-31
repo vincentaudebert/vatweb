@@ -74,7 +74,9 @@ class Explorer extends Component {
         </div>
         <div className="middle-bar__explorer">
           <div className="middle-bar__left-panel__title">
-            <div className="float-left font-heavy">EXPLORER: VATWEB.FR</div>
+            <div className="float-left font-heavy">
+              EXPLORER<span className="hidden-lg">: VATWEB.FR</span>
+            </div>
             <div className="float-right middle-bar__left-panel__options">
               <span className="options__icons">
                 <FaFile />

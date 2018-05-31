@@ -1,9 +1,9 @@
 .top-bar {
   background-color: #3c3c3c;
   font-size: 0.875rem; }
-
-.top-bar__btn-group {
-  margin-left: 0.75rem !important; }
+  .top-bar .top-bar__item {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; }
 
 .top-bar__btn {
   height: 0.875rem;

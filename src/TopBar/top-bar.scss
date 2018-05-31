@@ -4,10 +4,11 @@
 .top-bar {
   background-color: $color-medium-grey;
   font-size: rem(14px);
-}
 
-.top-bar__btn-group {
-  margin-left: $spacing !important;
+  .top-bar__item {
+    margin-top: rem(4px);
+    margin-bottom: rem(4px);
+  }
 }
 
 .top-bar__btn {

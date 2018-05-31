@@ -84,8 +84,14 @@ p {
   text-align: justify;
 }
 
-.hidden-sm {
+.hidden-sm,
+.hidden-md,
+.hidden-lg {
   display: none;
+}
+
+.show-md {
+  display: block !important;
 }
 
 .d-block {
@@ -115,6 +121,7 @@ $gutter: 4%;
 $breakpoint-small: 33.75em; // 540px
 $breakpoint-med: 45em; // 720px
 $breakpoint-large: 60em; // 960px
+$breakpoint-xlarge: 72.5em; // 1160px
 
 .container {
   width: 90%;
@@ -243,6 +250,22 @@ $breakpoint-large: 60em; // 960px
   }
 }
 
+@media only screen and (min-width: $breakpoint-large) {
+  .hidden-md {
+    display: block;
+  }
+
+  .show-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-xlarge) {
+  .hidden-lg {
+    display: inline-block;
+  }
+}
+
 .fade {
   opacity: 1;
   transition: opacity 0.25s linear;
@@ -263,4 +286,8 @@ $breakpoint-large: 60em; // 960px
 .reset-link {
   color: inherit;
   text-decoration: none;
+}
+
+.ml-spacing {
+  margin-left: $spacing !important;
 }
