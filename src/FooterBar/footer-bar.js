@@ -13,9 +13,15 @@ const FooterBar = props => {
   return (
     <div className="footer-bar row">
       <div className="col-4-sm left footer-bar--left">
-        <span className="footer-bar__info">
+        <a
+          href="https://github.com/vincentaudebert/vatweb"
+          target="_blank"
+          className="reset-link footer-bar__info"
+          title="Download my CV"
+          rel="noopener noreferrer"
+        >
           <GoGitBranch /> master (joke)
-        </span>
+        </a>
         <span className="footer-bar__info">
           <GoCloudUpload />
         </span>
