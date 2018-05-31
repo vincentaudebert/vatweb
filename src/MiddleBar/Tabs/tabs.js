@@ -26,7 +26,7 @@ export const Tabs = props => {
         return (
           <div
             key={`tabs-${file.name}`}
-            className={classnames('tab inline-block', {
+            className={classnames('tab d-inline-block', {
               'tab--active': file.active,
             })}
           >

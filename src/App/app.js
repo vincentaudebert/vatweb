@@ -3,6 +3,10 @@ import TopBar from '../TopBar/top-bar.container';
 import MiddleBar from '../MiddleBar/middle-bar';
 import FooterBar from '../FooterBar/footer-bar';
 import classnames from 'classnames';
+import './app.css';
+import FaMagicWand from 'react-icons/lib/fa/magic';
+import FaBackward from 'react-icons/lib/fa/backward';
+import FaHandPeace from 'react-icons/lib/fa/hand-peace-o';
 
 class App extends Component {
   constructor(props) {
@@ -11,11 +15,16 @@ class App extends Component {
       editorOpen: true,
     };
     this.toggleEditor = this.toggleEditor.bind(this);
+    this.editorAnimationEnd = this.editorAnimationEnd.bind(this);
   }
 
   componentDidMount() {
     const slug = this.props.match.params.slug || 'welcome.json';
     this.props.changeFile(slug);
+
+    document
+      .getElementById('editor')
+      .addEventListener('transitionend', this.editorAnimationEnd);
   }
 
   componentDidUpdate() {
@@ -33,17 +42,66 @@ class App extends Component {
     });
   }
 
+  editorAnimationEnd() {
+    if (!this.state.editorOpen) {
+      const alternativeElmt = document.getElementById('alternative');
+      const editorElmt = document.getElementById('editor');
+      editorElmt.classList.remove('d-block');
+      editorElmt.classList.remove('show');
+      editorElmt.classList.add('d-none');
+      alternativeElmt.classList.remove('d-none');
+      alternativeElmt.classList.add('d-block');
+      alternativeElmt.classList.add('show');
+    }
+  }
+
   render() {
     const editorClass = classnames('editor fade', {
       hide: !this.state.editorOpen,
       show: this.state.editorOpen,
     });
+    const alternativeClass = classnames('alternative d-none fade', {
+      hide: this.state.editorOpen,
+      show: !this.state.editorOpen,
+    });
     return (
       <div className="App">
-        <div className={editorClass}>
+        <div id="editor" className={editorClass}>
           <TopBar toggleEditor={this.toggleEditor} />
           <MiddleBar />
           <FooterBar />
+        </div>
+        <div id="alternative" className={alternativeClass}>
+          <div className="container">
+            <h2>Oopsie...</h2>
+            <p>
+              Don't worry. I'm not offended. I knew you would try all the
+              buttons. And particularly the closing one :)
+            </p>
+            <p>
+              If you want, you can reopen my life editor by clicking here:{' '}
+              <div
+                className="d-inline-block btn--fake"
+                onClick={() => this.toggleEditor(true)}
+                role="button"
+              >
+                <FaMagicWand /> <FaBackward /> <FaHandPeace />
+              </div>
+            </p>
+            <p>
+              If you got sick of reading some (beautiful) code, you can download
+              my{' '}
+              <a
+                className="alternative--link"
+                href="/assets/Vincent_Audebert_CV.pdf"
+                title="PDF CV"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                CV in a PDF format
+              </a>.
+            </p>
+          </div>
         </div>
       </div>
     );

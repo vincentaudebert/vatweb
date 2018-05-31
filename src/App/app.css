@@ -1,0 +1,25 @@
+.editor {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.alternative {
+  height: 100vh;
+  background-color: #1e1e1e; }
+  .alternative h2:first-child {
+    margin-top: 0;
+    padding-top: 1.5rem; }
+
+.alternative--link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 1.5rem; }
+  .alternative--link:hover {
+    text-decoration: none; }
+
+.btn--fake {
+  border: 1px solid #adadad;
+  padding: 0.5rem;
+  font-size: 1.875rem; }

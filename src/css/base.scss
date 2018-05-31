@@ -2,13 +2,6 @@
 @import 'variables';
 @import 'fonts';
 
-// fonts
-$font-family: 'Arctik', Helvetica, sans-serif;
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-heavy: 700;
-$font-height: 1.5;
-
 // universal
 
 html,
@@ -95,8 +88,16 @@ p {
   display: none;
 }
 
-.inline-block {
-  display: inline-block;
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
 }
 
 .float-right {
@@ -253,4 +254,13 @@ $breakpoint-large: 60em; // 960px
 
 .hide {
   opacity: 0;
+}
+
+.--active {
+  color: $color-white;
+}
+
+.reset-link {
+  color: inherit;
+  text-decoration: none;
 }

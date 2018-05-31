@@ -1,0 +1,36 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+.editor {
+  background-color: $color-dark-grey;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.alternative {
+  height: 100vh;
+  background-color: $color-dark-grey;
+
+  h2:first-child {
+    margin-top: 0;
+    padding-top: $spacing * 2;
+  }
+}
+
+.alternative--link {
+  color: inherit;
+  font-weight: $font-weight-heavy;
+  text-decoration: underline;
+  font-size: rem(24px);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn--fake {
+  border: 1px solid $color-light-grey;
+  padding: rem(8px);
+  font-size: rem(30px);
+}

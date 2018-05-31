@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
-import './css/index.css';
+import './css/base.css';
 import App from './App/app.container';
 import NoMatch from './NoMatch/no-match';
 import registerServiceWorker from './registerServiceWorker';

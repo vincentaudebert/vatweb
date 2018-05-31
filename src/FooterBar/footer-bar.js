@@ -35,9 +35,15 @@ const FooterBar = props => {
         <span className="footer-bar__info">
           Prettier:<GoCheck />
         </span>
-        <span className="footer-bar__info">
+        <a
+          href="/assets/Vincent_Audebert_CV.pdf"
+          target="_blank"
+          className="reset-link footer-bar__info"
+          title="Download my CV"
+          rel="noopener noreferrer"
+        >
           <FaSmile />
-        </span>
+        </a>
         <span className="footer-bar__info" role="img" aria-label="Bell">
           <FaBell />
         </span>
