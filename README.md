@@ -16,3 +16,25 @@ yarn start
 ```
 
 and to watch css `yarn watch-css`
+
+## Browser support
+
+**Supported browser / device versions:**
+
+| Browser       | Device/OS | Version | Notes |
+| ------------- | --------- | ------- | ----- |
+| Mobile Safari | iOS       | latest  |       |
+| Chrome        | Android   | latest  |       |
+| IE            | Windows   | 11      |       |
+| MS Edge       | Windows   | latest  |       |
+| Chrome        | Desktop   | latest  |       |
+| Firefox       | Desktop   | latest  |       |
+| Safari        | OSX       | latest  |       |
+
+## LICENSE
+
+GNU GPL v3
+
+## Guess
+
+I will let you guess which software I use as an IDE :)
