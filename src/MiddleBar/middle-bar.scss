@@ -1,0 +1,163 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+.middle-bar {
+  flex-grow: 1;
+  display: flex;
+}
+
+.middle-bar__left-panel {
+  margin: 0 !important;
+  background-color: $color-grey;
+  display: flex;
+  align-items: stretch;
+}
+
+.middle-bar__right-panel {
+  margin: 0 !important;
+  width: 100%;
+  background-color: $color-dark-grey;
+  font-family: 'Menlo Regular', Helvetica, sans-serif;
+  overflow: scroll;
+}
+
+.middle-bar__left-panel__title {
+  height: rem(12px);
+  padding: rem(10px) 0 rem(10px) $spacing;
+  margin-bottom: rem(10px);
+  font-size: rem(10px);
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+  &:after {
+    clear: both;
+    content: '';
+  }
+}
+
+.middle-bar__left-panel__files {
+  font-size: rem(14px);
+}
+
+.middle-bar__left-panel__options {
+  padding-right: $spacing;
+}
+
+.options__icons {
+  margin-left: $spacing;
+}
+
+.middle-bar__left-column {
+  background-color: $color-medium-dark-grey;
+  padding: rem(10px);
+  width: rem(30px);
+  font-size: rem(25px);
+
+  svg {
+    margin-bottom: rem(16px);
+    cursor: pointer;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.middle-bar__explorer {
+  width: rem(220px);
+}
+
+.seti-icon {
+  width: rem(12px);
+  height: rem(12px);
+}
+
+.seti-icon--small {
+  padding-left: rem(5px);
+  padding-right: rem(3px);
+}
+
+.seti-icon--big {
+  width: rem(20px);
+  height: rem(20px);
+  vertical-align: middle;
+}
+
+.folder--in {
+  padding-left: $spacing * 2 !important;
+}
+
+.file {
+  padding-left: $spacing;
+
+  &:hover {
+    background-color: $color-hover-grey;
+  }
+}
+
+.folder {
+  padding-left: $spacing;
+}
+
+.tabs {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  background-color: $color-grey;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+  padding: rem(4px) rem(12px) rem(4px) rem(10px);
+  border-right: 1px solid $color-dark-grey;
+  background-color: $color-inactive-grey;
+
+  svg {
+    color: $color-inactive-grey;
+  }
+
+  &:hover {
+    svg {
+      color: $color-white;
+    }
+  }
+}
+
+.tab--active {
+  color: $color-white;
+  background-color: $color-dark-grey;
+
+  svg {
+    color: $color-white;
+  }
+}
+
+.file-content {
+  overflow-y: scroll;
+
+  pre {
+    padding-top: rem(2px) !important;
+  }
+
+  code:first-child {
+    text-align: right !important;
+  }
+}
+
+.explorer--active {
+  background-color: $color-selected-blue;
+  color: $color-white;
+}
+
+.file--link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'base'; // includes grid
+
+.editor {
+  background-color: $color-dark-grey;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.--active {
+  color: $color-white;
+}

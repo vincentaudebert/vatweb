@@ -1,0 +1,30 @@
+$base-font-size: 16px;
+$spacing: 0.75rem;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-dark-grey: #1e1e1e;
+$color-medium-dark-grey: #333333;
+$color-grey: #252526;
+$color-medium-grey: #3c3c3c;
+$color-light-grey: #adadad;
+$color-hover-grey: #3f3f46;
+$color-inactive-grey: #2d2d2d;
+
+$color-red: #ff5c5c;
+$color-darker-red: darken($color-red, 5%);
+$color-hover-red: #c14645;
+$color-darker-hover-red: darken($color-hover-red, 5%);
+$color-yellow: #ffbd4c;
+$color-darker-yellow: darken($color-yellow, 5%);
+$color-hover-yellow: #c08e38;
+$color-darker-hover-yellow: darken($color-hover-yellow, 5%);
+$color-green: #00ca56;
+$color-darker-green: darken($color-green, 5%);
+$color-hover-green: #029740;
+$color-darker-hover-green: darken($color-hover-green, 5%);
+
+$color-blue: #007acc;
+$color-windows-error: #0000aa;
+$color-selected-blue: #094771;

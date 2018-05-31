@@ -1,0 +1,16 @@
+.footer-bar {
+  color: #fff;
+  background-color: #007acc;
+  font-size: 0.625rem; }
+
+.footer-bar__info {
+  margin-left: 0.625rem; }
+  .footer-bar__info:first-child {
+    margin-left: 0; }
+
+.footer-bar--left {
+  margin-left: 0.75rem !important; }
+
+.footer-bar--right {
+  float: right !important;
+  margin-right: 0.75rem !important; }

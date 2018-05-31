@@ -1,0 +1,36 @@
+.no-match__body {
+  height: 100vh;
+  background: #0000aa;
+  color: #fff;
+  font-family: courier;
+  font-size: 1.125rem;
+  text-align: center;
+  padding-top: 0.9375rem; }
+
+.blink {
+  color: yellow;
+  animation: blink 1s step-end infinite; }
+
+@keyframes blink {
+  67% {
+    opacity: 0; } }
+
+.no-match__neg {
+  background: #fff;
+  color: #0000aa;
+  padding: 0.125rem 0.5rem;
+  font-weight: bold;
+  font-family: courier; }
+
+.no-match__menu {
+  text-align: center;
+  margin-top: 3.125rem;
+  font-family: courier; }
+  .no-match__menu a,
+  .no-match__menu a:hover {
+    color: inherit;
+    font-family: courier; }
+
+.no-match__text {
+  margin-left: 6.25rem;
+  font-family: courier; }

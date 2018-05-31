@@ -1,0 +1,115 @@
+.middle-bar {
+  flex-grow: 1;
+  display: flex; }
+
+.middle-bar__left-panel {
+  margin: 0 !important;
+  background-color: #252526;
+  display: flex;
+  align-items: stretch; }
+
+.middle-bar__right-panel {
+  margin: 0 !important;
+  width: 100%;
+  background-color: #1e1e1e;
+  font-family: 'Menlo Regular', Helvetica, sans-serif;
+  overflow: scroll; }
+
+.middle-bar__left-panel__title {
+  height: 0.75rem;
+  padding: 0.625rem 0 0.625rem 0.75rem;
+  margin-bottom: 0.625rem;
+  font-size: 0.625rem;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); }
+  .middle-bar__left-panel__title:after {
+    clear: both;
+    content: ''; }
+
+.middle-bar__left-panel__files {
+  font-size: 0.875rem; }
+
+.middle-bar__left-panel__options {
+  padding-right: 0.75rem; }
+
+.options__icons {
+  margin-left: 0.75rem; }
+
+.middle-bar__left-column {
+  background-color: #333333;
+  padding: 0.625rem;
+  width: 1.875rem;
+  font-size: 1.5625rem; }
+  .middle-bar__left-column svg {
+    margin-bottom: 1rem;
+    cursor: pointer; }
+    .middle-bar__left-column svg:hover {
+      color: #fff; }
+
+.middle-bar__explorer {
+  width: 13.75rem; }
+
+.seti-icon {
+  width: 0.75rem;
+  height: 0.75rem; }
+
+.seti-icon--small {
+  padding-left: 0.3125rem;
+  padding-right: 0.1875rem; }
+
+.seti-icon--big {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle; }
+
+.folder--in {
+  padding-left: 1.5rem !important; }
+
+.file {
+  padding-left: 0.75rem; }
+  .file:hover {
+    background-color: #3f3f46; }
+
+.folder {
+  padding-left: 0.75rem; }
+
+.tabs {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #252526;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); }
+
+.tab {
+  padding: 0.25rem 0.75rem 0.25rem 0.625rem;
+  border-right: 1px solid #1e1e1e;
+  background-color: #2d2d2d; }
+  .tab svg {
+    color: #2d2d2d; }
+  .tab:hover svg {
+    color: #fff; }
+
+.tab--active {
+  color: #fff;
+  background-color: #1e1e1e; }
+  .tab--active svg {
+    color: #fff; }
+
+.file-content {
+  overflow-y: scroll; }
+  .file-content pre {
+    padding-top: 0.125rem !important; }
+  .file-content code:first-child {
+    text-align: right !important; }
+
+.explorer--active {
+  background-color: #094771;
+  color: #fff; }
+
+.file--link {
+  text-decoration: none;
+  color: inherit;
+  display: block; }
+  .file--link:hover, .file--link:focus, .file--link:active {
+    text-decoration: none;
+    color: inherit; }

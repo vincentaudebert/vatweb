@@ -1,0 +1,47 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+.no-match__body {
+  height: 100vh;
+  background: $color-windows-error;
+  color: $color-white;
+  font-family: courier;
+  font-size: rem(18px);
+  text-align: center;
+  padding-top: rem(15px);
+}
+
+.blink {
+  color: yellow;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+  67% {
+    opacity: 0;
+  }
+}
+
+.no-match__neg {
+  background: $color-white;
+  color: $color-windows-error;
+  padding: rem(2px) rem(8px);
+  font-weight: bold;
+  font-family: courier;
+}
+
+.no-match__menu {
+  text-align: center;
+  margin-top: rem(50px);
+  font-family: courier;
+
+  a,
+  a:hover {
+    color: inherit;
+    font-family: courier;
+  }
+}
+
+.no-match__text {
+  margin-left: rem(100px);
+  font-family: courier;
+}

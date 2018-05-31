@@ -1,0 +1,67 @@
+@import '../css/variables';
+@import '../css/mixins';
+
+.top-bar {
+  background-color: $color-medium-grey;
+  font-size: rem(14px);
+}
+
+.top-bar__btn-group {
+  margin-left: $spacing !important;
+}
+
+.top-bar__btn {
+  height: rem(14px);
+  width: rem(14px);
+  border-radius: 50%;
+  margin-left: $spacing;
+  border: 0;
+  font-size: rem(10px);
+  padding-left: rem(1px);
+  padding-top: rem(0px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color-dark-grey;
+  }
+}
+
+.top-bar__btn--close {
+  color: $color-red;
+  background-color: $color-red;
+  border: 1px solid $color-darker-red;
+
+  &:active {
+    background: $color-hover-red;
+    border: 1px solid $color-darker-hover-red;
+  }
+}
+
+.top-bar__btn--minimize {
+  color: $color-yellow;
+  background-color: $color-yellow;
+  border: 1px solid $color-darker-yellow;
+
+  &:active {
+    background: $color-hover-yellow;
+    border: 1px solid $color-darker-hover-yellow;
+  }
+}
+
+.top-bar__btn--expand {
+  color: $color-green;
+  background-color: $color-green;
+  border: 1px solid $color-darker-green;
+
+  &:active {
+    background: $color-hover-green;
+    border: 1px solid $color-darker-hover-green;
+  }
+}

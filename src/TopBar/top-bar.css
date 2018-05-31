@@ -1,0 +1,46 @@
+.top-bar {
+  background-color: #3c3c3c;
+  font-size: 0.875rem; }
+
+.top-bar__btn-group {
+  margin-left: 0.75rem !important; }
+
+.top-bar__btn {
+  height: 0.875rem;
+  width: 0.875rem;
+  border-radius: 50%;
+  margin-left: 0.75rem;
+  border: 0;
+  font-size: 0.625rem;
+  padding-left: 0.0625rem;
+  padding-top: 0rem; }
+  .top-bar__btn:first-child {
+    margin-left: 0; }
+  .top-bar__btn:focus {
+    outline: 0; }
+  .top-bar__btn:hover {
+    color: #1e1e1e; }
+
+.top-bar__btn--close {
+  color: #ff5c5c;
+  background-color: #ff5c5c;
+  border: 1px solid #ff4343; }
+  .top-bar__btn--close:active {
+    background: #c14645;
+    border: 1px solid #b13c3b; }
+
+.top-bar__btn--minimize {
+  color: #ffbd4c;
+  background-color: #ffbd4c;
+  border: 1px solid #ffb433; }
+  .top-bar__btn--minimize:active {
+    background: #c08e38;
+    border: 1px solid #ac7f32; }
+
+.top-bar__btn--expand {
+  color: #00ca56;
+  background-color: #00ca56;
+  border: 1px solid #00b14b; }
+  .top-bar__btn--expand:active {
+    background: #029740;
+    border: 1px solid #027e35; }
