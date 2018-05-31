@@ -12,11 +12,11 @@ export default `{
     "Ok if you can't be bothered you can download directly my CV in a PDF format:",
     "https://vatweb.fr/assets/Vincent_Audebert_CV.pdf",
     "or click on the PDF icon in the menu bar on the left",
-    "or click on the smiley face in the footer bar on the left"
+    "or click on the smiley face in the footer bar."
   ],
   "where-is-da-code": [
     "Oh by the way, I made the source code open source. You can see it here:",
     "https://github.com/vincentaudebert/vatweb",
-    "or click on the git icon in the footer bar on the left",
+    "or click on the git icon in the footer bar.",
   ]
 }`;
