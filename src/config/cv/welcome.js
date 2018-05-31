@@ -10,7 +10,7 @@ export default `{
   ],
   "hurry-up": [
     "Ok if you can't be bothered you can download directly my CV in a PDF format:",
-    "http://vatweb.fr/assets/Vincent_Audebert_CV.pdf",
+    "https://vatweb.fr/assets/Vincent_Audebert_CV.pdf",
     "or click on the PDF icon in the menu bar on the left",
     "or click on the smiley face in the footer bar on the left"
   ]
