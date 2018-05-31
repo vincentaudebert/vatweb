@@ -44,6 +44,10 @@
 
 .options__icons {
   margin-left: $spacing;
+
+  &:hover {
+    color: $color-white;
+  }
 }
 
 .middle-bar__left-column {
@@ -95,7 +99,16 @@
 }
 
 .folder {
-  padding-left: $spacing;
+  padding-left: rem(8px);
+
+  .seti-icon {
+    vertical-align: text-top;
+  }
+
+  &:hover {
+    background-color: $color-hover-grey;
+    cursor: pointer;
+  }
 }
 
 .tabs {
@@ -160,4 +173,28 @@
     text-decoration: none;
     color: inherit;
   }
+}
+
+.folder--open {
+  &:before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    content: '';
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+  }
+}
+
+.folder--close {
+  &:before {
+    transform: rotate(-90deg);
+  }
+}
+
+.pdf-link svg {
+  margin-top: rem(16px);
 }
