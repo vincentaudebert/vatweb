@@ -3,8 +3,14 @@ import './top-bar.css';
 import MdClose from 'react-icons/lib/md/close';
 import IoMinus from 'react-icons/lib/io/minus';
 import FaExpand from 'react-icons/lib/fa/expand';
+import type { fileType, fullFileType } from '../../app/app.types';
 
-export const TopBar = props => {
+type TopBarProps = {
+  currentFile: fullFileType,
+  openFiles: fileType,
+};
+
+export const TopBar = (props: TopBarProps) => {
   const { currentFile } = props;
   const name = currentFile ? currentFile.name : undefined;
 

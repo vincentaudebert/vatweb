@@ -1,14 +1,16 @@
+// @flow
+
 import { connect } from 'react-redux';
 import App from './app';
 import { changeFile } from './app.actions';
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state: { wantedLocation: ?string }) => ({
   wantedLocation: state.wantedLocation,
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch: Function) => {
   return {
-    changeFile: slug => {
+    changeFile: (slug: string) => {
       dispatch(changeFile(slug));
     },
   };

@@ -2,6 +2,13 @@
 import constants from './app.constants';
 import config from '../config/config';
 import { getFromSlug } from '../utilities';
+import type { fullFileType, folderType, fileType } from './app.types';
+
+export type reduxState = {
+  currentFile: fullFileType | folderType,
+  openFiles: Array<fileType>,
+  wantedLocation: ?string,
+};
 
 const defaultState = {
   currentFile: config.filter(item => item.name === 'welcome.json')[0],
@@ -14,14 +21,17 @@ const defaultState = {
   wantedLocation: undefined,
 };
 
-const resetOpenFiles = (openFiles, slug) => {
+const resetOpenFiles = (
+  openFiles: Array<fileType>,
+  slug: string
+): Array<fileType> => {
   return openFiles.map(file => {
     file.active = file.name === slug;
     return file;
   });
 };
 
-const changeFile = (previousState, payload) => {
+const changeFile = (previousState: reduxState, payload: { slug: string }) => {
   const { slug } = payload;
 
   // if filename invalid, we don't change anything
@@ -59,7 +69,7 @@ const changeFile = (previousState, payload) => {
   };
 };
 
-const closeFile = (previousState, payload) => {
+const closeFile = (previousState: reduxState, payload: { slug: string }) => {
   const { slug } = payload;
 
   const newOpenFiles = resetOpenFiles(previousState.openFiles, slug).filter(
@@ -82,7 +92,10 @@ const closeFile = (previousState, payload) => {
   };
 };
 
-export const appReducer = (previousState = defaultState, action) => {
+export const appReducer = (
+  previousState: reduxState = defaultState,
+  action: Object
+) => {
   switch (action.type) {
     case constants.CHANGE_FILE:
       return changeFile(previousState, action.payload);

@@ -6,8 +6,14 @@ import config from '../../config/config';
 import { getFromSlug } from '../../utilities';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
+import { fileType } from '../../app/app.types';
 
-export const Tabs = props => {
+type TabsProps = {
+  closeFile: Function,
+  openFiles: fileType,
+};
+
+export const Tabs = (props: TabsProps) => {
   const filteredFiles = config.filter(item => item.type === 'file');
   const fullOpenFiles = props.openFiles.map(item => {
     const completeItem = getFromSlug(filteredFiles, item.name);
@@ -16,6 +22,7 @@ export const Tabs = props => {
     completeItem.active = item.active;
     return completeItem;
   });
+
   return (
     <div className="tabs">
       {fullOpenFiles.map(file => {

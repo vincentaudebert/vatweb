@@ -1,3 +1,4 @@
+// @flow
 import React, { Component, Fragment } from 'react';
 
 import FaFile from 'react-icons/lib/fa/file-o';
@@ -14,22 +15,33 @@ import SetiReact from '../../svg/icons/react.svg';
 import SetiJSON from '../../svg/icons/json.svg';
 import config from '../../config/config';
 import classnames from 'classnames';
-
 import { Link } from 'react-router-dom';
+import type { fileType, fullFileType } from '../../app/app.types';
 
-class Explorer extends Component {
-  constructor(props) {
+type ExplorerProps = {
+  currentFile: fullFileType,
+  openFiles: fileType,
+};
+
+type ExplorerState = {
+  expandFolder: boolean,
+  expandExplorer: boolean,
+  fromExplorer: boolean,
+};
+
+class Explorer extends Component<ExplorerProps, ExplorerState> {
+  constructor(props: ExplorerProps) {
     super(props);
     this.state = {
       expandFolder: true,
       expandExplorer: true,
       fromExplorer: false,
     };
-    this.toggleFolder = this.toggleFolder.bind(this);
-    this.toggleExplorer = this.toggleExplorer.bind(this);
+    (this: any).toggleFolder = this.toggleFolder.bind(this);
+    (this: any).toggleExplorer = this.toggleExplorer.bind(this);
   }
 
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
     if (!state.fromExplorer) {
       const { currentFile } = props;
 

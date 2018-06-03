@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import TopBar from '../top-bar/top-bar.container';
 import MiddleBar from '../middle-bar/middle-bar';
@@ -9,14 +10,25 @@ import FaBackward from 'react-icons/lib/fa/backward';
 import FaHandPeace from 'react-icons/lib/fa/hand-peace-o';
 import ReactGA from 'react-ga';
 
-class App extends Component {
-  constructor(props) {
+type AppProps = {
+  wantedLocation: string,
+  changeFile: Function,
+  match: Object,
+  history: Object,
+};
+
+type AppState = {
+  editorOpen: boolean,
+};
+
+class App extends Component<AppProps, AppState> {
+  constructor(props: AppProps) {
     super(props);
     this.state = {
       editorOpen: true,
     };
-    this.toggleEditor = this.toggleEditor.bind(this);
-    this.editorAnimationEnd = this.editorAnimationEnd.bind(this);
+    (this: any).toggleEditor = this.toggleEditor.bind(this);
+    (this: any).editorAnimationEnd = this.editorAnimationEnd.bind(this);
   }
 
   componentDidMount() {
@@ -24,9 +36,11 @@ class App extends Component {
     this.props.changeFile(slug);
     ReactGA.pageview(slug);
 
-    document
-      .getElementById('editor')
-      .addEventListener('transitionend', this.editorAnimationEnd);
+    const editorElmt = document.getElementById('editor');
+
+    if (editorElmt) {
+      editorElmt.addEventListener('transitionend', this.editorAnimationEnd);
+    }
   }
 
   componentDidUpdate() {
@@ -41,7 +55,7 @@ class App extends Component {
     }
   }
 
-  toggleEditor(value) {
+  toggleEditor(value: boolean) {
     this.setState({
       editorOpen: value,
     });
@@ -51,12 +65,14 @@ class App extends Component {
     if (!this.state.editorOpen) {
       const alternativeElmt = document.getElementById('alternative');
       const editorElmt = document.getElementById('editor');
-      editorElmt.classList.remove('d-block');
-      editorElmt.classList.remove('show');
-      editorElmt.classList.add('d-none');
-      alternativeElmt.classList.remove('d-none');
-      alternativeElmt.classList.add('d-block');
-      alternativeElmt.classList.add('show');
+      if (editorElmt && alternativeElmt) {
+        editorElmt.classList.remove('d-block');
+        editorElmt.classList.remove('show');
+        editorElmt.classList.add('d-none');
+        alternativeElmt.classList.remove('d-none');
+        alternativeElmt.classList.add('d-block');
+        alternativeElmt.classList.add('show');
+      }
     }
   }
 

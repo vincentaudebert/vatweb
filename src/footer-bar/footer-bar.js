@@ -9,7 +9,9 @@ import FaSmile from 'react-icons/lib/fa/smile-o';
 import FaBell from 'react-icons/lib/fa/bell';
 import TiDelete from 'react-icons/lib/ti/delete';
 
-const FooterBar = props => {
+type FooterBarProps = {};
+
+const FooterBar = (props: FooterBarProps) => {
   return (
     <div className="footer-bar row">
       <div className="d-inline-block left footer-bar--left">

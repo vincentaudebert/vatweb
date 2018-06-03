@@ -3,7 +3,7 @@ import './middle-bar.css';
 import Explorer from './explorer/explorer.container';
 import FileContent from './file-content/file-content.container';
 
-export const MiddleBar = props => {
+export const MiddleBar = (props: {}) => {
   return (
     <div className="middle-bar row">
       <div className="left middle-bar__left-panel">

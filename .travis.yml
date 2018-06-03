@@ -7,3 +7,4 @@ cache:
 script:
   - yarn install
   - yarn run lint
+  - yarn run flow
