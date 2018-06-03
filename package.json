@@ -39,17 +39,16 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch",
+    "watch-css":
+      "yarn run build-css && node-sass-chokidar src/ -o src/ --watch",
     "bundle-analyzer": "node bundle-analyzer.js",
     "lint": "yarn run eslint src/",
     "flow-types": "flow-typed install",
-    "flow": "flow"
+    "flow": "./node_modules/.bin/flow"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vincentaudebert/vatweb.git"
   },
-  "authors": [
-    "Vincent Audebert <vincent@vatweb.fr>"
-  ]
+  "authors": ["Vincent Audebert <vincent@vatweb.fr>"]
 }
