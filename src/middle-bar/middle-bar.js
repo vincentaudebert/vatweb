@@ -1,7 +1,7 @@
 import React from 'react';
 import './middle-bar.css';
-import Explorer from './Explorer/explorer.container';
-import FileContent from './FileContent/file-content.container';
+import Explorer from './explorer/explorer.container';
+import FileContent from './file-content/file-content.container';
 
 export const MiddleBar = props => {
   return (

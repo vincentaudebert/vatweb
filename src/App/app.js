@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import TopBar from '../TopBar/top-bar.container';
-import MiddleBar from '../MiddleBar/middle-bar';
-import FooterBar from '../FooterBar/footer-bar';
+import TopBar from '../top-bar/top-bar.container';
+import MiddleBar from '../middle-bar/middle-bar';
+import FooterBar from '../footer-bar/footer-bar';
 import classnames from 'classnames';
 import './app.css';
 import FaMagicWand from 'react-icons/lib/fa/magic';

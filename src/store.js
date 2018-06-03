@@ -1,6 +1,6 @@
 // @flow
 import { createStore, compose } from 'redux';
-import appReducer from './App/app.reducer';
+import appReducer from './app/app.reducer';
 
 const store = createStore(
   appReducer,

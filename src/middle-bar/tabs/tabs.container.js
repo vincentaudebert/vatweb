@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Tabs from './tabs';
-import { closeFile } from '../../App/app.actions';
+import { closeFile } from '../../app/app.actions';
 import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {

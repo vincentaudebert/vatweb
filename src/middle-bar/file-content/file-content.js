@@ -1,5 +1,5 @@
 import React from 'react';
-import Tabs from '../Tabs/tabs.container';
+import Tabs from '../tabs/tabs.container';
 import SyntaxHighlighter, {
   registerLanguage,
 } from 'react-syntax-highlighter/prism-light';
