@@ -8,5 +8,6 @@ cache:
 script:
   - yarn install
   - yarn run flow-types
-  - yarn run lint
   - yarn run flow
+  - yarn run lint
+  

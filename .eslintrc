@@ -1,12 +1,5 @@
 {
   "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "extends": [
     "airbnb",
     "plugin:react/recommended",
@@ -46,13 +39,7 @@
     "jsx-a11y/no-static-element-interactions": [0]
   },
   "env": {
+    "es6": true,
     "browser": true
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx"]
-      }
-    }
   }
 }
