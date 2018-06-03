@@ -8,13 +8,11 @@ const mapStateToProps = (state: { wantedLocation: ?string }) => ({
   wantedLocation: state.wantedLocation,
 });
 
-const mapDispatchToProps = (dispatch: Function) => {
-  return {
-    changeFile: (slug: string) => {
-      dispatch(changeFile(slug));
-    },
-  };
-};
+const mapDispatchToProps = (dispatch: Function) => ({
+  changeFile: (slug: string) => {
+    dispatch(changeFile(slug));
+  },
+});
 
 export default connect(
   mapStateToProps,

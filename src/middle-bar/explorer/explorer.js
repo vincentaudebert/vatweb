@@ -1,6 +1,8 @@
 // @flow
+// ================================
+// eslint comment, please update asap when https://github.com/yannickcr/eslint-plugin-react/issues/1751 is merged
+// ================================
 import React, { Component, Fragment } from 'react';
-
 import FaFile from 'react-icons/lib/fa/file-o';
 import FaFolder from 'react-icons/lib/fa/folder-o';
 import IoRefresh from 'react-icons/lib/io/android-refresh';
@@ -10,17 +12,16 @@ import GoGitBranch from 'react-icons/lib/go/git-branch';
 import FaBug from 'react-icons/lib/fa/bug';
 import FaPDF from 'react-icons/lib/fa/file-pdf-o';
 import MdExtension from 'react-icons/lib/md/extension';
+import classnames from 'classnames';
+import { Link } from 'react-router-dom';
 import SetiFolder from '../../svg/icons/folder.svg';
 import SetiReact from '../../svg/icons/react.svg';
 import SetiJSON from '../../svg/icons/json.svg';
 import config from '../../config/config';
-import classnames from 'classnames';
-import { Link } from 'react-router-dom';
-import type { fileType, fullFileType } from '../../app/app.types';
+import type { fullFileType } from '../../app/app.types';
 
 type ExplorerProps = {
   currentFile: fullFileType,
-  openFiles: fileType,
 };
 
 type ExplorerState = {
@@ -35,31 +36,41 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     this.state = {
       expandFolder: true,
       expandExplorer: true,
+      // eslint-disable-next-line
       fromExplorer: false,
     };
     (this: any).toggleFolder = this.toggleFolder.bind(this);
     (this: any).toggleExplorer = this.toggleExplorer.bind(this);
+    (this: any).handleKeyDown = this.handleKeyDown.bind(this);
   }
 
   static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
+    const newState = state;
     if (!state.fromExplorer) {
       const { currentFile } = props;
 
       if (currentFile && currentFile.inFolder) {
-        state.expandFolder = true;
+        newState.expandFolder = true;
       }
     }
 
-    state.fromExplorer = false;
+    newState.fromExplorer = false;
 
-    return state;
+    return newState;
   }
 
   toggleFolder() {
     this.setState({
       expandFolder: !this.state.expandFolder,
+      // eslint-disable-next-line
       fromExplorer: true,
     });
+  }
+
+  handleKeyDown(evt: SyntheticKeyboardEvent<HTMLDivElement>) {
+    if (evt.which === 13 || evt.which === 32) {
+      this.toggleExplorer();
+    }
   }
 
   toggleExplorer() {
@@ -161,6 +172,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     'explorer--active': item.name === name,
                   })}
                   onClick={item.type === 'folder' ? this.toggleFolder : null}
+                  onKeyPress={this.handleKeyDown}
                 >
                   {item.type !== 'folder' ? (
                     <Link

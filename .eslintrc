@@ -17,6 +17,14 @@
   ],
   "plugins": ["react", "prettier", "flowtype", "flowtype-errors"],
   "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
     "prettier/prettier": [
       "error",
       {
@@ -31,6 +39,7 @@
       { "terms": ["todo", "fixme", "xxx"], "location": "start" }
     ],
     "react/sort-comp": [0],
+    "react/no-unescaped-entities": [0],
     "react/jsx-boolean-value": [0],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/default-props-match-prop-types": "off",

@@ -1,16 +1,17 @@
+// @flow
 import React from 'react';
-import './top-bar.css';
 import MdClose from 'react-icons/lib/md/close';
 import IoMinus from 'react-icons/lib/io/minus';
 import FaExpand from 'react-icons/lib/fa/expand';
-import type { fileType, fullFileType } from '../../app/app.types';
+import './top-bar.css';
+import type { fullFileType } from '../app/app.types';
 
 type TopBarProps = {
   currentFile: fullFileType,
-  openFiles: fileType,
+  toggleEditor: Function,
 };
 
-export const TopBar = (props: TopBarProps) => {
+const TopBar = (props: TopBarProps) => {
   const { currentFile } = props;
   const name = currentFile ? currentFile.name : undefined;
 

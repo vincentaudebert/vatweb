@@ -5,17 +5,15 @@ import type { fileType, fullFileType } from '../../app/app.types';
 
 type FileContentState = {
   currentFile: fullFileType,
-  openFiles: fileType,
+  openFiles: Array<fileType>,
 };
 
-const mapStateToProps = (state: FileContentState) => {
-  return {
-    currentFile: state.currentFile,
-    openFiles: state.openFiles,
-  };
-};
+const mapStateToProps = (state: FileContentState) => ({
+  currentFile: state.currentFile,
+  openFiles: state.openFiles,
+});
 
-const mapDispatchToProps = (dispatch: Function) => ({});
+const mapDispatchToProps = () => ({});
 
 export default connect(
   mapStateToProps,

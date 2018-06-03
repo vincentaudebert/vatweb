@@ -24,21 +24,20 @@ const defaultState = {
 const resetOpenFiles = (
   openFiles: Array<fileType>,
   slug: string
-): Array<fileType> => {
-  return openFiles.map(file => {
-    file.active = file.name === slug;
-    return file;
+): Array<fileType> =>
+  openFiles.map(file => {
+    const newFile = file;
+    newFile.active = file.name === slug;
+    return newFile;
   });
-};
 
 const changeFile = (previousState: reduxState, payload: { slug: string }) => {
   const { slug } = payload;
 
   // if filename invalid, we don't change anything
   if (
-    config.filter(item => {
-      return item.type === 'file' && item.name === slug;
-    }).length === 0
+    config.filter(item => item.type === 'file' && item.name === slug).length ===
+    0
   )
     return previousState;
 
@@ -92,7 +91,7 @@ const closeFile = (previousState: reduxState, payload: { slug: string }) => {
   };
 };
 
-export const appReducer = (
+const appReducer = (
   previousState: reduxState = defaultState,
   action: Object
 ) => {

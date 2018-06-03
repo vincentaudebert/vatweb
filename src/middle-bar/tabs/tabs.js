@@ -1,19 +1,23 @@
+// @flow
 import React, { Fragment } from 'react';
-import SetiReact from '../../svg/icons/react.svg';
-import SetiJson from '../../svg/icons/json.svg';
 import MdClose from 'react-icons/lib/md/close';
-import config from '../../config/config';
-import { getFromSlug } from '../../utilities';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
-import { fileType } from '../../app/app.types';
+
+import SetiReact from '../../svg/icons/react.svg';
+import SetiJson from '../../svg/icons/json.svg';
+import config from '../../config/config';
+import { getFromSlug } from '../../utilities';
+import type { fileType } from '../../app/app.types';
 
 type TabsProps = {
+  openFiles: Array<fileType>,
+  // eslint goes nuts on next line for some reasons...
+  // eslint-disable-next-line
   closeFile: Function,
-  openFiles: fileType,
 };
 
-export const Tabs = (props: TabsProps) => {
+const Tabs = (props: TabsProps) => {
   const filteredFiles = config.filter(item => item.type === 'file');
   const fullOpenFiles = props.openFiles.map(item => {
     const completeItem = getFromSlug(filteredFiles, item.name);

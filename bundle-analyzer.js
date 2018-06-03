@@ -1,6 +1,7 @@
+// eslint-disable-next-line
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 process.env.NODE_ENV = 'production';
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-  .BundleAnalyzerPlugin;
 
 const webpackConfigProd = require('react-scripts/config/webpack.config.prod');
 

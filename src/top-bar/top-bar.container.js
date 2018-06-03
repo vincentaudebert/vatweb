@@ -1,20 +1,19 @@
+// @flow
 import { connect } from 'react-redux';
 import TopBar from './top-bar';
-import type { fileType, fullFileType } from '../../app/app.types';
+import type { fileType, fullFileType } from '../app/app.types';
 
 type TopBarState = {
   currentFile: fullFileType,
-  openFiles: fileType,
+  openFiles: Array<fileType>,
 };
 
-const mapStateToProps = (state: TopBarState) => {
-  return {
-    currentFile: state.currentFile,
-    openFiles: state.openFiles,
-  };
-};
+const mapStateToProps = (state: TopBarState) => ({
+  currentFile: state.currentFile,
+  openFiles: state.openFiles,
+});
 
-const mapDispatchToProps = (dispatch: Function) => ({});
+const mapDispatchToProps = () => ({});
 
 export default connect(
   mapStateToProps,
