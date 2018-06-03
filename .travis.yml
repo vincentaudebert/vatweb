@@ -4,7 +4,9 @@ node_js:
 cache:
   directories:
   - node_modules
+  - flow-typed
 script:
   - yarn install
+  - yarn run flow-types
   - yarn run lint
   - yarn run flow
