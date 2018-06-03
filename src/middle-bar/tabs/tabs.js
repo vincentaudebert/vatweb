@@ -30,7 +30,11 @@ export const Tabs = props => {
               'tab--active': file.active,
             })}
           >
-            <Link to={`/file/${file.name}`} className="file--link">
+            <Link
+              title={file.name}
+              to={`/file/${file.name}`}
+              className="file--link"
+            >
               <Fragment>
                 <img
                   className="seti-icon seti-icon--big"

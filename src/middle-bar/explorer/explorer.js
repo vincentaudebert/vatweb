@@ -153,7 +153,11 @@ class Explorer extends Component {
                   onClick={item.type === 'folder' ? this.toggleFolder : null}
                 >
                   {item.type !== 'folder' ? (
-                    <Link to={`/file/${item.name}`} className="file--link">
+                    <Link
+                      title={item.name}
+                      to={`/file/${item.name}`}
+                      className="file--link"
+                    >
                       {content}
                     </Link>
                   ) : (
