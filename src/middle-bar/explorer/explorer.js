@@ -83,14 +83,14 @@ class Explorer extends Component {
         <div className="middle-bar__explorer">
           <div
             className={classnames('middle-bar__left-panel__title', {
-              'mb-0': this.state.expandExplorer,
+              'mb-0': !this.state.expandExplorer,
             })}
           >
             <Fragment>
               <div className="float-left font-heavy">
                 <a
                   className={classnames('explorer--open reset-link', {
-                    'explorer--close': this.state.expandExplorer,
+                    'explorer--close': !this.state.expandExplorer,
                   })}
                   onClick={evt => {
                     evt.preventDefault();
@@ -117,7 +117,7 @@ class Explorer extends Component {
           </div>
           <div
             className={classnames('middle-bar__left-panel__files', {
-              'd-none': this.state.expandExplorer,
+              'd-none': !this.state.expandExplorer,
             })}
           >
             {config.map(item => {
