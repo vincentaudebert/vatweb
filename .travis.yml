@@ -7,4 +7,3 @@ cache:
 script:
   - yarn install
   - yarn run lint
-  - yarn run build
