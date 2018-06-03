@@ -53,9 +53,16 @@ const Tabs = (props: TabsProps) => {
                   alt="Type Icon"
                 />{' '}
                 {file.name}{' '}
-                <MdClose
-                  onClick={() => props.closeFile(fullOpenFiles, file.name)}
-                />
+                <button
+                  className="reset-button btn--close"
+                  title={`Close ${file.name}`}
+                  onClick={evt => {
+                    evt.preventDefault();
+                    props.closeFile(fullOpenFiles, file.name);
+                  }}
+                >
+                  <MdClose />
+                </button>
               </Fragment>
             </Link>
           </div>

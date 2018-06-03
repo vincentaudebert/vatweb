@@ -102,17 +102,16 @@ class App extends Component<AppProps, AppState> {
             </p>
             <p>
               If you want, you can reopen my life editor by clicking here:{' '}
-              <a
-                className="d-inline-block btn--fake reset-link"
+              <button
+                className="d-inline-block btn--fake reset-button"
                 onClick={evt => {
                   evt.preventDefault();
                   this.toggleEditor(true);
                 }}
-                role="button"
-                href="/"
+                title="Reopen editor"
               >
                 <FaMagicWand /> <FaBackward /> <FaHandPeace />
-              </a>
+              </button>
             </p>
             <p>
               If you got sick of reading some (beautiful) code, you can download

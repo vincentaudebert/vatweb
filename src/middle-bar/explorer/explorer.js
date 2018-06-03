@@ -109,19 +109,19 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
           >
             <Fragment>
               <div className="float-left font-heavy">
-                <a
-                  className={classnames('explorer--open reset-link', {
+                <button
+                  className={classnames('explorer--open reset-button', {
                     'explorer--close': !this.state.expandExplorer,
                   })}
                   onClick={evt => {
                     evt.preventDefault();
                     this.toggleExplorer();
                   }}
-                  href="/"
+                  title="Open explorer"
                 >
                   {' '}
                   EXPLORER<span className="hidden-sm">: VATWEB.FR</span>
-                </a>
+                </button>
               </div>
               <div className="float-right middle-bar__left-panel__options">
                 <span className="options__icons">
@@ -171,8 +171,6 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                       item.inFolder === true && !this.state.expandFolder,
                     'explorer--active': item.name === name,
                   })}
-                  onClick={item.type === 'folder' ? this.toggleFolder : null}
-                  onKeyPress={this.handleKeyDown}
                 >
                   {item.type !== 'folder' ? (
                     <Link
@@ -183,13 +181,24 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                       {content}
                     </Link>
                   ) : (
-                    <div
-                      className={classnames('folder--open', {
-                        'folder--close': !this.state.expandFolder,
-                      })}
+                    <button
+                      className="reset-button"
+                      onClick={evt => {
+                        evt.preventDefault();
+                        if (item.type === 'folder') {
+                          this.toggleFolder();
+                        }
+                      }}
+                      title="Open folder"
                     >
-                      {content}
-                    </div>
+                      <div
+                        className={classnames('folder--open', {
+                          'folder--close': !this.state.expandFolder,
+                        })}
+                      >
+                        {content}
+                      </div>
+                    </button>
                   )}
                 </div>
               );
