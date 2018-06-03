@@ -1,6 +1,7 @@
-.middle-bar {
-  flex-grow: 1;
-  display: flex; }
+@media only screen and (min-width: 60em) {
+  .middle-bar {
+    flex-grow: 1;
+    display: flex; } }
 
 .middle-bar__left-panel {
   margin: 0 !important;
@@ -37,10 +38,14 @@
     color: #fff; }
 
 .middle-bar__left-column {
+  display: none;
   background-color: #333333;
   padding: 0.625rem;
   width: 1.875rem;
   font-size: 1.5625rem; }
+  @media only screen and (min-width: 60em) {
+    .middle-bar__left-column {
+      display: block; } }
   .middle-bar__left-column svg {
     margin-bottom: 1rem;
     cursor: pointer; }
@@ -48,7 +53,14 @@
       color: #fff; }
 
 .middle-bar__explorer {
-  width: 13.75rem; }
+  width: 100%;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.125rem; }
+  @media only screen and (min-width: 60em) {
+    .middle-bar__explorer {
+      width: 14.375rem;
+      box-shadow: none;
+      margin-bottom: 0; } }
 
 .seti-icon {
   width: 0.75rem;
@@ -74,7 +86,7 @@
 .folder {
   padding-left: 0.5rem; }
   .folder .seti-icon {
-    vertical-align: text-top; }
+    vertical-align: middle; }
   .folder:hover {
     background-color: #3f3f46;
     cursor: pointer; }
@@ -102,6 +114,9 @@
   .tab--active svg {
     color: #fff; }
 
+.icon--active {
+  color: #fff; }
+
 .file-content {
   overflow-y: scroll; }
   .file-content pre {
@@ -121,19 +136,27 @@
     text-decoration: none;
     color: inherit; }
 
-.folder--open:before {
+.folder--open:before,
+.explorer--open:before {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
   vertical-align: middle;
   content: '';
-  border-top: 5px solid;
-  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-right: 0px solid transparent;
   border-left: 5px solid transparent; }
 
-.folder--close:before {
-  transform: rotate(-90deg); }
+.explorer--open:before {
+  margin-left: 0;
+  margin-right: 0.1875rem; }
+
+.folder--close:before,
+.explorer--close:before {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid; }
 
 .pdf-link svg {
   margin-top: 1rem; }

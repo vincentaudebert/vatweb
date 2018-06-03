@@ -12,7 +12,7 @@ import TiDelete from 'react-icons/lib/ti/delete';
 const FooterBar = props => {
   return (
     <div className="footer-bar row">
-      <div className="col-4-sm left footer-bar--left">
+      <div className="d-inline-block left footer-bar--left">
         <a
           href="https://github.com/vincentaudebert/vatweb"
           target="_blank"
@@ -22,21 +22,20 @@ const FooterBar = props => {
         >
           <GoGitBranch /> master (joke)
         </a>
-        <span className="footer-bar__info">
+        <span className="footer-bar__info--lg">
           <GoCloudUpload />
         </span>
-        <span className="footer-bar__info" title="Active Linters">
+        <span className="footer-bar__info--lg" title="Active Linters">
           <GoInfo /> ESLint, Standard
         </span>
-        <span className="footer-bar__info" title="0 Warning">
+        <span className="footer-bar__info--lg" title="0 Warning">
           <TiDelete /> 0 <GoAlert /> 0
         </span>
       </div>
-      <div className="col-4-sm" />
-      <div className="col-4-sm right footer-bar--right">
-        <span className="footer-bar__info">Spaces: 2</span>
-        <span className="footer-bar__info">UTF-8</span>
-        <span className="footer-bar__info">LF</span>
+      <div className="d-inline-block right footer-bar--right">
+        <span className="footer-bar__info--lg">Spaces: 2</span>
+        <span className="footer-bar__info--lg">UTF-8</span>
+        <span className="footer-bar__info--lg">LF</span>
         <span className="footer-bar__info">JavaScript</span>
         <span className="footer-bar__info">
           Prettier:<GoCheck />
@@ -50,7 +49,7 @@ const FooterBar = props => {
         >
           <FaSmile />
         </a>
-        <span className="footer-bar__info" role="img" aria-label="Bell">
+        <span className="footer-bar__info--lg" role="img" aria-label="Bell">
           <FaBell />
         </span>
       </div>

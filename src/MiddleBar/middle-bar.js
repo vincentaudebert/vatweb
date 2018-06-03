@@ -6,10 +6,10 @@ import FileContent from './FileContent/file-content.container';
 export const MiddleBar = props => {
   return (
     <div className="middle-bar row">
-      <div className="col-3 left middle-bar__left-panel">
+      <div className="left middle-bar__left-panel">
         <Explorer />
       </div>
-      <div className="col-9 middle-bar__right-panel">
+      <div className="middle-bar__right-panel">
         <FileContent />
       </div>
     </div>
