@@ -6,6 +6,11 @@
     flex-grow: 1;
     display: flex;
   }
+
+  &:after {
+    content: '';
+    clear: both;
+  }
 }
 
 .middle-bar__left-panel {

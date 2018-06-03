@@ -10,6 +10,11 @@
     margin-top: rem(4px);
     margin-bottom: rem(4px);
   }
+
+  &:after {
+    content: '';
+    clear: both;
+  }
 }
 
 .top-bar__filename {

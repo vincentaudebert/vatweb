@@ -3,6 +3,10 @@
     flex-grow: 1;
     display: flex; } }
 
+.middle-bar:after {
+  content: '';
+  clear: both; }
+
 .middle-bar__left-panel {
   margin: 0 !important;
   background-color: #252526;

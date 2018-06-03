@@ -5,6 +5,9 @@
   .top-bar .top-bar__filename {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
+  .top-bar:after {
+    content: '';
+    clear: both; }
 
 .top-bar__filename {
   position: absolute;
