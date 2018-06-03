@@ -2,15 +2,37 @@
 @import '../css/mixins';
 
 .footer-bar {
+  position: sticky;
+  bottom: 0;
   color: $color-white;
   background-color: $color-blue;
   font-size: rem(10px);
+  padding: rem(5px);
+
+  @media only screen and (min-width: $breakpoint-large) {
+    position: inherit;
+    bottom: initial;
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+  }
 }
 
-.footer-bar__info {
+.footer-bar__info,
+.footer-bar__info--lg {
   margin-left: rem(10px);
   &:first-child {
     margin-left: 0;
+  }
+}
+
+.footer-bar__info--lg {
+  display: none;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    display: inline-block;
   }
 }
 

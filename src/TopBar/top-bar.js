@@ -11,7 +11,7 @@ export const TopBar = props => {
 
   return (
     <div className="top-bar row">
-      <div className="col-4-sm left ml-spacing top-bar__item">
+      <div className="d-inline-block left ml-spacing top-bar__item">
         <button
           type="button"
           onClick={() => props.toggleEditor(false)}
@@ -34,7 +34,7 @@ export const TopBar = props => {
           <FaExpand />
         </button>
       </div>
-      <div className="col-4-sm center top-bar__item">
+      <div className="d-inline-block center top-bar__filename">
         {name && `${name} - `}vatweb.fr
       </div>
     </div>

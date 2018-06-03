@@ -64,71 +64,48 @@ class App extends Component {
       hide: this.state.editorOpen,
       show: !this.state.editorOpen,
     });
-    const alternativeMobileClass = 'alternative';
     return (
       <div className="App">
-        <div className="hidden-md">
-          <div id="editor" className={editorClass}>
-            <TopBar toggleEditor={this.toggleEditor} />
-            <MiddleBar />
-            <FooterBar />
-          </div>
-          <div id="alternative" className={alternativeClass}>
-            <div className="container">
-              <h2>Oopsie...</h2>
-              <p>
-                Don't worry. I'm not offended. I knew you would try all the
-                buttons. And particularly the closing one :)
-              </p>
-              <p>
-                If you want, you can reopen my life editor by clicking here:{' '}
-                <div
-                  className="d-inline-block btn--fake"
-                  onClick={() => this.toggleEditor(true)}
-                  role="button"
-                >
-                  <FaMagicWand /> <FaBackward /> <FaHandPeace />
-                </div>
-              </p>
-              <p>
-                If you got sick of reading some (beautiful) code, you can
-                download my{' '}
-                <a
-                  className="alternative--link"
-                  href="/assets/Vincent_Audebert_CV.pdf"
-                  title="PDF CV"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  CV in a PDF format
-                </a>.
-              </p>
-              <p>Vincent.</p>
-            </div>
-          </div>
+        <div id="editor" className={editorClass}>
+          <TopBar toggleEditor={this.toggleEditor} />
+          <MiddleBar />
+          <FooterBar />
         </div>
-        <div className="show-md">
-          <div id="alternative--mobile" className={alternativeMobileClass}>
-            <div className="container">
-              <h2>Lovely Mobile/Tablet...</h2>
-              <p>
-                Unfortunately, I don't support yet these devices. Please come
-                back on a desktop screen for a nice experience :)
-              </p>
-              <p>
-                In the meantime, you can download my{' '}
-                <a
-                  className="alternative--link"
-                  href="/assets/Vincent_Audebert_CV.pdf"
-                  title="PDF CV"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  CV in a PDF format
-                </a>.
-              </p>
-              <p>Vincent.</p>
-            </div>
+        <div id="alternative" className={alternativeClass}>
+          <div className="container">
+            <h2>Oopsie...</h2>
+            <p>
+              Don't worry. I'm not offended. I knew you would try all the
+              buttons. And particularly the closing one :)
+            </p>
+            <p>
+              If you want, you can reopen my life editor by clicking here:{' '}
+              <a
+                className="d-inline-block btn--fake reset-link"
+                onClick={evt => {
+                  evt.preventDefault();
+                  this.toggleEditor(true);
+                }}
+                role="button"
+                href="/"
+              >
+                <FaMagicWand /> <FaBackward /> <FaHandPeace />
+              </a>
+            </p>
+            <p>
+              If you got sick of reading some (beautiful) code, you can download
+              my{' '}
+              <a
+                className="alternative--link"
+                href="/assets/Vincent_Audebert_CV.pdf"
+                title="PDF CV"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                CV in a PDF format
+              </a>.
+            </p>
+            <p>Vincent.</p>
           </div>
         </div>
       </div>

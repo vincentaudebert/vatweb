@@ -1,9 +1,19 @@
 .top-bar {
   background-color: #3c3c3c;
   font-size: 0.875rem; }
-  .top-bar .top-bar__item {
+  .top-bar .top-bar__item,
+  .top-bar .top-bar__filename {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
+  .top-bar:after {
+    content: '';
+    clear: both; }
+
+.top-bar__filename {
+  position: absolute;
+  width: calc( 100% - 132px);
+  margin-left: auto;
+  margin-right: auto; }
 
 .top-bar__btn {
   height: 0.875rem;

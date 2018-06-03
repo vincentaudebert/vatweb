@@ -23,9 +23,11 @@ class Explorer extends Component {
     super(props);
     this.state = {
       expandFolder: true,
+      expandExplorer: true,
       fromExplorer: false,
     };
     this.toggleFolder = this.toggleFolder.bind(this);
+    this.toggleExplorer = this.toggleExplorer.bind(this);
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -50,6 +52,12 @@ class Explorer extends Component {
     });
   }
 
+  toggleExplorer() {
+    this.setState({
+      expandExplorer: !this.state.expandExplorer,
+    });
+  }
+
   render() {
     const currentFile = getActiveItem(this.props.openFiles);
     const name = currentFile ? currentFile.name : undefined;
@@ -57,7 +65,7 @@ class Explorer extends Component {
     return (
       <Fragment>
         <div className="middle-bar__left-column center">
-          <FaClone className="--active" />
+          <FaClone className="icon--active" />
           <FaSearch />
           <GoGitBranch />
           <FaBug />
@@ -73,23 +81,45 @@ class Explorer extends Component {
           </a>
         </div>
         <div className="middle-bar__explorer">
-          <div className="middle-bar__left-panel__title">
-            <div className="float-left font-heavy">
-              EXPLORER<span className="hidden-lg">: VATWEB.FR</span>
-            </div>
-            <div className="float-right middle-bar__left-panel__options">
-              <span className="options__icons">
-                <FaFile />
-              </span>
-              <span className="options__icons">
-                <FaFolder />
-              </span>
-              <span className="options__icons">
-                <IoRefresh />
-              </span>
-            </div>
+          <div
+            className={classnames('middle-bar__left-panel__title', {
+              'mb-0': this.state.expandExplorer,
+            })}
+          >
+            <Fragment>
+              <div className="float-left font-heavy">
+                <a
+                  className={classnames('explorer--open reset-link', {
+                    'explorer--close': this.state.expandExplorer,
+                  })}
+                  onClick={evt => {
+                    evt.preventDefault();
+                    this.toggleExplorer();
+                  }}
+                  href="/"
+                >
+                  {' '}
+                  EXPLORER<span className="hidden-sm">: VATWEB.FR</span>
+                </a>
+              </div>
+              <div className="float-right middle-bar__left-panel__options">
+                <span className="options__icons">
+                  <FaFile />
+                </span>
+                <span className="options__icons">
+                  <FaFolder />
+                </span>
+                <span className="options__icons">
+                  <IoRefresh />
+                </span>
+              </div>
+            </Fragment>
           </div>
-          <div className="middle-bar__left-panel__files">
+          <div
+            className={classnames('middle-bar__left-panel__files', {
+              'd-none': this.state.expandExplorer,
+            })}
+          >
             {config.map(item => {
               let icon = SetiFolder;
               if (item.language === 'react') icon = SetiReact;
