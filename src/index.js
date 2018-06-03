@@ -8,6 +8,10 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
+import gaId from './config/analytics';
+
+import ReactGA from 'react-ga';
+ReactGA.initialize(gaId); //Unique Google Analytics tracking number
 
 const router = (
   <Router>

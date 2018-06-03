@@ -7,6 +7,7 @@ import './app.css';
 import FaMagicWand from 'react-icons/lib/fa/magic';
 import FaBackward from 'react-icons/lib/fa/backward';
 import FaHandPeace from 'react-icons/lib/fa/hand-peace-o';
+import ReactGA from 'react-ga';
 
 class App extends Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class App extends Component {
   componentDidMount() {
     const slug = this.props.match.params.slug || 'welcome.json';
     this.props.changeFile(slug);
+    ReactGA.pageview(slug);
 
     document
       .getElementById('editor')
@@ -33,7 +35,10 @@ class App extends Component {
 
     // if file just got close we want to change url to last file open
     if (wantedLocation && wantedLocation !== slug) history.push(wantedLocation);
-    else changeFile(slug);
+    else {
+      changeFile(slug);
+      ReactGA.pageview(slug);
+    }
   }
 
   toggleEditor(value) {

@@ -5888,6 +5888,13 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
+react-ga@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.3.tgz#0f447c73664c069a5fc341f6f431262e3d4c23c4"
+  optionalDependencies:
+    prop-types "^15.6.0"
+    react "^15.6.2 || ^16.0"
+
 react-icon-base@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-icon-base/-/react-icon-base-2.1.0.tgz#a196e33fdf1e7aaa1fda3aefbb68bdad9e82a79d"
@@ -5987,7 +5994,7 @@ react-syntax-highlighter@^7.0.4:
     prismjs "^1.8.4"
     refractor "^2.4.1"
 
-react@^16.4.0:
+"react@^15.6.2 || ^16.0", react@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
   dependencies:
