@@ -3,6 +3,7 @@ import FileContent from './file-content';
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    currentFile: state.currentFile,
     openFiles: state.openFiles,
   };
 };

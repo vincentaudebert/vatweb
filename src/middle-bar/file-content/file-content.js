@@ -5,14 +5,9 @@ import SyntaxHighlighter, {
 } from 'react-syntax-highlighter/prism-light';
 import jsx from 'react-syntax-highlighter/languages/prism/jsx';
 import prism from 'react-syntax-highlighter/styles/prism/atom-dark';
-import config from '../../config/config';
-import { getActiveItem, getFromSlug } from '../../utilities';
 
 const Component = props => {
-  const activeFile = getActiveItem(props.openFiles);
-  const fullActiveFile = activeFile
-    ? getFromSlug(config, activeFile.name)
-    : false;
+  const fullActiveFile = props.currentFile;
   const codeString = fullActiveFile ? fullActiveFile.content : '';
 
   registerLanguage('jsx', jsx);

@@ -3,6 +3,7 @@ import Explorer from './explorer';
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    currentFile: state.currentFile,
     openFiles: state.openFiles,
   };
 };

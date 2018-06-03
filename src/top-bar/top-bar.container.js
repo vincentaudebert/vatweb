@@ -3,6 +3,7 @@ import TopBar from './top-bar';
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    currentFile: state.currentFile,
     openFiles: state.openFiles,
   };
 };

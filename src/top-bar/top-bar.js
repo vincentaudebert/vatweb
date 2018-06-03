@@ -3,10 +3,9 @@ import './top-bar.css';
 import MdClose from 'react-icons/lib/md/close';
 import IoMinus from 'react-icons/lib/io/minus';
 import FaExpand from 'react-icons/lib/fa/expand';
-import { getActiveItem } from '../utilities';
 
 export const TopBar = props => {
-  const currentFile = getActiveItem(props.openFiles);
+  const { currentFile } = props;
   const name = currentFile ? currentFile.name : undefined;
 
   return (

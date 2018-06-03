@@ -16,7 +16,6 @@ import config from '../../config/config';
 import classnames from 'classnames';
 
 import { Link } from 'react-router-dom';
-import { getActiveItem, getFromSlug } from '../../utilities';
 
 class Explorer extends Component {
   constructor(props) {
@@ -32,10 +31,9 @@ class Explorer extends Component {
 
   static getDerivedStateFromProps(props, state) {
     if (!state.fromExplorer) {
-      const activeItem = getActiveItem(props.openFiles);
-      const fullActiveItem = getFromSlug(config, activeItem.name);
+      const { currentFile } = props;
 
-      if (fullActiveItem.inFolder) {
+      if (currentFile && currentFile.inFolder) {
         state.expandFolder = true;
       }
     }
@@ -59,7 +57,7 @@ class Explorer extends Component {
   }
 
   render() {
-    const currentFile = getActiveItem(this.props.openFiles);
+    const { currentFile } = this.props;
     const name = currentFile ? currentFile.name : undefined;
 
     return (

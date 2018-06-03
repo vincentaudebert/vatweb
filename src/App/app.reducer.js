@@ -4,6 +4,7 @@ import config from '../config/config';
 import { getFromSlug } from '../utilities';
 
 const defaultState = {
+  currentFile: config.filter(item => item.name === 'welcome.json')[0],
   openFiles: [
     {
       name: 'welcome.json',
@@ -34,9 +35,12 @@ const changeFile = (previousState, payload) => {
   const fileIsAlreadyOpen = getFromSlug(previousState.openFiles, slug);
 
   const newOpenFiles = resetOpenFiles(previousState.openFiles, slug);
+  const currentFile = getFromSlug(config, slug);
+
   if (fileIsAlreadyOpen) {
     return {
       ...previousState,
+      currentFile,
       openFiles: newOpenFiles,
       wantedLocation: undefined,
     };
@@ -49,6 +53,7 @@ const changeFile = (previousState, payload) => {
 
   return {
     ...previousState,
+    currentFile,
     openFiles: newOpenFiles,
     wantedLocation: undefined,
   };
@@ -63,12 +68,15 @@ const closeFile = (previousState, payload) => {
 
   // we just make sure we activate the last file in the list
   const lastFile = newOpenFiles[newOpenFiles.length - 1];
+  let currentFile;
   if (lastFile) {
     lastFile.active = true;
+    currentFile = getFromSlug(config, lastFile.name); // for now we always have at least a file opened
   }
 
   return {
     ...previousState,
+    currentFile,
     openFiles: newOpenFiles,
     wantedLocation: lastFile ? lastFile.name : undefined,
   };
