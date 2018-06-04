@@ -6,9 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to run
 
-### Before
+### Google analytics setup
 
-Rename `/src/config/analytics-TOBEEDITED.js` into `/src/config/analytics.js` and replace the content with your correct Google Analytics ID.
+To setup your Google Analytics ID you will need an environment variable: `GOOGLE_ANALYTICS_ID`.
+You can either set it directly into your Continuous Integration system or add `GOOGLE_ANALYTICS_ID=UA-XXXXXX-X` at the beginning of the `build` command in `package.json`
 
 ### Then
 

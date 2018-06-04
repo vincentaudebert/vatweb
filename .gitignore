@@ -22,5 +22,4 @@ yarn-error.log*
 
 .vscode*
 
-/src/config/analytics.js
 /stats.json

@@ -9,9 +9,9 @@ import App from './app/app.container';
 import NoMatch from './no-match/no-match';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
-import gaId from './config/analytics';
+import getGaId from './config/analytics';
 
-ReactGA.initialize(gaId); // Unique Google Analytics tracking number
+ReactGA.initialize(getGaId()); // Unique Google Analytics tracking number
 
 const router = (
   <Router>
