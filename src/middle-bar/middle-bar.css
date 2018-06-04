@@ -17,7 +17,6 @@
   margin: 0 !important;
   width: 100%;
   background-color: #1e1e1e;
-  font-family: 'Menlo Regular', Helvetica, sans-serif;
   overflow: scroll; }
 
 .middle-bar__left-panel__title {
@@ -135,7 +134,8 @@
 .file--link {
   text-decoration: none;
   color: inherit;
-  display: block; }
+  display: block;
+  font-size: 0.875rem; }
   .file--link:hover, .file--link:focus, .file--link:active {
     text-decoration: none;
     color: inherit; }

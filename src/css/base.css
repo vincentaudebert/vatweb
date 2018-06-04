@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "Menlo Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Menlo-Regular.eot?") format("eot"), url("./fonts/Menlo-Regular.woff2") format("woff2"), url("./fonts/Menlo-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: "Arctik";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/arctik-2.eot?") format("eot"), url("./fonts/arctik-2.woff2") format("woff2"), url("./fonts/arctik-2.woff") format("woff"); }
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html,
 body {
   height: 100%;
@@ -22,10 +11,7 @@ body {
   background-color: #1e1e1e;
   color: #adadad;
   line-height: 1.5;
-  letter-spacing: 1px; }
-
-* {
-  font-family: "Arctik", Helvetica, sans-serif; }
+  font-family: "Roboto", Helvetica, sans-serif; }
 
 h1 {
   font-size: 2.5rem; }
