@@ -24,7 +24,6 @@
   margin: 0 !important;
   width: 100%;
   background-color: $color-dark-grey;
-  font-family: 'Menlo Regular', Helvetica, sans-serif;
   overflow: scroll;
 }
 
@@ -190,6 +189,7 @@
   text-decoration: none;
   color: inherit;
   display: block;
+  font-size: rem(14px);
 
   &:hover,
   &:focus,
