@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Google analytics setup
 
-To setup your Google Analytics ID you will need an environment variable: `GOOGLE_ANALYTICS_ID`.
-You can either set it directly into your Continuous Integration system or add `GOOGLE_ANALYTICS_ID=UA-XXXXXX-X` at the beginning of the `build` command in `package.json`
+To setup your Google Analytics ID you will need an environment variable: `REACT_APP_GOOGLE_ANALYTICS_ID`.
+You can either set it directly into your Continuous Integration system or add `REACT_APP_GOOGLE_ANALYTICS_ID=UA-XXXXXX-X` at the beginning of the `build` command in `package.json`
 
 ### Then
 
