@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import ReactGA from 'react-ga';
 import 'normalize.css';
 import './css/base.css';
 import App from './app/app.container';
 import NoMatch from './no-match/no-match';
 import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import store from './store';
 import gaId from './config/analytics';
 
-import ReactGA from 'react-ga';
-ReactGA.initialize(gaId); //Unique Google Analytics tracking number
+ReactGA.initialize(gaId); // Unique Google Analytics tracking number
 
 const router = (
   <Router>

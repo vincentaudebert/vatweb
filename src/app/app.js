@@ -1,22 +1,35 @@
+// @flow
 import React, { Component } from 'react';
-import TopBar from '../top-bar/top-bar.container';
-import MiddleBar from '../middle-bar/middle-bar';
-import FooterBar from '../footer-bar/footer-bar';
 import classnames from 'classnames';
-import './app.css';
+import ReactGA from 'react-ga';
 import FaMagicWand from 'react-icons/lib/fa/magic';
 import FaBackward from 'react-icons/lib/fa/backward';
 import FaHandPeace from 'react-icons/lib/fa/hand-peace-o';
-import ReactGA from 'react-ga';
 
-class App extends Component {
-  constructor(props) {
+import TopBar from '../top-bar/top-bar.container';
+import MiddleBar from '../middle-bar/middle-bar';
+import FooterBar from '../footer-bar/footer-bar';
+import './app.css';
+
+type AppProps = {
+  wantedLocation: string,
+  changeFile: Function,
+  match: Object,
+  history: Object,
+};
+
+type AppState = {
+  editorOpen: boolean,
+};
+
+class App extends Component<AppProps, AppState> {
+  constructor(props: AppProps) {
     super(props);
     this.state = {
       editorOpen: true,
     };
-    this.toggleEditor = this.toggleEditor.bind(this);
-    this.editorAnimationEnd = this.editorAnimationEnd.bind(this);
+    (this: any).toggleEditor = this.toggleEditor.bind(this);
+    (this: any).editorAnimationEnd = this.editorAnimationEnd.bind(this);
   }
 
   componentDidMount() {
@@ -24,14 +37,16 @@ class App extends Component {
     this.props.changeFile(slug);
     ReactGA.pageview(slug);
 
-    document
-      .getElementById('editor')
-      .addEventListener('transitionend', this.editorAnimationEnd);
+    const editorElmt = document.getElementById('editor');
+
+    if (editorElmt) {
+      editorElmt.addEventListener('transitionend', this.editorAnimationEnd);
+    }
   }
 
   componentDidUpdate() {
     const { match, wantedLocation, changeFile, history } = this.props;
-    let slug = match.params.slug || 'welcome.json';
+    const slug = match.params.slug || 'welcome.json';
 
     // if file just got close we want to change url to last file open
     if (wantedLocation && wantedLocation !== slug) history.push(wantedLocation);
@@ -41,7 +56,7 @@ class App extends Component {
     }
   }
 
-  toggleEditor(value) {
+  toggleEditor(value: boolean) {
     this.setState({
       editorOpen: value,
     });
@@ -51,12 +66,14 @@ class App extends Component {
     if (!this.state.editorOpen) {
       const alternativeElmt = document.getElementById('alternative');
       const editorElmt = document.getElementById('editor');
-      editorElmt.classList.remove('d-block');
-      editorElmt.classList.remove('show');
-      editorElmt.classList.add('d-none');
-      alternativeElmt.classList.remove('d-none');
-      alternativeElmt.classList.add('d-block');
-      alternativeElmt.classList.add('show');
+      if (editorElmt && alternativeElmt) {
+        editorElmt.classList.remove('d-block');
+        editorElmt.classList.remove('show');
+        editorElmt.classList.add('d-none');
+        alternativeElmt.classList.remove('d-none');
+        alternativeElmt.classList.add('d-block');
+        alternativeElmt.classList.add('show');
+      }
     }
   }
 
@@ -85,17 +102,16 @@ class App extends Component {
             </p>
             <p>
               If you want, you can reopen my life editor by clicking here:{' '}
-              <a
-                className="d-inline-block btn--fake reset-link"
+              <button
+                className="d-inline-block btn--fake reset-button"
                 onClick={evt => {
                   evt.preventDefault();
                   this.toggleEditor(true);
                 }}
-                role="button"
-                href="/"
+                title="Reopen editor"
               >
                 <FaMagicWand /> <FaBackward /> <FaHandPeace />
-              </a>
+              </button>
             </p>
             <p>
               If you got sick of reading some (beautiful) code, you can download

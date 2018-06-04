@@ -1,15 +1,19 @@
+// @flow
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import Tabs from './tabs';
 import { closeFile } from '../../app/app.actions';
-import { withRouter } from 'react-router-dom';
+import type { fileType } from '../../app/app.types';
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    openFiles: state.openFiles,
-  };
+type TabsState = {
+  openFiles: Array<fileType>,
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapStateToProps = (state: TabsState) => ({
+  openFiles: state.openFiles,
+});
+
+const mapDispatchToProps = (dispatch: Function) => ({
   closeFile: (openFiles, slug) => {
     dispatch(closeFile(slug));
   },

@@ -1,14 +1,19 @@
+// @flow
 import { connect } from 'react-redux';
 import FileContent from './file-content';
+import type { fileType, fullFileType } from '../../app/app.types';
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    currentFile: state.currentFile,
-    openFiles: state.openFiles,
-  };
+type FileContentState = {
+  currentFile: fullFileType,
+  openFiles: Array<fileType>,
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => ({});
+const mapStateToProps = (state: FileContentState) => ({
+  currentFile: state.currentFile,
+  openFiles: state.openFiles,
+});
+
+const mapDispatchToProps = () => ({});
 
 export default connect(
   mapStateToProps,

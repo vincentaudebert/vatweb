@@ -1,5 +1,8 @@
+// @flow
+// ================================
+// eslint comment, please update asap when https://github.com/yannickcr/eslint-plugin-react/issues/1751 is merged
+// ================================
 import React, { Component, Fragment } from 'react';
-
 import FaFile from 'react-icons/lib/fa/file-o';
 import FaFolder from 'react-icons/lib/fa/folder-o';
 import IoRefresh from 'react-icons/lib/io/android-refresh';
@@ -9,45 +12,65 @@ import GoGitBranch from 'react-icons/lib/go/git-branch';
 import FaBug from 'react-icons/lib/fa/bug';
 import FaPDF from 'react-icons/lib/fa/file-pdf-o';
 import MdExtension from 'react-icons/lib/md/extension';
+import classnames from 'classnames';
+import { Link } from 'react-router-dom';
 import SetiFolder from '../../svg/icons/folder.svg';
 import SetiReact from '../../svg/icons/react.svg';
 import SetiJSON from '../../svg/icons/json.svg';
 import config from '../../config/config';
-import classnames from 'classnames';
+import type { fullFileType } from '../../app/app.types';
 
-import { Link } from 'react-router-dom';
+type ExplorerProps = {
+  currentFile: fullFileType,
+};
 
-class Explorer extends Component {
-  constructor(props) {
+type ExplorerState = {
+  expandFolder: boolean,
+  expandExplorer: boolean,
+  fromExplorer: boolean,
+};
+
+class Explorer extends Component<ExplorerProps, ExplorerState> {
+  constructor(props: ExplorerProps) {
     super(props);
     this.state = {
       expandFolder: true,
       expandExplorer: true,
+      // eslint-disable-next-line
       fromExplorer: false,
     };
-    this.toggleFolder = this.toggleFolder.bind(this);
-    this.toggleExplorer = this.toggleExplorer.bind(this);
+    (this: any).toggleFolder = this.toggleFolder.bind(this);
+    (this: any).toggleExplorer = this.toggleExplorer.bind(this);
+    (this: any).handleKeyDown = this.handleKeyDown.bind(this);
   }
 
-  static getDerivedStateFromProps(props, state) {
+  static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
+    const newState = state;
     if (!state.fromExplorer) {
       const { currentFile } = props;
 
       if (currentFile && currentFile.inFolder) {
-        state.expandFolder = true;
+        newState.expandFolder = true;
       }
     }
 
-    state.fromExplorer = false;
+    newState.fromExplorer = false;
 
-    return state;
+    return newState;
   }
 
   toggleFolder() {
     this.setState({
       expandFolder: !this.state.expandFolder,
+      // eslint-disable-next-line
       fromExplorer: true,
     });
+  }
+
+  handleKeyDown(evt: SyntheticKeyboardEvent<HTMLDivElement>) {
+    if (evt.which === 13 || evt.which === 32) {
+      this.toggleExplorer();
+    }
   }
 
   toggleExplorer() {
@@ -86,19 +109,19 @@ class Explorer extends Component {
           >
             <Fragment>
               <div className="float-left font-heavy">
-                <a
-                  className={classnames('explorer--open reset-link', {
+                <button
+                  className={classnames('explorer--open reset-button', {
                     'explorer--close': !this.state.expandExplorer,
                   })}
                   onClick={evt => {
                     evt.preventDefault();
                     this.toggleExplorer();
                   }}
-                  href="/"
+                  title="Open explorer"
                 >
                   {' '}
                   EXPLORER<span className="hidden-sm">: VATWEB.FR</span>
-                </a>
+                </button>
               </div>
               <div className="float-right middle-bar__left-panel__options">
                 <span className="options__icons">
@@ -148,7 +171,6 @@ class Explorer extends Component {
                       item.inFolder === true && !this.state.expandFolder,
                     'explorer--active': item.name === name,
                   })}
-                  onClick={item.type === 'folder' ? this.toggleFolder : null}
                 >
                   {item.type !== 'folder' ? (
                     <Link
@@ -159,13 +181,24 @@ class Explorer extends Component {
                       {content}
                     </Link>
                   ) : (
-                    <div
-                      className={classnames('folder--open', {
-                        'folder--close': !this.state.expandFolder,
-                      })}
+                    <button
+                      className="reset-button"
+                      onClick={evt => {
+                        evt.preventDefault();
+                        if (item.type === 'folder') {
+                          this.toggleFolder();
+                        }
+                      }}
+                      title="Open folder"
                     >
-                      {content}
-                    </div>
+                      <div
+                        className={classnames('folder--open', {
+                          'folder--close': !this.state.expandFolder,
+                        })}
+                      >
+                        {content}
+                      </div>
+                    </button>
                   )}
                 </div>
               );

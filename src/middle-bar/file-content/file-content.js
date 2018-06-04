@@ -1,12 +1,18 @@
+// @flow
 import React from 'react';
-import Tabs from '../tabs/tabs.container';
 import SyntaxHighlighter, {
   registerLanguage,
 } from 'react-syntax-highlighter/prism-light';
 import jsx from 'react-syntax-highlighter/languages/prism/jsx';
 import prism from 'react-syntax-highlighter/styles/prism/atom-dark';
+import Tabs from '../tabs/tabs.container';
+import type { fullFileType } from '../../app/app.types';
 
-const Component = props => {
+type FileContentProps = {
+  currentFile: fullFileType,
+};
+
+const Component = (props: FileContentProps) => {
   const fullActiveFile = props.currentFile;
   const codeString = fullActiveFile ? fullActiveFile.content : '';
 
