@@ -32,3 +32,13 @@
 .footer-bar--right {
   float: right !important;
   margin-right: 0.75rem !important; }
+
+.icon--footer {
+  font-size: 0.875rem; }
+
+.icon--footer-small {
+  font-size: 0.75rem; }
+
+.icon--footer-big {
+  font-size: 0.9375rem;
+  margin-bottom: 0.0625rem; }

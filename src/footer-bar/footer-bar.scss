@@ -44,3 +44,16 @@
   float: right !important;
   margin-right: $spacing !important;
 }
+
+.icon--footer {
+  font-size: rem(14px);
+}
+
+.icon--footer-small {
+  font-size: rem(12px);
+}
+
+.icon--footer-big {
+  font-size: rem(15px);
+  margin-bottom: rem(1px);
+}
