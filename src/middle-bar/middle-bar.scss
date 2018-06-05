@@ -59,21 +59,12 @@
 .middle-bar__left-column {
   display: none;
   background-color: $color-medium-dark-grey;
-  padding: rem(10px);
+  padding: rem(6px);
   width: rem(30px);
   font-size: rem(25px);
 
   @media only screen and (min-width: $breakpoint-large) {
     display: block;
-  }
-
-  svg {
-    margin-bottom: rem(16px);
-    cursor: pointer;
-
-    &:hover {
-      color: $color-white;
-    }
   }
 }
 
@@ -164,8 +155,23 @@
   }
 }
 
+.icon--explorer {
+  width: rem(26px);
+  height: rem(26px);
+  fill: $color-light-grey;
+  cursor: default;
+  margin-bottom: rem(5px);
+}
+
+.icon--explorer-title {
+  width: rem(12px);
+  height: rem(12px);
+  fill: $color-light-grey;
+}
+
 .icon--active {
-  color: $color-white;
+  fill: $color-white;
+  cursor: pointer;
 }
 
 .file-content {
@@ -230,4 +236,10 @@
 
 .pdf-link svg {
   margin-top: rem(16px);
+  width: rem(30px);
+  height: rem(30px);
+
+  &:hover {
+    fill: $color-white;
+  }
 }

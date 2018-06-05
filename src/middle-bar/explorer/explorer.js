@@ -3,17 +3,17 @@
 // eslint comment, please update asap when https://github.com/yannickcr/eslint-plugin-react/issues/1751 is merged
 // ================================
 import React, { Component, Fragment } from 'react';
-import FaFile from 'react-icons/lib/fa/file-o';
-import FaFolder from 'react-icons/lib/fa/folder-o';
-import IoRefresh from 'react-icons/lib/io/android-refresh';
-import FaClone from 'react-icons/lib/fa/clone';
-import FaSearch from 'react-icons/lib/fa/search';
-import GoGitBranch from 'react-icons/lib/go/git-branch';
-import FaBug from 'react-icons/lib/fa/bug';
-import FaPDF from 'react-icons/lib/fa/file-pdf-o';
-import MdExtension from 'react-icons/lib/md/extension';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
+import FaPDF from 'react-icons/lib/fa/file-pdf-o';
+import IconFile from '../../svg/file-svg';
+import IconFolder from '../../svg/folder-svg';
+import IconRefresh from '../../svg/refresh-svg';
+import IconFileExplorer from '../../svg/explorer-svg';
+import IconSearch from '../../svg/search-svg';
+import IconGit from '../../svg/git-svg';
+import IconDebug from '../../svg/debug-svg';
+import IconExtensions from '../../svg/extensions-svg';
 import SetiFolder from '../../svg/icons/folder.svg';
 import SetiReact from '../../svg/icons/react.svg';
 import SetiJSON from '../../svg/icons/json.svg';
@@ -86,11 +86,11 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     return (
       <Fragment>
         <div className="middle-bar__left-column center">
-          <FaClone className="icon--active" />
-          <FaSearch />
-          <GoGitBranch />
-          <FaBug />
-          <MdExtension />
+          <IconFileExplorer className="icon--explorer icon--active" />
+          <IconSearch className="icon--explorer" />
+          <IconGit className="icon--explorer" />
+          <IconDebug className="icon--explorer" />
+          <IconExtensions className="icon--explorer" />
           <a
             href="/assets/Vincent_Audebert_CV.pdf"
             target="_blank"
@@ -125,13 +125,13 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
               </div>
               <div className="float-right middle-bar__left-panel__options">
                 <span className="options__icons">
-                  <FaFile />
+                  <IconFile className="icon--explorer-title" />
                 </span>
                 <span className="options__icons">
-                  <FaFolder />
+                  <IconFolder className="icon--explorer-title" />
                 </span>
                 <span className="options__icons">
-                  <IoRefresh />
+                  <IconRefresh className="icon--explorer-title" />
                 </span>
               </div>
             </Fragment>
