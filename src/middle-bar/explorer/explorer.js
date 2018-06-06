@@ -111,7 +111,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     evt.preventDefault();
                     this.toggleExplorer();
                   }}
-                  title="Open explorer"
+                  title="Open/Collapse explorer"
                 >
                   {' '}
                   EXPLORER<span className="hidden-sm">: VATWEB.FR</span>
@@ -176,14 +176,14 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     </Link>
                   ) : (
                     <button
-                      className="reset-button"
+                      className="reset-button btn--folder"
                       onClick={evt => {
                         evt.preventDefault();
                         if (item.type === 'folder') {
                           this.toggleFolder();
                         }
                       }}
-                      title="Open folder"
+                      title="Open/Collapse folder"
                     >
                       <div
                         className={classnames('folder--open', {
