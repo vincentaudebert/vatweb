@@ -15,12 +15,14 @@ class Home extends Component<Props, *> {
       setPhoneNumber,
       setEmail,
       setLinkedInProfile,
+      setLanguages
     } = this.props;
     setLocation('Bonneville, France');
     setPhoneNumber('+33 7 72 41 88 58');
     setEmail('vincent@vatweb.fr');
     setLinkedInProfile('https://www.linkedin.com/in/vincentaudebert/');
     setGitHubProfile('https://github.com/vincentaudebert');
+    setLanguages(['French', 'English']);
   }
 
   componentWillUnmount() {

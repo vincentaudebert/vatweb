@@ -32,7 +32,7 @@ class Hobbies extends Component<Props, State> {
     }
 
     render() {
-        const activity = this.pickActivity(props.weather);
+        const activity = this.pickActivity(this.props.weather);
         return (
             <div className="free-time">
                 <p>I'm going to do {activity}</p>
