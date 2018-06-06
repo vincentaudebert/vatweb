@@ -31,18 +31,12 @@ type ExplorerState = {
 };
 
 class Explorer extends Component<ExplorerProps, ExplorerState> {
-  constructor(props: ExplorerProps) {
-    super(props);
-    this.state = {
-      expandFolder: true,
-      expandExplorer: true,
-      // eslint-disable-next-line
-      fromExplorer: false,
-    };
-    (this: any).toggleFolder = this.toggleFolder.bind(this);
-    (this: any).toggleExplorer = this.toggleExplorer.bind(this);
-    (this: any).handleKeyDown = this.handleKeyDown.bind(this);
-  }
+  state = {
+    expandFolder: true,
+    expandExplorer: true,
+    // eslint-disable-next-line
+    fromExplorer: false,
+  };
 
   static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
     const newState = state;
@@ -59,25 +53,25 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     return newState;
   }
 
-  toggleFolder() {
+  toggleFolder = (): void => {
     this.setState({
       expandFolder: !this.state.expandFolder,
       // eslint-disable-next-line
       fromExplorer: true,
     });
-  }
+  };
 
-  handleKeyDown(evt: SyntheticKeyboardEvent<HTMLDivElement>) {
+  handleKeyDown = (evt: SyntheticKeyboardEvent<HTMLDivElement>): void => {
     if (evt.which === 13 || evt.which === 32) {
       this.toggleExplorer();
     }
-  }
+  };
 
-  toggleExplorer() {
+  toggleExplorer = (): void => {
     this.setState({
       expandExplorer: !this.state.expandExplorer,
     });
-  }
+  };
 
   render() {
     const { currentFile } = this.props;
