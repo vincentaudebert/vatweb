@@ -54,7 +54,7 @@ const Tabs = (props: TabsProps) => {
                 />{' '}
                 {file.name}{' '}
                 <button
-                  className="reset-button btn--close"
+                  className="reset-button"
                   title={`Close ${file.name}`}
                   onClick={evt => {
                     evt.preventDefault();
