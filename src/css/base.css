@@ -136,7 +136,5 @@ p {
   color: inherit;
   font: inherit;
   line-height: normal;
-  appearance: none; }
-
-.btn--close {
+  appearance: none;
   cursor: pointer; }

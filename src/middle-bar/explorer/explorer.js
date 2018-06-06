@@ -31,18 +31,12 @@ type ExplorerState = {
 };
 
 class Explorer extends Component<ExplorerProps, ExplorerState> {
-  constructor(props: ExplorerProps) {
-    super(props);
-    this.state = {
-      expandFolder: true,
-      expandExplorer: true,
-      // eslint-disable-next-line
-      fromExplorer: false,
-    };
-    (this: any).toggleFolder = this.toggleFolder.bind(this);
-    (this: any).toggleExplorer = this.toggleExplorer.bind(this);
-    (this: any).handleKeyDown = this.handleKeyDown.bind(this);
-  }
+  state = {
+    expandFolder: true,
+    expandExplorer: true,
+    // eslint-disable-next-line
+    fromExplorer: false,
+  };
 
   static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
     const newState = state;
@@ -59,25 +53,25 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     return newState;
   }
 
-  toggleFolder() {
+  toggleFolder = (): void => {
     this.setState({
       expandFolder: !this.state.expandFolder,
       // eslint-disable-next-line
       fromExplorer: true,
     });
-  }
+  };
 
-  handleKeyDown(evt: SyntheticKeyboardEvent<HTMLDivElement>) {
+  handleKeyDown = (evt: SyntheticKeyboardEvent<HTMLDivElement>): void => {
     if (evt.which === 13 || evt.which === 32) {
       this.toggleExplorer();
     }
-  }
+  };
 
-  toggleExplorer() {
+  toggleExplorer = (): void => {
     this.setState({
       expandExplorer: !this.state.expandExplorer,
     });
-  }
+  };
 
   render() {
     const { currentFile } = this.props;
@@ -117,7 +111,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     evt.preventDefault();
                     this.toggleExplorer();
                   }}
-                  title="Open explorer"
+                  title="Open/Collapse explorer"
                 >
                   {' '}
                   EXPLORER<span className="hidden-sm">: VATWEB.FR</span>
@@ -182,14 +176,14 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     </Link>
                   ) : (
                     <button
-                      className="reset-button"
+                      className="reset-button btn--folder"
                       onClick={evt => {
                         evt.preventDefault();
                         if (item.type === 'folder') {
                           this.toggleFolder();
                         }
                       }}
-                      title="Open folder"
+                      title="Open/Collapse folder"
                     >
                       <div
                         className={classnames('folder--open', {

@@ -23,14 +23,9 @@ type AppState = {
 };
 
 class App extends Component<AppProps, AppState> {
-  constructor(props: AppProps) {
-    super(props);
-    this.state = {
-      editorOpen: true,
-    };
-    (this: any).toggleEditor = this.toggleEditor.bind(this);
-    (this: any).editorAnimationEnd = this.editorAnimationEnd.bind(this);
-  }
+  state = {
+    editorOpen: true,
+  };
 
   componentDidMount() {
     const slug = this.props.match.params.slug || 'welcome.json';
@@ -56,13 +51,13 @@ class App extends Component<AppProps, AppState> {
     }
   }
 
-  toggleEditor(value: boolean) {
+  toggleEditor = (value: boolean): void => {
     this.setState({
       editorOpen: value,
     });
-  }
+  };
 
-  editorAnimationEnd() {
+  editorAnimationEnd = (): void => {
     if (!this.state.editorOpen) {
       const alternativeElmt = document.getElementById('alternative');
       const editorElmt = document.getElementById('editor');
@@ -75,7 +70,7 @@ class App extends Component<AppProps, AppState> {
         alternativeElmt.classList.add('show');
       }
     }
-  }
+  };
 
   render() {
     const editorClass = classnames('editor fade', {

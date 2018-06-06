@@ -176,3 +176,7 @@
   height: 1.875rem; }
   .pdf-link svg:hover {
     fill: #fff; }
+
+.btn--folder {
+  width: 100%;
+  text-align: left; }

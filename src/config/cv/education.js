@@ -2,12 +2,8 @@ export default `import React, { Component } from 'react';
 import type { Props, State } from './education.flow.js';
 
 class Education extends Component<Props, State> {
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            year: 1995,
-        }
-        (this: any).incrementYear = (this: any).incrementYear.bind(this);
+    state = {
+        year: 1995,
     }
 
     componentDidUpdate() {
@@ -23,7 +19,7 @@ class Education extends Component<Props, State> {
         travelTo('New Zealand');
     }
 
-    incrementYear() {
+    incrementYear = (): void => {
         this.setState({
             year: this.state.year + 1;
         })
