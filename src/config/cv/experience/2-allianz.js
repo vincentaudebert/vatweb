@@ -3,7 +3,7 @@ import type { Props } from './allianz.flow.js';
 
 class Allianz extends Component<Props, *> {
   constructor(props: Props) {
-    const { setStartDate, setWorkLocation } = this.props;
+    const { setStartDate, setWorkLocation } = props;
     setStartDate('September 2010');
     setWorkLocation('Paris, France');
   }

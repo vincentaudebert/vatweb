@@ -3,7 +3,7 @@ import type { Props } from './pikpok.flow.js';
 
 class PikPok extends Component<Props, *> {
   constructor(props: Props) {
-    const { setStartDate, setWorkLocation } = this.props;
+    const { setStartDate, setWorkLocation } = props;
     setStartDate('July 2014');
     setWorkLocation('Wellington, New Zealand');
   }

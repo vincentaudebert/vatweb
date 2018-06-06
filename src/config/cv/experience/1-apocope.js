@@ -3,7 +3,7 @@ import type { Props } from './apocope.flow.js';
 
 class Apocope extends Component<Props, *> {
   constructor(props: Props) {
-    const { setStartDate, setWorkLocation } = this.props;
+    const { setStartDate, setWorkLocation } = props;
     setStartDate('September 2008');
     setWorkLocation('Paris, France');
   }

@@ -3,7 +3,7 @@ import type { Props } from './springload.flow.js';
 
 class Springload extends Component<Props, *> {
   constructor(props: Props) {
-    const { setStartDate, setWorkLocation } = this.props;
+    const { setStartDate, setWorkLocation } = props;
     setStartDate('October 2015');
     setWorkLocation('Wellington, New Zealand / Full Remote');
   }

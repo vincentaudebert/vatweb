@@ -3,7 +3,7 @@ import type { Props } from './showcase-workshop.flow.js';
 
 class ShowcaseWorkshop extends Component<Props, *> {
   constructor(props: Props) {
-    const { setStartDate, setWorkLocation } = this.props;
+    const { setStartDate, setWorkLocation } = props;
     setStartDate('January 2013');
     setWorkLocation('Wellington, New Zealand');
   }
