@@ -11,7 +11,7 @@ import './footer-bar.css';
 
 const FooterBar = () => (
   <div className="footer-bar row">
-    <div className="d-inline-block left footer-bar--left">
+    <div className="d-inline-block left footer-bar__left">
       <a
         href="https://github.com/vincentaudebert/vatweb"
         target="_blank"
@@ -32,7 +32,7 @@ const FooterBar = () => (
         <MdWarning className="icon--footer-small" /> 0
       </span>
     </div>
-    <div className="d-inline-block right footer-bar--right">
+    <div className="d-inline-block right footer-bar__right">
       <span className="footer-bar__info--lg">Spaces: 2</span>
       <span className="footer-bar__info--lg">UTF-8</span>
       <span className="footer-bar__info--lg">LF</span>

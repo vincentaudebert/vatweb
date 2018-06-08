@@ -1,15 +1,15 @@
 .top-bar {
   background-color: #3c3c3c;
   font-size: 0.875rem; }
-  .top-bar .top-bar__item,
-  .top-bar .top-bar__filename {
+  .top-bar .top-bar__left,
+  .top-bar .top-bar__right {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
   .top-bar:after {
     content: '';
     clear: both; }
 
-.top-bar__filename {
+.top-bar__right {
   position: absolute;
   width: calc( 100% - 132px);
   margin-left: auto;

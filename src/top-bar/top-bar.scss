@@ -5,8 +5,8 @@
   background-color: $color-medium-grey;
   font-size: rem(14px);
 
-  .top-bar__item,
-  .top-bar__filename {
+  .top-bar__left,
+  .top-bar__right {
     margin-top: rem(4px);
     margin-bottom: rem(4px);
   }
@@ -17,7 +17,7 @@
   }
 }
 
-.top-bar__filename {
+.top-bar__right {
   position: absolute;
   width: calc(
     100% - 132px

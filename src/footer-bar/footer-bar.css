@@ -26,10 +26,10 @@
     .footer-bar__info--lg {
       display: inline-block; } }
 
-.footer-bar--left {
+.footer-bar__left {
   margin-left: 0.75rem !important; }
 
-.footer-bar--right {
+.footer-bar__right {
   float: right !important;
   margin-right: 0.75rem !important; }
 

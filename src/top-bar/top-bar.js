@@ -17,7 +17,7 @@ const TopBar = (props: TopBarProps) => {
 
   return (
     <div className="top-bar row">
-      <div className="d-inline-block left ml-spacing top-bar__item">
+      <div className="d-inline-block left ml-spacing top-bar__left">
         <button
           type="button"
           onClick={() => props.toggleEditor(false)}
@@ -40,7 +40,7 @@ const TopBar = (props: TopBarProps) => {
           <FaExpand />
         </button>
       </div>
-      <div className="d-inline-block center top-bar__filename">
+      <div className="d-inline-block center top-bar__right">
         {name && `${name} - `}vatweb.fr
       </div>
     </div>
