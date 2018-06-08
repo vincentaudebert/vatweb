@@ -167,11 +167,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                   })}
                 >
                   {item.type !== 'folder' ? (
-                    <Link
-                      title={item.name}
-                      to={`/file/${item.name}`}
-                      className="file--link"
-                    >
+                    <Link to={`/file/${item.name}`} className="file--link">
                       {content}
                     </Link>
                   ) : (
