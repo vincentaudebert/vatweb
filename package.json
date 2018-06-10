@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -31,6 +33,7 @@
     "flow-bin": "^0.73.0",
     "node-sass-chokidar": "^1.3.0",
     "prettier": "^1.13.2",
+    "react-test-renderer": "^16.4.0",
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "scripts": {
@@ -39,16 +42,18 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css":
-      "yarn run build-css && node-sass-chokidar src/ -o src/ --watch",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch",
     "bundle-analyzer": "node bundle-analyzer.js",
     "lint": "yarn run eslint src/",
     "flow-types": "flow-typed install",
-    "flow": "./node_modules/.bin/flow"
+    "flow": "./node_modules/.bin/flow",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vincentaudebert/vatweb.git"
   },
-  "authors": ["Vincent Audebert <vincent@vatweb.fr>"]
+  "authors": [
+    "Vincent Audebert <vincent@vatweb.fr>"
+  ]
 }

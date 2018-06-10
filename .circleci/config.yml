@@ -46,5 +46,6 @@ jobs:
       # run tests!
       - run: yarn run flow
       - run: yarn run lint
+      - run: yarn run test
 
 
