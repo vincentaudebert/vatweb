@@ -18,8 +18,13 @@ const NoMatch = () => (
         Press any link to continue <span className="blink">_</span>
       </p>
       <div className="no-match__menu">
-        <a href="/">Go back Home</a> -{' '}
-        <a href="mailto:vincent_at_vatweb.fr">Send an email</a>
+        <a href="/" title="Go Home">
+          Go back Home
+        </a>{' '}
+        -{' '}
+        <a href="mailto:vincent_at_vatweb.fr" title="Send an email">
+          Send an email
+        </a>
       </div>
     </div>
   </div>
