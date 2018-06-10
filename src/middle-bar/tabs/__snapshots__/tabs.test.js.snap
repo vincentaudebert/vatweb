@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs filter out invalid openFiles 1`] = `
+<MemoryRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Tabs
+      closeFile={[Function]}
+      openFiles={
+        Array [
+          Object {
+            "active": true,
+            "name": "invalid name",
+          },
+          Object {
+            "active": false,
+            "name": "me.js",
+          },
+          Object {
+            "active": false,
+            "name": "1-apocope.js",
+          },
+        ]
+      }
+    >
+      <div
+        className="tabs"
+      >
+        <div
+          className="tab d-inline-block"
+          key="tabs-me.js"
+        >
+          <Link
+            className="file--link"
+            replace={false}
+            to="/file/me.js"
+          >
+            <a
+              className="file--link"
+              href="/file/me.js"
+              onClick={[Function]}
+            >
+              <img
+                alt="Type Icon"
+                className="seti-icon seti-icon--big"
+                src="react.svg"
+              />
+               
+              me.js
+               
+              <button
+                className="reset-button"
+                onClick={[Function]}
+                title="Close me.js"
+              >
+                <MdClose>
+                  <IconBase
+                    viewBox="0 0 40 40"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      style={
+                        Object {
+                          "color": undefined,
+                          "verticalAlign": "middle",
+                        }
+                      }
+                      viewBox="0 0 40 40"
+                      width="1em"
+                    >
+                      <g>
+                        <path
+                          d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+                        />
+                      </g>
+                    </svg>
+                  </IconBase>
+                </MdClose>
+              </button>
+            </a>
+          </Link>
+        </div>
+        <div
+          className="tab d-inline-block"
+          key="tabs-1-apocope.js"
+        >
+          <Link
+            className="file--link"
+            replace={false}
+            to="/file/1-apocope.js"
+          >
+            <a
+              className="file--link"
+              href="/file/1-apocope.js"
+              onClick={[Function]}
+            >
+              <img
+                alt="Type Icon"
+                className="seti-icon seti-icon--big"
+                src="react.svg"
+              />
+               
+              1-apocope.js
+               
+              <button
+                className="reset-button"
+                onClick={[Function]}
+                title="Close 1-apocope.js"
+              >
+                <MdClose>
+                  <IconBase
+                    viewBox="0 0 40 40"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      preserveAspectRatio="xMidYMid meet"
+                      style={
+                        Object {
+                          "color": undefined,
+                          "verticalAlign": "middle",
+                        }
+                      }
+                      viewBox="0 0 40 40"
+                      width="1em"
+                    >
+                      <g>
+                        <path
+                          d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+                        />
+                      </g>
+                    </svg>
+                  </IconBase>
+                </MdClose>
+              </button>
+            </a>
+          </Link>
+        </div>
+      </div>
+    </Tabs>
+  </Router>
+</MemoryRouter>
+`;
+
+exports[`Tabs renders correctly 1`] = `
+<div
+  className="tabs"
+>
+  <div
+    className="tab d-inline-block tab--active"
+  >
+    <a
+      className="file--link"
+      href="/file/welcome.json"
+      onClick={[Function]}
+    >
+      <img
+        alt="Type Icon"
+        className="seti-icon seti-icon--big"
+        src="json.svg"
+      />
+       
+      welcome.json
+       
+      <button
+        className="reset-button"
+        onClick={[Function]}
+        title="Close welcome.json"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+            />
+          </g>
+        </svg>
+      </button>
+    </a>
+  </div>
+  <div
+    className="tab d-inline-block"
+  >
+    <a
+      className="file--link"
+      href="/file/me.js"
+      onClick={[Function]}
+    >
+      <img
+        alt="Type Icon"
+        className="seti-icon seti-icon--big"
+        src="react.svg"
+      />
+       
+      me.js
+       
+      <button
+        className="reset-button"
+        onClick={[Function]}
+        title="Close me.js"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+            />
+          </g>
+        </svg>
+      </button>
+    </a>
+  </div>
+  <div
+    className="tab d-inline-block"
+  >
+    <a
+      className="file--link"
+      href="/file/1-apocope.js"
+      onClick={[Function]}
+    >
+      <img
+        alt="Type Icon"
+        className="seti-icon seti-icon--big"
+        src="react.svg"
+      />
+       
+      1-apocope.js
+       
+      <button
+        className="reset-button"
+        onClick={[Function]}
+        title="Close 1-apocope.js"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          style={
+            Object {
+              "color": undefined,
+              "verticalAlign": "middle",
+            }
+          }
+          viewBox="0 0 40 40"
+          width="1em"
+        >
+          <g>
+            <path
+              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+            />
+          </g>
+        </svg>
+      </button>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Tabs renders correctly with no open files 1`] = `
+<div
+  className="tabs"
+/>
+`;
