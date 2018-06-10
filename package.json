@@ -70,6 +70,7 @@
       "!**/*.constants.{js,jsx}",
       "!**/*.actions.{js,jsx}",
       "!src/index.js",
+      "!src/setupTests.js",
       "!src/store.js",
       "!src/registerServiceWorker.js"
     ]
