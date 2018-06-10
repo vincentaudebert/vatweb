@@ -6,8 +6,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Dependency Status](https://david-dm.org/vincentaudebert/vatweb.svg?theme=shields.io)](https://david-dm.org/vincentaudebert/vatweb)
 [![devDependency Status](https://david-dm.org/vincentaudebert/vatweb/dev-status.svg?theme=shields.io)](https://david-dm.org/vincentaudebert/vatweb#info=devDependencies)
-[![Flow Status](https://img.shields.io/badge/Flow-OK-brightgreen.svg)]
-[![ESLint Status](https://img.shields.io/badge/ESLint-OK-brightgreen.svg)]
+![Flow Status](https://img.shields.io/badge/Flow-OK-brightgreen.svg)
+![ESLint Status](https://img.shields.io/badge/ESLint-OK-brightgreen.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
