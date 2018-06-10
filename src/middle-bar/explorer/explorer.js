@@ -61,12 +61,6 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     });
   };
 
-  handleKeyDown = (evt: SyntheticKeyboardEvent<HTMLDivElement>): void => {
-    if (evt.which === 13 || evt.which === 32) {
-      this.toggleExplorer();
-    }
-  };
-
   toggleExplorer = (): void => {
     this.setState({
       expandExplorer: !this.state.expandExplorer,
@@ -166,18 +160,12 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     'explorer--active': item.name === name,
                   })}
                 >
-                  {item.type !== 'folder' ? (
-                    <Link to={`/file/${item.name}`} className="file--link">
-                      {content}
-                    </Link>
-                  ) : (
+                  {item.type === 'folder' ? (
                     <button
                       className="reset-button btn--folder"
                       onClick={evt => {
                         evt.preventDefault();
-                        if (item.type === 'folder') {
-                          this.toggleFolder();
-                        }
+                        this.toggleFolder();
                       }}
                       title="Open/Collapse folder"
                     >
@@ -189,6 +177,10 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                         {content}
                       </div>
                     </button>
+                  ) : (
+                    <Link to={`/file/${item.name}`} className="file--link">
+                      {content}
+                    </Link>
                   )}
                 </div>
               );

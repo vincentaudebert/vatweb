@@ -1,0 +1,2160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Explorer active file being within a folder 1`] = `
+<MemoryRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Explorer
+      currentFile={
+        Object {
+          "content": "import React, { Component, Fragment } from 'react';
+        import type { Props } from './apocope.flow.js';
+        
+        class Apocope extends Component<Props, *> {
+          constructor(props: Props) {
+            const { setStartDate, setWorkLocation } = props;
+            setStartDate('September 2008');
+            setWorkLocation('Paris, France');
+          }
+        
+          componentDidMount() {
+            const { setSkills } = this.props;
+            setSkills([
+              'PHP',
+              'Zend Framework',
+              'Responsive design',
+              'HTML5',
+              'Unit tests',
+              'R&D',
+              'Geolocation',
+            ]);
+          }
+        
+          componentWillUnmount() {
+            const { setEndDate } = this.props;
+            setEndDate('September 2010');
+          }
+        
+          render() {
+            return (
+              <Fragment>
+                <p>
+                  During this tenure, I was an apprentice, working primarily as a web
+                  developer on many mobile website projects.
+                </p>
+        
+                <div className=\\"accomplishments\\">
+                  <ul>
+                    <li>
+                      <h3>Conception of mobile internet websites</h3>
+                      <p>Nespresso</p>
+                      <p>Carrefour</p>
+                      <p>Decathlon</p>
+                      <p>Nespresso</p>
+                    </li>
+                    <li>
+                      <h3>Research and Development on the company platform</h3>
+                      <p>
+                        Development of a geolocalization module based on Google Maps
+                      </p>
+                      <p>Integration of Zend to the company platform</p>
+                      <p>Study of HTML5</p>
+                    </li>
+                    <li>Unit tests</li>
+                    <li>Preparation of technical specifications</li>
+                  </ul>
+                </div>
+              </Fragment>
+            );
+          }
+        }
+        
+        export default Apocope;
+        ",
+          "inFolder": true,
+          "language": "react",
+          "name": "1-apocope.js",
+          "type": "file",
+        }
+      }
+    >
+      <div
+        className="middle-bar__left-column center"
+      >
+        <SvgComponent
+          className="icon--explorer icon--active"
+        >
+          <svg
+            className="icon--explorer icon--active"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17.705 8H9s-2 .078-2 2v15s0 2 2 2l11-.004C22 27 22 25 22 25V13.509L17.705 8zM16 10v5h4v10H9V10h7zm5.509-6h-8.493S11 4.016 10.985 6H19v.454L22.931 11H24v12c2 0 2-1.995 2-1.995V9.648L21.509 4z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M19.23 4.095c-4.842 0-8.769 3.928-8.769 8.771 0 1.781.539 3.43 1.449 4.815 0 0-5.482 5.455-7.102 7.102-1.621 1.646 1.001 4.071 2.602 2.409 1.602-1.659 7.006-7.005 7.006-7.005a8.726 8.726 0 0 0 4.814 1.45 8.773 8.773 0 0 0 8.772-8.771c.001-4.844-3.927-8.771-8.772-8.771zm0 15.035a6.265 6.265 0 1 1 0-12.529 6.264 6.264 0 1 1 0 12.529z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 10 16"
+          >
+            <path
+              d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17 19.488v4.248c0 .462.09 1.264-.373 1.264H15v-1h1v-3.19l-.173-.18c-1.453 1.205-3.528 1.248-4.67.108C10 19.578 10.118 18 11.376 16H8v1H7v-1.627C7 14.91 7.802 15 8.264 15h4.105L17 19.488zM14 9h-1V8h1.955c.46 0 1.045.22 1.045.682v3.345l.736.875c.18-.973.89-1.71 1.914-1.71.143 0 .35.014.35.04V9h1v2.618c0 .117.265.382.382.382H23v1h-2.233c.027 0 .042.154.042.298 0 1.025-.74 1.753-1.712 1.932l.875.77h3.346c.462 0 .682.583.682 1.045V19h-1v-1h-2.52L14 11.698V9zm2-5C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm10 12c0 2.397-.85 4.6-2.262 6.324L9.676 8.262A9.95 9.95 0 0 1 16 6c5.514 0 10 4.486 10 10zM6 16c0-2.398.85-4.6 2.262-6.324L22.324 23.74A9.961 9.961 0 0 1 16 26c-5.514 0-10-4.486-10-10z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="-10 -10 80 80"
+          >
+            <path
+              d="M12.9 47.1H30V60H0V0h25.7v12.9H12.9v34.2zm4.2-4.2h25.7V17.1H17.1v25.8zM30 0v12.9h8.6V8.6h12.9v12.9h-4.3V30H60V0H30zm17.1 47.1H34.3V60H60V34.3H47.1v12.8z"
+            />
+          </svg>
+        </SvgComponent>
+        <a
+          className="reset-link pdf-link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download my CV"
+        >
+          <FaFilePdfO>
+            <IconBase
+              viewBox="0 0 40 40"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                style={
+                  Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+                }
+                viewBox="0 0 40 40"
+                width="1em"
+              >
+                <g>
+                  <path
+                    d="m35.8 8.5q0.6 0.6 1 1.7t0.5 1.9v25.8q0 0.8-0.6 1.5t-1.6 0.6h-30q-0.9 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h20q0.9 0 2 0.4t1.7 1.1z m-9.9-5.5v8.4h8.4q-0.3-0.6-0.5-0.9l-7-7q-0.3-0.2-0.9-0.5z m8.5 34.1v-22.8h-9.3q-0.9 0-1.5-0.6t-0.6-1.6v-9.2h-17.1v34.2h28.5z m-11.4-13.2q0.7 0.6 1.8 1.3 1.3-0.2 2.6-0.2 3.3 0 4 1.1 0.4 0.5 0 1.2 0 0 0 0l0 0v0.1q-0.2 0.8-1.6 0.8-1.1 0-2.6-0.4t-2.9-1.2q-4.9 0.5-8.7 1.8-3.4 5.9-5.4 5.9-0.4 0-0.7-0.2l-0.5-0.2q0-0.1-0.1-0.2-0.3-0.2-0.2-0.8 0.2-0.8 1.3-2t2.9-2.1q0.3-0.2 0.5 0.1 0.1 0 0.1 0.1 1.1-1.9 2.4-4.4 1.5-3.1 2.3-5.9-0.5-1.8-0.7-3.5t0.2-2.9q0.2-0.9 0.9-0.9h0.5q0.5 0 0.8 0.4 0.4 0.4 0.2 1.5-0.1 0.1-0.1 0.2 0 0 0 0.1v0.7q0 2.8-0.3 4.3 1.2 3.7 3.3 5.3z m-12.9 9.2q1.2-0.6 3.1-3.5-1.2 0.8-2 1.8t-1.1 1.7z m8.9-20.6q-0.4 1-0.1 3 0.1-0.2 0.2-1 0-0.1 0.1-0.9 0.1-0.1 0.1-0.2 0-0.1 0-0.1t0 0 0 0q0-0.5-0.3-0.8 0 0 0 0v0z m-2.8 14.8q3-1.2 6.4-1.8-0.1 0-0.3-0.2t-0.4-0.3q-1.7-1.5-2.8-4-0.6 2-1.9 4.4-0.7 1.3-1 1.9z m14.4-0.4q-0.5-0.5-3.1-0.5 1.7 0.6 2.8 0.6 0.3 0 0.4 0 0 0-0.1-0.1z"
+                  />
+                </g>
+              </svg>
+            </IconBase>
+          </FaFilePdfO>
+        </a>
+      </div>
+      <div
+        className="middle-bar__explorer"
+      >
+        <div
+          className="middle-bar__left-panel__title"
+        >
+          <div
+            className="float-left font-heavy"
+          >
+            <button
+              className="explorer--open reset-button"
+              onClick={[Function]}
+              title="Open/Collapse explorer"
+            >
+               
+              EXPLORER
+              <span
+                className="hidden-sm"
+              >
+                : VATWEB.FR
+              </span>
+            </button>
+          </div>
+          <div
+            className="float-right middle-bar__left-panel__options"
+          >
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M20.938 4.031H7v23.938h10v-2H9V6.031h10v3h4v11h2V7.969l-4.062-3.938zm2.062 18h-2v2h-2v2h2v1.938h2v-2h2v-1.938h-2v-2z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 35 32"
+                >
+                  <path
+                    d="M8.431 9.155h20.958c2.158 0 2.158-2.238.084-2.238H14.987c-.83 0-1.244-1.244-1.244-1.244S13.162 3.848 12 3.848H1.211C-.365 3.848.049 5.673.049 5.673s2.407 20.47 2.573 21.715S4.075 29 4.075 29l2.821-18.103c.208-1.327 1.12-1.7 1.535-1.742zm25.227.787H9.095c-.733 0-1.328.594-1.328 1.327l-2.572 16.4c0 .734.595 1.328 1.328 1.328h24.563c.732 0 1.328-.594 1.328-1.328l2.572-16.4c0-.733-.593-1.327-1.328-1.327z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M26.034 16.767l-4.09-4.09h2.396l-.068-.178a9.717 9.717 0 0 0-9.04-6.15c-5.365 0-9.715 4.35-9.715 9.715s4.35 9.716 9.715 9.716a9.717 9.717 0 0 0 8.864-5.733c.015-.031.024-.066.038-.099l2.605 2.589c-.017.03-.029.064-.047.096a13.287 13.287 0 0 1-11.525 6.663C7.827 29.294 1.875 23.342 1.875 16S7.827 2.706 15.169 2.706c6.138 0 11.303 4.158 12.833 9.812.015.052.019.107.032.159h2.091l-4.091 4.09z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+          </div>
+        </div>
+        <div
+          className="middle-bar__left-panel__files"
+        >
+          <div
+            className="folder"
+            key="explorer-experience"
+          >
+            <button
+              className="reset-button btn--folder"
+              onClick={[Function]}
+              title="Open/Collapse folder"
+            >
+              <div
+                className="folder--open folder--close"
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--small"
+                  src="folder.svg"
+                />
+                 
+                experience
+              </div>
+            </button>
+          </div>
+          <div
+            className="file folder--in d-none explorer--active"
+            key="explorer-1-apocope.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/1-apocope.js"
+            >
+              <a
+                className="file--link"
+                href="/file/1-apocope.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                1-apocope.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-2-allianz.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/2-allianz.js"
+            >
+              <a
+                className="file--link"
+                href="/file/2-allianz.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                2-allianz.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-3-showcase-workshop.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/3-showcase-workshop.js"
+            >
+              <a
+                className="file--link"
+                href="/file/3-showcase-workshop.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                3-showcase-workshop.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-4-pikpok.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/4-pikpok.js"
+            >
+              <a
+                className="file--link"
+                href="/file/4-pikpok.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                4-pikpok.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-5-springload.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/5-springload.js"
+            >
+              <a
+                className="file--link"
+                href="/file/5-springload.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                5-springload.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-education.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/education.js"
+            >
+              <a
+                className="file--link"
+                href="/file/education.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                education.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-hobbies.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/hobbies.js"
+            >
+              <a
+                className="file--link"
+                href="/file/hobbies.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                hobbies.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-me.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/me.js"
+            >
+              <a
+                className="file--link"
+                href="/file/me.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                me.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-welcome.json"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/welcome.json"
+            >
+              <a
+                className="file--link"
+                href="/file/welcome.json"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="json.svg"
+                />
+                 
+                welcome.json
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Explorer>
+  </Router>
+</MemoryRouter>
+`;
+
+exports[`Explorer explorer button toggles explorer 1`] = `
+<MemoryRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Explorer
+      currentFile={
+        Object {
+          "content": "{
+          \\"hello\\": [
+            \\"Heya! Welcome on my portfolio.\\", 
+            \\"It shows you what I have done and what I can do.\\"
+          ],
+          \\"wait-what\\": [
+            \\"Ok, maybe it needs a bit of explanation.\\",
+            \\"You can use the file explorer on your left to open files\\",
+            \\"These describe some of the work I have been doing or what studies I did, etc.\\"
+          ],
+          \\"are-you-mad\\": [
+            \\"Hehe, no. I just thought it would be\\",
+            \\"an original way to present myself and relevant with my expertise.\\"
+          ],
+          \\"aint-nobody-got-time-for-that\\": [
+            \\"Ok if you can't be bothered\\",
+            \\"you can download directly my CV in a PDF format:\\",
+            \\"https://vatweb.fr/assets/Vincent_Audebert_CV.pdf\\",
+            \\"or click on the PDF icon in the menu bar on the left (desktop only)\\",
+            \\"or click on the smiley face in the footer bar.\\"
+          ],
+          \\"where-is-da-code\\": [
+            \\"Oh by the way, I made the source code open source.\\",
+            \\"You can see it here:\\",
+            \\"https://github.com/vincentaudebert/vatweb\\",
+            \\"or click on the git icon in the footer bar.\\",
+          ]
+        }",
+          "inFolder": false,
+          "language": "json",
+          "name": "welcome.json",
+          "type": "file",
+        }
+      }
+    >
+      <div
+        className="middle-bar__left-column center"
+      >
+        <SvgComponent
+          className="icon--explorer icon--active"
+        >
+          <svg
+            className="icon--explorer icon--active"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17.705 8H9s-2 .078-2 2v15s0 2 2 2l11-.004C22 27 22 25 22 25V13.509L17.705 8zM16 10v5h4v10H9V10h7zm5.509-6h-8.493S11 4.016 10.985 6H19v.454L22.931 11H24v12c2 0 2-1.995 2-1.995V9.648L21.509 4z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M19.23 4.095c-4.842 0-8.769 3.928-8.769 8.771 0 1.781.539 3.43 1.449 4.815 0 0-5.482 5.455-7.102 7.102-1.621 1.646 1.001 4.071 2.602 2.409 1.602-1.659 7.006-7.005 7.006-7.005a8.726 8.726 0 0 0 4.814 1.45 8.773 8.773 0 0 0 8.772-8.771c.001-4.844-3.927-8.771-8.772-8.771zm0 15.035a6.265 6.265 0 1 1 0-12.529 6.264 6.264 0 1 1 0 12.529z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 10 16"
+          >
+            <path
+              d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17 19.488v4.248c0 .462.09 1.264-.373 1.264H15v-1h1v-3.19l-.173-.18c-1.453 1.205-3.528 1.248-4.67.108C10 19.578 10.118 18 11.376 16H8v1H7v-1.627C7 14.91 7.802 15 8.264 15h4.105L17 19.488zM14 9h-1V8h1.955c.46 0 1.045.22 1.045.682v3.345l.736.875c.18-.973.89-1.71 1.914-1.71.143 0 .35.014.35.04V9h1v2.618c0 .117.265.382.382.382H23v1h-2.233c.027 0 .042.154.042.298 0 1.025-.74 1.753-1.712 1.932l.875.77h3.346c.462 0 .682.583.682 1.045V19h-1v-1h-2.52L14 11.698V9zm2-5C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm10 12c0 2.397-.85 4.6-2.262 6.324L9.676 8.262A9.95 9.95 0 0 1 16 6c5.514 0 10 4.486 10 10zM6 16c0-2.398.85-4.6 2.262-6.324L22.324 23.74A9.961 9.961 0 0 1 16 26c-5.514 0-10-4.486-10-10z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="-10 -10 80 80"
+          >
+            <path
+              d="M12.9 47.1H30V60H0V0h25.7v12.9H12.9v34.2zm4.2-4.2h25.7V17.1H17.1v25.8zM30 0v12.9h8.6V8.6h12.9v12.9h-4.3V30H60V0H30zm17.1 47.1H34.3V60H60V34.3H47.1v12.8z"
+            />
+          </svg>
+        </SvgComponent>
+        <a
+          className="reset-link pdf-link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download my CV"
+        >
+          <FaFilePdfO>
+            <IconBase
+              viewBox="0 0 40 40"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                style={
+                  Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+                }
+                viewBox="0 0 40 40"
+                width="1em"
+              >
+                <g>
+                  <path
+                    d="m35.8 8.5q0.6 0.6 1 1.7t0.5 1.9v25.8q0 0.8-0.6 1.5t-1.6 0.6h-30q-0.9 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h20q0.9 0 2 0.4t1.7 1.1z m-9.9-5.5v8.4h8.4q-0.3-0.6-0.5-0.9l-7-7q-0.3-0.2-0.9-0.5z m8.5 34.1v-22.8h-9.3q-0.9 0-1.5-0.6t-0.6-1.6v-9.2h-17.1v34.2h28.5z m-11.4-13.2q0.7 0.6 1.8 1.3 1.3-0.2 2.6-0.2 3.3 0 4 1.1 0.4 0.5 0 1.2 0 0 0 0l0 0v0.1q-0.2 0.8-1.6 0.8-1.1 0-2.6-0.4t-2.9-1.2q-4.9 0.5-8.7 1.8-3.4 5.9-5.4 5.9-0.4 0-0.7-0.2l-0.5-0.2q0-0.1-0.1-0.2-0.3-0.2-0.2-0.8 0.2-0.8 1.3-2t2.9-2.1q0.3-0.2 0.5 0.1 0.1 0 0.1 0.1 1.1-1.9 2.4-4.4 1.5-3.1 2.3-5.9-0.5-1.8-0.7-3.5t0.2-2.9q0.2-0.9 0.9-0.9h0.5q0.5 0 0.8 0.4 0.4 0.4 0.2 1.5-0.1 0.1-0.1 0.2 0 0 0 0.1v0.7q0 2.8-0.3 4.3 1.2 3.7 3.3 5.3z m-12.9 9.2q1.2-0.6 3.1-3.5-1.2 0.8-2 1.8t-1.1 1.7z m8.9-20.6q-0.4 1-0.1 3 0.1-0.2 0.2-1 0-0.1 0.1-0.9 0.1-0.1 0.1-0.2 0-0.1 0-0.1t0 0 0 0q0-0.5-0.3-0.8 0 0 0 0v0z m-2.8 14.8q3-1.2 6.4-1.8-0.1 0-0.3-0.2t-0.4-0.3q-1.7-1.5-2.8-4-0.6 2-1.9 4.4-0.7 1.3-1 1.9z m14.4-0.4q-0.5-0.5-3.1-0.5 1.7 0.6 2.8 0.6 0.3 0 0.4 0 0 0-0.1-0.1z"
+                  />
+                </g>
+              </svg>
+            </IconBase>
+          </FaFilePdfO>
+        </a>
+      </div>
+      <div
+        className="middle-bar__explorer"
+      >
+        <div
+          className="middle-bar__left-panel__title mb-0"
+        >
+          <div
+            className="float-left font-heavy"
+          >
+            <button
+              className="explorer--open reset-button explorer--close"
+              onClick={[Function]}
+              title="Open/Collapse explorer"
+            >
+               
+              EXPLORER
+              <span
+                className="hidden-sm"
+              >
+                : VATWEB.FR
+              </span>
+            </button>
+          </div>
+          <div
+            className="float-right middle-bar__left-panel__options"
+          >
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M20.938 4.031H7v23.938h10v-2H9V6.031h10v3h4v11h2V7.969l-4.062-3.938zm2.062 18h-2v2h-2v2h2v1.938h2v-2h2v-1.938h-2v-2z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 35 32"
+                >
+                  <path
+                    d="M8.431 9.155h20.958c2.158 0 2.158-2.238.084-2.238H14.987c-.83 0-1.244-1.244-1.244-1.244S13.162 3.848 12 3.848H1.211C-.365 3.848.049 5.673.049 5.673s2.407 20.47 2.573 21.715S4.075 29 4.075 29l2.821-18.103c.208-1.327 1.12-1.7 1.535-1.742zm25.227.787H9.095c-.733 0-1.328.594-1.328 1.327l-2.572 16.4c0 .734.595 1.328 1.328 1.328h24.563c.732 0 1.328-.594 1.328-1.328l2.572-16.4c0-.733-.593-1.327-1.328-1.327z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M26.034 16.767l-4.09-4.09h2.396l-.068-.178a9.717 9.717 0 0 0-9.04-6.15c-5.365 0-9.715 4.35-9.715 9.715s4.35 9.716 9.715 9.716a9.717 9.717 0 0 0 8.864-5.733c.015-.031.024-.066.038-.099l2.605 2.589c-.017.03-.029.064-.047.096a13.287 13.287 0 0 1-11.525 6.663C7.827 29.294 1.875 23.342 1.875 16S7.827 2.706 15.169 2.706c6.138 0 11.303 4.158 12.833 9.812.015.052.019.107.032.159h2.091l-4.091 4.09z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+          </div>
+        </div>
+        <div
+          className="middle-bar__left-panel__files d-none"
+        >
+          <div
+            className="folder"
+            key="explorer-experience"
+          >
+            <button
+              className="reset-button btn--folder"
+              onClick={[Function]}
+              title="Open/Collapse folder"
+            >
+              <div
+                className="folder--open"
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--small"
+                  src="folder.svg"
+                />
+                 
+                experience
+              </div>
+            </button>
+          </div>
+          <div
+            className="file folder--in"
+            key="explorer-1-apocope.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/1-apocope.js"
+            >
+              <a
+                className="file--link"
+                href="/file/1-apocope.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                1-apocope.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in"
+            key="explorer-2-allianz.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/2-allianz.js"
+            >
+              <a
+                className="file--link"
+                href="/file/2-allianz.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                2-allianz.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in"
+            key="explorer-3-showcase-workshop.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/3-showcase-workshop.js"
+            >
+              <a
+                className="file--link"
+                href="/file/3-showcase-workshop.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                3-showcase-workshop.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in"
+            key="explorer-4-pikpok.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/4-pikpok.js"
+            >
+              <a
+                className="file--link"
+                href="/file/4-pikpok.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                4-pikpok.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in"
+            key="explorer-5-springload.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/5-springload.js"
+            >
+              <a
+                className="file--link"
+                href="/file/5-springload.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                5-springload.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-education.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/education.js"
+            >
+              <a
+                className="file--link"
+                href="/file/education.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                education.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-hobbies.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/hobbies.js"
+            >
+              <a
+                className="file--link"
+                href="/file/hobbies.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                hobbies.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-me.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/me.js"
+            >
+              <a
+                className="file--link"
+                href="/file/me.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                me.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file explorer--active"
+            key="explorer-welcome.json"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/welcome.json"
+            >
+              <a
+                className="file--link"
+                href="/file/welcome.json"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="json.svg"
+                />
+                 
+                welcome.json
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Explorer>
+  </Router>
+</MemoryRouter>
+`;
+
+exports[`Explorer folder button toggles folder 1`] = `
+<MemoryRouter
+  keyLength={0}
+>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Explorer
+      currentFile={
+        Object {
+          "content": "{
+          \\"hello\\": [
+            \\"Heya! Welcome on my portfolio.\\", 
+            \\"It shows you what I have done and what I can do.\\"
+          ],
+          \\"wait-what\\": [
+            \\"Ok, maybe it needs a bit of explanation.\\",
+            \\"You can use the file explorer on your left to open files\\",
+            \\"These describe some of the work I have been doing or what studies I did, etc.\\"
+          ],
+          \\"are-you-mad\\": [
+            \\"Hehe, no. I just thought it would be\\",
+            \\"an original way to present myself and relevant with my expertise.\\"
+          ],
+          \\"aint-nobody-got-time-for-that\\": [
+            \\"Ok if you can't be bothered\\",
+            \\"you can download directly my CV in a PDF format:\\",
+            \\"https://vatweb.fr/assets/Vincent_Audebert_CV.pdf\\",
+            \\"or click on the PDF icon in the menu bar on the left (desktop only)\\",
+            \\"or click on the smiley face in the footer bar.\\"
+          ],
+          \\"where-is-da-code\\": [
+            \\"Oh by the way, I made the source code open source.\\",
+            \\"You can see it here:\\",
+            \\"https://github.com/vincentaudebert/vatweb\\",
+            \\"or click on the git icon in the footer bar.\\",
+          ]
+        }",
+          "inFolder": false,
+          "language": "json",
+          "name": "welcome.json",
+          "type": "file",
+        }
+      }
+    >
+      <div
+        className="middle-bar__left-column center"
+      >
+        <SvgComponent
+          className="icon--explorer icon--active"
+        >
+          <svg
+            className="icon--explorer icon--active"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17.705 8H9s-2 .078-2 2v15s0 2 2 2l11-.004C22 27 22 25 22 25V13.509L17.705 8zM16 10v5h4v10H9V10h7zm5.509-6h-8.493S11 4.016 10.985 6H19v.454L22.931 11H24v12c2 0 2-1.995 2-1.995V9.648L21.509 4z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M19.23 4.095c-4.842 0-8.769 3.928-8.769 8.771 0 1.781.539 3.43 1.449 4.815 0 0-5.482 5.455-7.102 7.102-1.621 1.646 1.001 4.071 2.602 2.409 1.602-1.659 7.006-7.005 7.006-7.005a8.726 8.726 0 0 0 4.814 1.45 8.773 8.773 0 0 0 8.772-8.771c.001-4.844-3.927-8.771-8.772-8.771zm0 15.035a6.265 6.265 0 1 1 0-12.529 6.264 6.264 0 1 1 0 12.529z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 10 16"
+          >
+            <path
+              d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M17 19.488v4.248c0 .462.09 1.264-.373 1.264H15v-1h1v-3.19l-.173-.18c-1.453 1.205-3.528 1.248-4.67.108C10 19.578 10.118 18 11.376 16H8v1H7v-1.627C7 14.91 7.802 15 8.264 15h4.105L17 19.488zM14 9h-1V8h1.955c.46 0 1.045.22 1.045.682v3.345l.736.875c.18-.973.89-1.71 1.914-1.71.143 0 .35.014.35.04V9h1v2.618c0 .117.265.382.382.382H23v1h-2.233c.027 0 .042.154.042.298 0 1.025-.74 1.753-1.712 1.932l.875.77h3.346c.462 0 .682.583.682 1.045V19h-1v-1h-2.52L14 11.698V9zm2-5C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm10 12c0 2.397-.85 4.6-2.262 6.324L9.676 8.262A9.95 9.95 0 0 1 16 6c5.514 0 10 4.486 10 10zM6 16c0-2.398.85-4.6 2.262-6.324L22.324 23.74A9.961 9.961 0 0 1 16 26c-5.514 0-10-4.486-10-10z"
+            />
+          </svg>
+        </SvgComponent>
+        <SvgComponent
+          className="icon--explorer"
+        >
+          <svg
+            className="icon--explorer"
+            viewBox="-10 -10 80 80"
+          >
+            <path
+              d="M12.9 47.1H30V60H0V0h25.7v12.9H12.9v34.2zm4.2-4.2h25.7V17.1H17.1v25.8zM30 0v12.9h8.6V8.6h12.9v12.9h-4.3V30H60V0H30zm17.1 47.1H34.3V60H60V34.3H47.1v12.8z"
+            />
+          </svg>
+        </SvgComponent>
+        <a
+          className="reset-link pdf-link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download my CV"
+        >
+          <FaFilePdfO>
+            <IconBase
+              viewBox="0 0 40 40"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                preserveAspectRatio="xMidYMid meet"
+                style={
+                  Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+                }
+                viewBox="0 0 40 40"
+                width="1em"
+              >
+                <g>
+                  <path
+                    d="m35.8 8.5q0.6 0.6 1 1.7t0.5 1.9v25.8q0 0.8-0.6 1.5t-1.6 0.6h-30q-0.9 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h20q0.9 0 2 0.4t1.7 1.1z m-9.9-5.5v8.4h8.4q-0.3-0.6-0.5-0.9l-7-7q-0.3-0.2-0.9-0.5z m8.5 34.1v-22.8h-9.3q-0.9 0-1.5-0.6t-0.6-1.6v-9.2h-17.1v34.2h28.5z m-11.4-13.2q0.7 0.6 1.8 1.3 1.3-0.2 2.6-0.2 3.3 0 4 1.1 0.4 0.5 0 1.2 0 0 0 0l0 0v0.1q-0.2 0.8-1.6 0.8-1.1 0-2.6-0.4t-2.9-1.2q-4.9 0.5-8.7 1.8-3.4 5.9-5.4 5.9-0.4 0-0.7-0.2l-0.5-0.2q0-0.1-0.1-0.2-0.3-0.2-0.2-0.8 0.2-0.8 1.3-2t2.9-2.1q0.3-0.2 0.5 0.1 0.1 0 0.1 0.1 1.1-1.9 2.4-4.4 1.5-3.1 2.3-5.9-0.5-1.8-0.7-3.5t0.2-2.9q0.2-0.9 0.9-0.9h0.5q0.5 0 0.8 0.4 0.4 0.4 0.2 1.5-0.1 0.1-0.1 0.2 0 0 0 0.1v0.7q0 2.8-0.3 4.3 1.2 3.7 3.3 5.3z m-12.9 9.2q1.2-0.6 3.1-3.5-1.2 0.8-2 1.8t-1.1 1.7z m8.9-20.6q-0.4 1-0.1 3 0.1-0.2 0.2-1 0-0.1 0.1-0.9 0.1-0.1 0.1-0.2 0-0.1 0-0.1t0 0 0 0q0-0.5-0.3-0.8 0 0 0 0v0z m-2.8 14.8q3-1.2 6.4-1.8-0.1 0-0.3-0.2t-0.4-0.3q-1.7-1.5-2.8-4-0.6 2-1.9 4.4-0.7 1.3-1 1.9z m14.4-0.4q-0.5-0.5-3.1-0.5 1.7 0.6 2.8 0.6 0.3 0 0.4 0 0 0-0.1-0.1z"
+                  />
+                </g>
+              </svg>
+            </IconBase>
+          </FaFilePdfO>
+        </a>
+      </div>
+      <div
+        className="middle-bar__explorer"
+      >
+        <div
+          className="middle-bar__left-panel__title"
+        >
+          <div
+            className="float-left font-heavy"
+          >
+            <button
+              className="explorer--open reset-button"
+              onClick={[Function]}
+              title="Open/Collapse explorer"
+            >
+               
+              EXPLORER
+              <span
+                className="hidden-sm"
+              >
+                : VATWEB.FR
+              </span>
+            </button>
+          </div>
+          <div
+            className="float-right middle-bar__left-panel__options"
+          >
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M20.938 4.031H7v23.938h10v-2H9V6.031h10v3h4v11h2V7.969l-4.062-3.938zm2.062 18h-2v2h-2v2h2v1.938h2v-2h2v-1.938h-2v-2z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 35 32"
+                >
+                  <path
+                    d="M8.431 9.155h20.958c2.158 0 2.158-2.238.084-2.238H14.987c-.83 0-1.244-1.244-1.244-1.244S13.162 3.848 12 3.848H1.211C-.365 3.848.049 5.673.049 5.673s2.407 20.47 2.573 21.715S4.075 29 4.075 29l2.821-18.103c.208-1.327 1.12-1.7 1.535-1.742zm25.227.787H9.095c-.733 0-1.328.594-1.328 1.327l-2.572 16.4c0 .734.595 1.328 1.328 1.328h24.563c.732 0 1.328-.594 1.328-1.328l2.572-16.4c0-.733-.593-1.327-1.328-1.327z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+            <span
+              className="options__icons"
+            >
+              <SvgComponent
+                className="icon--explorer-title"
+              >
+                <svg
+                  className="icon--explorer-title"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M26.034 16.767l-4.09-4.09h2.396l-.068-.178a9.717 9.717 0 0 0-9.04-6.15c-5.365 0-9.715 4.35-9.715 9.715s4.35 9.716 9.715 9.716a9.717 9.717 0 0 0 8.864-5.733c.015-.031.024-.066.038-.099l2.605 2.589c-.017.03-.029.064-.047.096a13.287 13.287 0 0 1-11.525 6.663C7.827 29.294 1.875 23.342 1.875 16S7.827 2.706 15.169 2.706c6.138 0 11.303 4.158 12.833 9.812.015.052.019.107.032.159h2.091l-4.091 4.09z"
+                  />
+                </svg>
+              </SvgComponent>
+            </span>
+          </div>
+        </div>
+        <div
+          className="middle-bar__left-panel__files"
+        >
+          <div
+            className="folder"
+            key="explorer-experience"
+          >
+            <button
+              className="reset-button btn--folder"
+              onClick={[Function]}
+              title="Open/Collapse folder"
+            >
+              <div
+                className="folder--open folder--close"
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--small"
+                  src="folder.svg"
+                />
+                 
+                experience
+              </div>
+            </button>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-1-apocope.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/1-apocope.js"
+            >
+              <a
+                className="file--link"
+                href="/file/1-apocope.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                1-apocope.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-2-allianz.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/2-allianz.js"
+            >
+              <a
+                className="file--link"
+                href="/file/2-allianz.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                2-allianz.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-3-showcase-workshop.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/3-showcase-workshop.js"
+            >
+              <a
+                className="file--link"
+                href="/file/3-showcase-workshop.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                3-showcase-workshop.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-4-pikpok.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/4-pikpok.js"
+            >
+              <a
+                className="file--link"
+                href="/file/4-pikpok.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                4-pikpok.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-5-springload.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/5-springload.js"
+            >
+              <a
+                className="file--link"
+                href="/file/5-springload.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                5-springload.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-education.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/education.js"
+            >
+              <a
+                className="file--link"
+                href="/file/education.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                education.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-hobbies.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/hobbies.js"
+            >
+              <a
+                className="file--link"
+                href="/file/hobbies.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                hobbies.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file"
+            key="explorer-me.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/me.js"
+            >
+              <a
+                className="file--link"
+                href="/file/me.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                me.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file explorer--active"
+            key="explorer-welcome.json"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/welcome.json"
+            >
+              <a
+                className="file--link"
+                href="/file/welcome.json"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="json.svg"
+                />
+                 
+                welcome.json
+              </a>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </Explorer>
+  </Router>
+</MemoryRouter>
+`;
+
+exports[`Explorer renders correctly 1`] = `
+Array [
+  <div
+    className="middle-bar__left-column center"
+>
+    <svg
+        className="icon--explorer icon--active"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M17.705 8H9s-2 .078-2 2v15s0 2 2 2l11-.004C22 27 22 25 22 25V13.509L17.705 8zM16 10v5h4v10H9V10h7zm5.509-6h-8.493S11 4.016 10.985 6H19v.454L22.931 11H24v12c2 0 2-1.995 2-1.995V9.648L21.509 4z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M19.23 4.095c-4.842 0-8.769 3.928-8.769 8.771 0 1.781.539 3.43 1.449 4.815 0 0-5.482 5.455-7.102 7.102-1.621 1.646 1.001 4.071 2.602 2.409 1.602-1.659 7.006-7.005 7.006-7.005a8.726 8.726 0 0 0 4.814 1.45 8.773 8.773 0 0 0 8.772-8.771c.001-4.844-3.927-8.771-8.772-8.771zm0 15.035a6.265 6.265 0 1 1 0-12.529 6.264 6.264 0 1 1 0 12.529z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 10 16"
+    >
+        <path
+            d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M17 19.488v4.248c0 .462.09 1.264-.373 1.264H15v-1h1v-3.19l-.173-.18c-1.453 1.205-3.528 1.248-4.67.108C10 19.578 10.118 18 11.376 16H8v1H7v-1.627C7 14.91 7.802 15 8.264 15h4.105L17 19.488zM14 9h-1V8h1.955c.46 0 1.045.22 1.045.682v3.345l.736.875c.18-.973.89-1.71 1.914-1.71.143 0 .35.014.35.04V9h1v2.618c0 .117.265.382.382.382H23v1h-2.233c.027 0 .042.154.042.298 0 1.025-.74 1.753-1.712 1.932l.875.77h3.346c.462 0 .682.583.682 1.045V19h-1v-1h-2.52L14 11.698V9zm2-5C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm10 12c0 2.397-.85 4.6-2.262 6.324L9.676 8.262A9.95 9.95 0 0 1 16 6c5.514 0 10 4.486 10 10zM6 16c0-2.398.85-4.6 2.262-6.324L22.324 23.74A9.961 9.961 0 0 1 16 26c-5.514 0-10-4.486-10-10z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="-10 -10 80 80"
+    >
+        <path
+            d="M12.9 47.1H30V60H0V0h25.7v12.9H12.9v34.2zm4.2-4.2h25.7V17.1H17.1v25.8zM30 0v12.9h8.6V8.6h12.9v12.9h-4.3V30H60V0H30zm17.1 47.1H34.3V60H60V34.3H47.1v12.8z"
+        />
+    </svg>
+    <a
+        className="reset-link pdf-link"
+        href="/assets/Vincent_Audebert_CV.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download my CV"
+    >
+        <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+                Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+        >
+            <g>
+                <path
+                    d="m35.8 8.5q0.6 0.6 1 1.7t0.5 1.9v25.8q0 0.8-0.6 1.5t-1.6 0.6h-30q-0.9 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h20q0.9 0 2 0.4t1.7 1.1z m-9.9-5.5v8.4h8.4q-0.3-0.6-0.5-0.9l-7-7q-0.3-0.2-0.9-0.5z m8.5 34.1v-22.8h-9.3q-0.9 0-1.5-0.6t-0.6-1.6v-9.2h-17.1v34.2h28.5z m-11.4-13.2q0.7 0.6 1.8 1.3 1.3-0.2 2.6-0.2 3.3 0 4 1.1 0.4 0.5 0 1.2 0 0 0 0l0 0v0.1q-0.2 0.8-1.6 0.8-1.1 0-2.6-0.4t-2.9-1.2q-4.9 0.5-8.7 1.8-3.4 5.9-5.4 5.9-0.4 0-0.7-0.2l-0.5-0.2q0-0.1-0.1-0.2-0.3-0.2-0.2-0.8 0.2-0.8 1.3-2t2.9-2.1q0.3-0.2 0.5 0.1 0.1 0 0.1 0.1 1.1-1.9 2.4-4.4 1.5-3.1 2.3-5.9-0.5-1.8-0.7-3.5t0.2-2.9q0.2-0.9 0.9-0.9h0.5q0.5 0 0.8 0.4 0.4 0.4 0.2 1.5-0.1 0.1-0.1 0.2 0 0 0 0.1v0.7q0 2.8-0.3 4.3 1.2 3.7 3.3 5.3z m-12.9 9.2q1.2-0.6 3.1-3.5-1.2 0.8-2 1.8t-1.1 1.7z m8.9-20.6q-0.4 1-0.1 3 0.1-0.2 0.2-1 0-0.1 0.1-0.9 0.1-0.1 0.1-0.2 0-0.1 0-0.1t0 0 0 0q0-0.5-0.3-0.8 0 0 0 0v0z m-2.8 14.8q3-1.2 6.4-1.8-0.1 0-0.3-0.2t-0.4-0.3q-1.7-1.5-2.8-4-0.6 2-1.9 4.4-0.7 1.3-1 1.9z m14.4-0.4q-0.5-0.5-3.1-0.5 1.7 0.6 2.8 0.6 0.3 0 0.4 0 0 0-0.1-0.1z"
+                />
+            </g>
+        </svg>
+    </a>
+</div>,
+  <div
+    className="middle-bar__explorer"
+>
+    <div
+        className="middle-bar__left-panel__title"
+    >
+        <div
+            className="float-left font-heavy"
+        >
+            <button
+                className="explorer--open reset-button"
+                onClick={[Function]}
+                title="Open/Collapse explorer"
+            >
+                 
+                EXPLORER
+                <span
+                    className="hidden-sm"
+                >
+                    : VATWEB.FR
+                </span>
+            </button>
+        </div>
+        <div
+            className="float-right middle-bar__left-panel__options"
+        >
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 32 32"
+                >
+                    <path
+                        d="M20.938 4.031H7v23.938h10v-2H9V6.031h10v3h4v11h2V7.969l-4.062-3.938zm2.062 18h-2v2h-2v2h2v1.938h2v-2h2v-1.938h-2v-2z"
+                    />
+                </svg>
+            </span>
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 35 32"
+                >
+                    <path
+                        d="M8.431 9.155h20.958c2.158 0 2.158-2.238.084-2.238H14.987c-.83 0-1.244-1.244-1.244-1.244S13.162 3.848 12 3.848H1.211C-.365 3.848.049 5.673.049 5.673s2.407 20.47 2.573 21.715S4.075 29 4.075 29l2.821-18.103c.208-1.327 1.12-1.7 1.535-1.742zm25.227.787H9.095c-.733 0-1.328.594-1.328 1.327l-2.572 16.4c0 .734.595 1.328 1.328 1.328h24.563c.732 0 1.328-.594 1.328-1.328l2.572-16.4c0-.733-.593-1.327-1.328-1.327z"
+                    />
+                </svg>
+            </span>
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 32 32"
+                >
+                    <path
+                        d="M26.034 16.767l-4.09-4.09h2.396l-.068-.178a9.717 9.717 0 0 0-9.04-6.15c-5.365 0-9.715 4.35-9.715 9.715s4.35 9.716 9.715 9.716a9.717 9.717 0 0 0 8.864-5.733c.015-.031.024-.066.038-.099l2.605 2.589c-.017.03-.029.064-.047.096a13.287 13.287 0 0 1-11.525 6.663C7.827 29.294 1.875 23.342 1.875 16S7.827 2.706 15.169 2.706c6.138 0 11.303 4.158 12.833 9.812.015.052.019.107.032.159h2.091l-4.091 4.09z"
+                    />
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div
+        className="middle-bar__left-panel__files"
+    >
+        <div
+            className="folder"
+        >
+            <button
+                className="reset-button btn--folder"
+                onClick={[Function]}
+                title="Open/Collapse folder"
+            >
+                <div
+                    className="folder--open"
+                >
+                    <img
+                        alt="Type Icon"
+                        className="seti-icon seti-icon--small"
+                        src="folder.svg"
+                    />
+                     
+                    experience
+                </div>
+            </button>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/1-apocope.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                1-apocope.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/2-allianz.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                2-allianz.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/3-showcase-workshop.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                3-showcase-workshop.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/4-pikpok.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                4-pikpok.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/5-springload.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                5-springload.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/education.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                education.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/hobbies.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                hobbies.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/me.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                me.js
+            </a>
+        </div>
+        <div
+            className="file explorer--active"
+        >
+            <a
+                className="file--link"
+                href="/file/welcome.json"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="json.svg"
+                />
+                 
+                welcome.json
+            </a>
+        </div>
+    </div>
+</div>,
+]
+`;
+
+exports[`Explorer renders correctly with currentFile undefined 1`] = `
+Array [
+  <div
+    className="middle-bar__left-column center"
+>
+    <svg
+        className="icon--explorer icon--active"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M17.705 8H9s-2 .078-2 2v15s0 2 2 2l11-.004C22 27 22 25 22 25V13.509L17.705 8zM16 10v5h4v10H9V10h7zm5.509-6h-8.493S11 4.016 10.985 6H19v.454L22.931 11H24v12c2 0 2-1.995 2-1.995V9.648L21.509 4z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M19.23 4.095c-4.842 0-8.769 3.928-8.769 8.771 0 1.781.539 3.43 1.449 4.815 0 0-5.482 5.455-7.102 7.102-1.621 1.646 1.001 4.071 2.602 2.409 1.602-1.659 7.006-7.005 7.006-7.005a8.726 8.726 0 0 0 4.814 1.45 8.773 8.773 0 0 0 8.772-8.771c.001-4.844-3.927-8.771-8.772-8.771zm0 15.035a6.265 6.265 0 1 1 0-12.529 6.264 6.264 0 1 1 0 12.529z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 10 16"
+    >
+        <path
+            d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="0 0 32 32"
+    >
+        <path
+            d="M17 19.488v4.248c0 .462.09 1.264-.373 1.264H15v-1h1v-3.19l-.173-.18c-1.453 1.205-3.528 1.248-4.67.108C10 19.578 10.118 18 11.376 16H8v1H7v-1.627C7 14.91 7.802 15 8.264 15h4.105L17 19.488zM14 9h-1V8h1.955c.46 0 1.045.22 1.045.682v3.345l.736.875c.18-.973.89-1.71 1.914-1.71.143 0 .35.014.35.04V9h1v2.618c0 .117.265.382.382.382H23v1h-2.233c.027 0 .042.154.042.298 0 1.025-.74 1.753-1.712 1.932l.875.77h3.346c.462 0 .682.583.682 1.045V19h-1v-1h-2.52L14 11.698V9zm2-5C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm10 12c0 2.397-.85 4.6-2.262 6.324L9.676 8.262A9.95 9.95 0 0 1 16 6c5.514 0 10 4.486 10 10zM6 16c0-2.398.85-4.6 2.262-6.324L22.324 23.74A9.961 9.961 0 0 1 16 26c-5.514 0-10-4.486-10-10z"
+        />
+    </svg>
+    <svg
+        className="icon--explorer"
+        viewBox="-10 -10 80 80"
+    >
+        <path
+            d="M12.9 47.1H30V60H0V0h25.7v12.9H12.9v34.2zm4.2-4.2h25.7V17.1H17.1v25.8zM30 0v12.9h8.6V8.6h12.9v12.9h-4.3V30H60V0H30zm17.1 47.1H34.3V60H60V34.3H47.1v12.8z"
+        />
+    </svg>
+    <a
+        className="reset-link pdf-link"
+        href="/assets/Vincent_Audebert_CV.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download my CV"
+    >
+        <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+                Object {
+                    "color": undefined,
+                    "verticalAlign": "middle",
+                  }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+        >
+            <g>
+                <path
+                    d="m35.8 8.5q0.6 0.6 1 1.7t0.5 1.9v25.8q0 0.8-0.6 1.5t-1.6 0.6h-30q-0.9 0-1.5-0.6t-0.6-1.5v-35.8q0-0.8 0.6-1.5t1.5-0.6h20q0.9 0 2 0.4t1.7 1.1z m-9.9-5.5v8.4h8.4q-0.3-0.6-0.5-0.9l-7-7q-0.3-0.2-0.9-0.5z m8.5 34.1v-22.8h-9.3q-0.9 0-1.5-0.6t-0.6-1.6v-9.2h-17.1v34.2h28.5z m-11.4-13.2q0.7 0.6 1.8 1.3 1.3-0.2 2.6-0.2 3.3 0 4 1.1 0.4 0.5 0 1.2 0 0 0 0l0 0v0.1q-0.2 0.8-1.6 0.8-1.1 0-2.6-0.4t-2.9-1.2q-4.9 0.5-8.7 1.8-3.4 5.9-5.4 5.9-0.4 0-0.7-0.2l-0.5-0.2q0-0.1-0.1-0.2-0.3-0.2-0.2-0.8 0.2-0.8 1.3-2t2.9-2.1q0.3-0.2 0.5 0.1 0.1 0 0.1 0.1 1.1-1.9 2.4-4.4 1.5-3.1 2.3-5.9-0.5-1.8-0.7-3.5t0.2-2.9q0.2-0.9 0.9-0.9h0.5q0.5 0 0.8 0.4 0.4 0.4 0.2 1.5-0.1 0.1-0.1 0.2 0 0 0 0.1v0.7q0 2.8-0.3 4.3 1.2 3.7 3.3 5.3z m-12.9 9.2q1.2-0.6 3.1-3.5-1.2 0.8-2 1.8t-1.1 1.7z m8.9-20.6q-0.4 1-0.1 3 0.1-0.2 0.2-1 0-0.1 0.1-0.9 0.1-0.1 0.1-0.2 0-0.1 0-0.1t0 0 0 0q0-0.5-0.3-0.8 0 0 0 0v0z m-2.8 14.8q3-1.2 6.4-1.8-0.1 0-0.3-0.2t-0.4-0.3q-1.7-1.5-2.8-4-0.6 2-1.9 4.4-0.7 1.3-1 1.9z m14.4-0.4q-0.5-0.5-3.1-0.5 1.7 0.6 2.8 0.6 0.3 0 0.4 0 0 0-0.1-0.1z"
+                />
+            </g>
+        </svg>
+    </a>
+</div>,
+  <div
+    className="middle-bar__explorer"
+>
+    <div
+        className="middle-bar__left-panel__title"
+    >
+        <div
+            className="float-left font-heavy"
+        >
+            <button
+                className="explorer--open reset-button"
+                onClick={[Function]}
+                title="Open/Collapse explorer"
+            >
+                 
+                EXPLORER
+                <span
+                    className="hidden-sm"
+                >
+                    : VATWEB.FR
+                </span>
+            </button>
+        </div>
+        <div
+            className="float-right middle-bar__left-panel__options"
+        >
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 32 32"
+                >
+                    <path
+                        d="M20.938 4.031H7v23.938h10v-2H9V6.031h10v3h4v11h2V7.969l-4.062-3.938zm2.062 18h-2v2h-2v2h2v1.938h2v-2h2v-1.938h-2v-2z"
+                    />
+                </svg>
+            </span>
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 35 32"
+                >
+                    <path
+                        d="M8.431 9.155h20.958c2.158 0 2.158-2.238.084-2.238H14.987c-.83 0-1.244-1.244-1.244-1.244S13.162 3.848 12 3.848H1.211C-.365 3.848.049 5.673.049 5.673s2.407 20.47 2.573 21.715S4.075 29 4.075 29l2.821-18.103c.208-1.327 1.12-1.7 1.535-1.742zm25.227.787H9.095c-.733 0-1.328.594-1.328 1.327l-2.572 16.4c0 .734.595 1.328 1.328 1.328h24.563c.732 0 1.328-.594 1.328-1.328l2.572-16.4c0-.733-.593-1.327-1.328-1.327z"
+                    />
+                </svg>
+            </span>
+            <span
+                className="options__icons"
+            >
+                <svg
+                    className="icon--explorer-title"
+                    viewBox="0 0 32 32"
+                >
+                    <path
+                        d="M26.034 16.767l-4.09-4.09h2.396l-.068-.178a9.717 9.717 0 0 0-9.04-6.15c-5.365 0-9.715 4.35-9.715 9.715s4.35 9.716 9.715 9.716a9.717 9.717 0 0 0 8.864-5.733c.015-.031.024-.066.038-.099l2.605 2.589c-.017.03-.029.064-.047.096a13.287 13.287 0 0 1-11.525 6.663C7.827 29.294 1.875 23.342 1.875 16S7.827 2.706 15.169 2.706c6.138 0 11.303 4.158 12.833 9.812.015.052.019.107.032.159h2.091l-4.091 4.09z"
+                    />
+                </svg>
+            </span>
+        </div>
+    </div>
+    <div
+        className="middle-bar__left-panel__files"
+    >
+        <div
+            className="folder"
+        >
+            <button
+                className="reset-button btn--folder"
+                onClick={[Function]}
+                title="Open/Collapse folder"
+            >
+                <div
+                    className="folder--open"
+                >
+                    <img
+                        alt="Type Icon"
+                        className="seti-icon seti-icon--small"
+                        src="folder.svg"
+                    />
+                     
+                    experience
+                </div>
+            </button>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/1-apocope.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                1-apocope.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/2-allianz.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                2-allianz.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/3-showcase-workshop.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                3-showcase-workshop.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/4-pikpok.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                4-pikpok.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/5-springload.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                5-springload.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/education.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                education.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/hobbies.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                hobbies.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/me.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                me.js
+            </a>
+        </div>
+        <div
+            className="file"
+        >
+            <a
+                className="file--link"
+                href="/file/welcome.json"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="json.svg"
+                />
+                 
+                welcome.json
+            </a>
+        </div>
+    </div>
+</div>,
+]
+`;
