@@ -25,8 +25,8 @@ describe('TopBar', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders correctly with undefined file name', () => {
-    currentFile.name = undefined;
+  it('renders correctly with undefined currentFile', () => {
+    currentFile = undefined;
     const tree = renderer
       .create(<TopBar currentFile={currentFile} toggleEditor={toggleEditor} />)
       .toJSON();

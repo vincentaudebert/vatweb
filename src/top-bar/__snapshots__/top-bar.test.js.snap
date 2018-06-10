@@ -92,7 +92,7 @@ exports[`TopBar renders correctly 1`] = `
 </div>
 `;
 
-exports[`TopBar renders correctly with undefined file name 1`] = `
+exports[`TopBar renders correctly with undefined currentFile 1`] = `
 <div
   className="top-bar row"
 >
