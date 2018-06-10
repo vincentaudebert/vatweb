@@ -1,3 +1,6 @@
+[![CircleCI](https://circleci.com/gh/vincentaudebert/vatweb/tree/master.svg?style=svg)](https://circleci.com/gh/vincentaudebert/vatweb/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/vincentaudebert/vatweb/badge.svg?branch=master)](https://coveralls.io/github/vincentaudebert/vatweb?branch=master)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## DEMO

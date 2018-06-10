@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
+    "coveralls": "^3.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
@@ -41,6 +42,7 @@
     "start": "react-scripts start",
     "build": "yarn run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:ci": "yarn run test --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch",
