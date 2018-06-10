@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiddleBar renders correctly 1`] = `
+<div
+  className="middle-bar row"
+>
+  <div
+    className="left middle-bar__left-panel"
+  >
+    <div />
+  </div>
+  <div
+    className="middle-bar__right-panel"
+  >
+    <div />
+  </div>
+</div>
+`;

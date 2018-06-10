@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopBar renders correctly 1`] = `
+<div
+  className="top-bar row"
+>
+  <div
+    className="d-inline-block left ml-spacing top-bar__left"
+  >
+    <button
+      className="top-bar__btn top-bar__btn--close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+          />
+        </g>
+      </svg>
+    </button>
+    <button
+      className="top-bar__btn top-bar__btn--minimize"
+      type="button"
+      value="Reduce"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m5 22.5v-5h30v5h-30z"
+          />
+        </g>
+      </svg>
+    </button>
+    <button
+      className="top-bar__btn top-bar__btn--expand"
+      type="button"
+      value="Expand"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m19.9 23.6q0 0.3-0.3 0.5l-7.4 7.4 3.2 3.2q0.5 0.4 0.5 1t-0.5 1-1 0.4h-10q-0.6 0-1-0.4t-0.4-1v-10q0-0.6 0.4-1t1-0.4 1 0.4l3.2 3.2 7.5-7.4q0.2-0.2 0.5-0.2t0.5 0.2l2.5 2.6q0.3 0.2 0.3 0.5z m17.4-19.3v10q0 0.6-0.4 1t-1 0.4-1-0.4l-3.3-3.2-7.4 7.4q-0.2 0.2-0.5 0.2t-0.5-0.2l-2.5-2.6q-0.3-0.2-0.3-0.5t0.3-0.5l7.4-7.4-3.2-3.2q-0.5-0.4-0.5-1t0.5-1 1-0.4h10q0.5 0 1 0.4t0.4 1z"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div
+    className="d-inline-block center top-bar__right"
+  >
+    Test Name - 
+    vatweb.fr
+  </div>
+</div>
+`;
+
+exports[`TopBar renders correctly with undefined currentFile 1`] = `
+<div
+  className="top-bar row"
+>
+  <div
+    className="d-inline-block left ml-spacing top-bar__left"
+  >
+    <button
+      className="top-bar__btn top-bar__btn--close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+          />
+        </g>
+      </svg>
+    </button>
+    <button
+      className="top-bar__btn top-bar__btn--minimize"
+      type="button"
+      value="Reduce"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m5 22.5v-5h30v5h-30z"
+          />
+        </g>
+      </svg>
+    </button>
+    <button
+      className="top-bar__btn top-bar__btn--expand"
+      type="button"
+      value="Expand"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        preserveAspectRatio="xMidYMid meet"
+        style={
+          Object {
+            "color": undefined,
+            "verticalAlign": "middle",
+          }
+        }
+        viewBox="0 0 40 40"
+        width="1em"
+      >
+        <g>
+          <path
+            d="m19.9 23.6q0 0.3-0.3 0.5l-7.4 7.4 3.2 3.2q0.5 0.4 0.5 1t-0.5 1-1 0.4h-10q-0.6 0-1-0.4t-0.4-1v-10q0-0.6 0.4-1t1-0.4 1 0.4l3.2 3.2 7.5-7.4q0.2-0.2 0.5-0.2t0.5 0.2l2.5 2.6q0.3 0.2 0.3 0.5z m17.4-19.3v10q0 0.6-0.4 1t-1 0.4-1-0.4l-3.3-3.2-7.4 7.4q-0.2 0.2-0.5 0.2t-0.5-0.2l-2.5-2.6q-0.3-0.2-0.3-0.5t0.3-0.5l7.4-7.4-3.2-3.2q-0.5-0.4-0.5-1t0.5-1 1-0.4h10q0.5 0 1 0.4t0.4 1z"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div
+    className="d-inline-block center top-bar__right"
+  >
+    vatweb.fr
+  </div>
+</div>
+`;

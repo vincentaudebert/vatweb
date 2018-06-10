@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App hidden editor 1`] = `
+<App
+  changeFile={[Function]}
+  match={
+    Object {
+      "params": Object {
+        "slug": "me.js",
+      },
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <div
+      className="editor fade hide"
+      id="editor"
+    >
+      <div
+        toggleEditor={[Function]}
+      />
+      <div />
+      <div />
+    </div>
+    <div
+      className="alternative d-none fade show"
+      id="alternative"
+    >
+      <div
+        className="container"
+      >
+        <h2>
+          Oopsie...
+        </h2>
+        <p>
+          Don't worry. I'm not offended. I knew you would try all the buttons. And particularly the closing one :)
+        </p>
+        <p>
+          If you want, you can reopen my life editor by clicking here:
+           
+          <button
+            className="d-inline-block btn--fake reset-button"
+            onClick={[Function]}
+            title="Reopen editor"
+          >
+            <FaMagic>
+              <IconBase
+                viewBox="0 0 40 40"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m27.6 13l6.5-6.6-2.4-2.4-6.5 6.6z m9.9-6.6q0 0.6-0.4 1l-28.7 28.7q-0.4 0.4-1 0.4t-1-0.4l-4.4-4.4q-0.4-0.4-0.4-1t0.4-1l28.7-28.7q0.4-0.4 1-0.4t1 0.4l4.4 4.4q0.4 0.4 0.4 1z m-30.1-4.2l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.1-0.6 2.1-0.7 0.7-2.2z m7.8 3.6l4.4 1.3-4.4 1.4-1.3 4.4-1.4-4.4-4.4-1.4 4.4-1.3 1.4-4.4z m20.8 10.7l2.1 0.6-2.1 0.7-0.7 2.2-0.7-2.2-2.2-0.7 2.2-0.6 0.7-2.2z m-14.3-14.3l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.2-0.6 2.2-0.7 0.7-2.2z"
+                    />
+                  </g>
+                </svg>
+              </IconBase>
+            </FaMagic>
+             
+            <FaBackward>
+              <IconBase
+                viewBox="0 0 40 40"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"
+                    />
+                  </g>
+                </svg>
+              </IconBase>
+            </FaBackward>
+             
+            <FaHandPeaceO>
+              <IconBase
+                viewBox="0 0 40 40"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m31.8 14.4q1.3 0 2.3 0.6 3.2 1.4 3.2 5v3.9q0 2.2-0.5 4.2l-1.9 7.6q-0.5 1.9-2 3.1t-3.6 1.2h-14.9q-2.3 0-4-1.7t-1.7-4v-9l-5.3-14q-0.4-1-0.4-2 0-2.4 1.7-4.1t4-1.6q1.8 0 3.3 1t2 2.7l0.4 0.9v-2.5q0-2.4 1.7-4t4-1.7 4.1 1.7 1.7 4v5.8q0.6-0.1 1-0.1 1.6 0 2.9 0.8t1.9 2.2z m-4.9-0.1q-0.7 0-1.3 0.4t-0.9 1.1l-1.7 3.6-1.6 3.5h1.2q1.2 0 2.1 0.7t1.1 1.8l3.4-7.6q0.2-0.4 0.2-1 0-1-0.7-1.8t-1.8-0.7z m5 3q-0.5 0-0.9 0.2t-0.7 0.3-0.5 0.7-0.4 0.7-0.4 0.8l-2.9 6.5q-0.2 0.4-0.2 1 0 1 0.7 1.8t1.8 0.7q0.7 0 1.3-0.4t0.9-1.1l3.6-7.8q0.2-0.4 0.2-0.9 0-1.1-0.7-1.8t-1.8-0.7z m-26-8q0 0.5 0.1 1l5.6 14.5v1.6l2.2-2.5q1-1 2.4-1h4.4l2.4-5.2v-12q0-1.2-0.8-2t-2.1-0.8-2 0.8-0.8 2v14.3h-1.4l-4.5-11.7q-0.3-0.9-1.1-1.4t-1.6-0.5q-1.2 0-2 0.9t-0.8 2z m23.4 27.8q1 0 1.8-0.6t1-1.5l1.9-7.6q0.4-1.6 0.4-3.5v-2l-3.1 6.9q-0.4 0.9-1.2 1.4t-1.7 0.5q-1.2 0-2.1-0.8t-1.1-1.9q-1 1.3-2.6 1.3h-4.6v-0.7h4.6q1.1 0 1.8-0.8t0.8-1.7-0.7-1.8-1.7-0.7h-6.6q-1.1 0-1.8 0.8l-2.8 3v6.9q0 1.2 0.8 2t2 0.8h14.9z"
+                    />
+                  </g>
+                </svg>
+              </IconBase>
+            </FaHandPeaceO>
+          </button>
+        </p>
+        <p>
+          If you got sick of reading some (beautiful) code, you can download my
+           
+          <a
+            className="alternative--link"
+            href="/assets/Vincent_Audebert_CV.pdf"
+            rel="noreferrer noopener"
+            target="_blank"
+            title="PDF CV"
+          >
+            CV in a PDF format
+          </a>
+          .
+        </p>
+        <p>
+          Vincent.
+        </p>
+      </div>
+    </div>
+  </div>
+</App>
+`;
+
+exports[`App renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="editor fade show"
+    id="editor"
+  >
+    <div
+      toggleEditor={[Function]}
+    />
+    <div />
+    <div />
+  </div>
+  <div
+    className="alternative d-none fade hide"
+    id="alternative"
+  >
+    <div
+      className="container"
+    >
+      <h2>
+        Oopsie...
+      </h2>
+      <p>
+        Don't worry. I'm not offended. I knew you would try all the buttons. And particularly the closing one :)
+      </p>
+      <p>
+        If you want, you can reopen my life editor by clicking here:
+         
+        <button
+          className="d-inline-block btn--fake reset-button"
+          onClick={[Function]}
+          title="Reopen editor"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m27.6 13l6.5-6.6-2.4-2.4-6.5 6.6z m9.9-6.6q0 0.6-0.4 1l-28.7 28.7q-0.4 0.4-1 0.4t-1-0.4l-4.4-4.4q-0.4-0.4-0.4-1t0.4-1l28.7-28.7q0.4-0.4 1-0.4t1 0.4l4.4 4.4q0.4 0.4 0.4 1z m-30.1-4.2l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.1-0.6 2.1-0.7 0.7-2.2z m7.8 3.6l4.4 1.3-4.4 1.4-1.3 4.4-1.4-4.4-4.4-1.4 4.4-1.3 1.4-4.4z m20.8 10.7l2.1 0.6-2.1 0.7-0.7 2.2-0.7-2.2-2.2-0.7 2.2-0.6 0.7-2.2z m-14.3-14.3l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.2-0.6 2.2-0.7 0.7-2.2z"
+              />
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"
+              />
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m31.8 14.4q1.3 0 2.3 0.6 3.2 1.4 3.2 5v3.9q0 2.2-0.5 4.2l-1.9 7.6q-0.5 1.9-2 3.1t-3.6 1.2h-14.9q-2.3 0-4-1.7t-1.7-4v-9l-5.3-14q-0.4-1-0.4-2 0-2.4 1.7-4.1t4-1.6q1.8 0 3.3 1t2 2.7l0.4 0.9v-2.5q0-2.4 1.7-4t4-1.7 4.1 1.7 1.7 4v5.8q0.6-0.1 1-0.1 1.6 0 2.9 0.8t1.9 2.2z m-4.9-0.1q-0.7 0-1.3 0.4t-0.9 1.1l-1.7 3.6-1.6 3.5h1.2q1.2 0 2.1 0.7t1.1 1.8l3.4-7.6q0.2-0.4 0.2-1 0-1-0.7-1.8t-1.8-0.7z m5 3q-0.5 0-0.9 0.2t-0.7 0.3-0.5 0.7-0.4 0.7-0.4 0.8l-2.9 6.5q-0.2 0.4-0.2 1 0 1 0.7 1.8t1.8 0.7q0.7 0 1.3-0.4t0.9-1.1l3.6-7.8q0.2-0.4 0.2-0.9 0-1.1-0.7-1.8t-1.8-0.7z m-26-8q0 0.5 0.1 1l5.6 14.5v1.6l2.2-2.5q1-1 2.4-1h4.4l2.4-5.2v-12q0-1.2-0.8-2t-2.1-0.8-2 0.8-0.8 2v14.3h-1.4l-4.5-11.7q-0.3-0.9-1.1-1.4t-1.6-0.5q-1.2 0-2 0.9t-0.8 2z m23.4 27.8q1 0 1.8-0.6t1-1.5l1.9-7.6q0.4-1.6 0.4-3.5v-2l-3.1 6.9q-0.4 0.9-1.2 1.4t-1.7 0.5q-1.2 0-2.1-0.8t-1.1-1.9q-1 1.3-2.6 1.3h-4.6v-0.7h4.6q1.1 0 1.8-0.8t0.8-1.7-0.7-1.8-1.7-0.7h-6.6q-1.1 0-1.8 0.8l-2.8 3v6.9q0 1.2 0.8 2t2 0.8h14.9z"
+              />
+            </g>
+          </svg>
+        </button>
+      </p>
+      <p>
+        If you got sick of reading some (beautiful) code, you can download my
+         
+        <a
+          className="alternative--link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="PDF CV"
+        >
+          CV in a PDF format
+        </a>
+        .
+      </p>
+      <p>
+        Vincent.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App renders correctly with no slug 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="editor fade show"
+    id="editor"
+  >
+    <div
+      toggleEditor={[Function]}
+    />
+    <div />
+    <div />
+  </div>
+  <div
+    className="alternative d-none fade hide"
+    id="alternative"
+  >
+    <div
+      className="container"
+    >
+      <h2>
+        Oopsie...
+      </h2>
+      <p>
+        Don't worry. I'm not offended. I knew you would try all the buttons. And particularly the closing one :)
+      </p>
+      <p>
+        If you want, you can reopen my life editor by clicking here:
+         
+        <button
+          className="d-inline-block btn--fake reset-button"
+          onClick={[Function]}
+          title="Reopen editor"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m27.6 13l6.5-6.6-2.4-2.4-6.5 6.6z m9.9-6.6q0 0.6-0.4 1l-28.7 28.7q-0.4 0.4-1 0.4t-1-0.4l-4.4-4.4q-0.4-0.4-0.4-1t0.4-1l28.7-28.7q0.4-0.4 1-0.4t1 0.4l4.4 4.4q0.4 0.4 0.4 1z m-30.1-4.2l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.1-0.6 2.1-0.7 0.7-2.2z m7.8 3.6l4.4 1.3-4.4 1.4-1.3 4.4-1.4-4.4-4.4-1.4 4.4-1.3 1.4-4.4z m20.8 10.7l2.1 0.6-2.1 0.7-0.7 2.2-0.7-2.2-2.2-0.7 2.2-0.6 0.7-2.2z m-14.3-14.3l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.2-0.6 2.2-0.7 0.7-2.2z"
+              />
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"
+              />
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m31.8 14.4q1.3 0 2.3 0.6 3.2 1.4 3.2 5v3.9q0 2.2-0.5 4.2l-1.9 7.6q-0.5 1.9-2 3.1t-3.6 1.2h-14.9q-2.3 0-4-1.7t-1.7-4v-9l-5.3-14q-0.4-1-0.4-2 0-2.4 1.7-4.1t4-1.6q1.8 0 3.3 1t2 2.7l0.4 0.9v-2.5q0-2.4 1.7-4t4-1.7 4.1 1.7 1.7 4v5.8q0.6-0.1 1-0.1 1.6 0 2.9 0.8t1.9 2.2z m-4.9-0.1q-0.7 0-1.3 0.4t-0.9 1.1l-1.7 3.6-1.6 3.5h1.2q1.2 0 2.1 0.7t1.1 1.8l3.4-7.6q0.2-0.4 0.2-1 0-1-0.7-1.8t-1.8-0.7z m5 3q-0.5 0-0.9 0.2t-0.7 0.3-0.5 0.7-0.4 0.7-0.4 0.8l-2.9 6.5q-0.2 0.4-0.2 1 0 1 0.7 1.8t1.8 0.7q0.7 0 1.3-0.4t0.9-1.1l3.6-7.8q0.2-0.4 0.2-0.9 0-1.1-0.7-1.8t-1.8-0.7z m-26-8q0 0.5 0.1 1l5.6 14.5v1.6l2.2-2.5q1-1 2.4-1h4.4l2.4-5.2v-12q0-1.2-0.8-2t-2.1-0.8-2 0.8-0.8 2v14.3h-1.4l-4.5-11.7q-0.3-0.9-1.1-1.4t-1.6-0.5q-1.2 0-2 0.9t-0.8 2z m23.4 27.8q1 0 1.8-0.6t1-1.5l1.9-7.6q0.4-1.6 0.4-3.5v-2l-3.1 6.9q-0.4 0.9-1.2 1.4t-1.7 0.5q-1.2 0-2.1-0.8t-1.1-1.9q-1 1.3-2.6 1.3h-4.6v-0.7h4.6q1.1 0 1.8-0.8t0.8-1.7-0.7-1.8-1.7-0.7h-6.6q-1.1 0-1.8 0.8l-2.8 3v6.9q0 1.2 0.8 2t2 0.8h14.9z"
+              />
+            </g>
+          </svg>
+        </button>
+      </p>
+      <p>
+        If you got sick of reading some (beautiful) code, you can download my
+         
+        <a
+          className="alternative--link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="PDF CV"
+        >
+          CV in a PDF format
+        </a>
+        .
+      </p>
+      <p>
+        Vincent.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App test animation end function 1`] = `
+<div
+  class="App"
+>
+  <div
+    class="editor fade hide d-none"
+    id="editor"
+  >
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div
+    class="alternative fade show d-block"
+    id="alternative"
+  >
+    <div
+      class="container"
+    >
+      <h2>
+        Oopsie...
+      </h2>
+      <p>
+        Don't worry. I'm not offended. I knew you would try all the buttons. And particularly the closing one :)
+      </p>
+      <p>
+        If you want, you can reopen my life editor by clicking here: 
+        <button
+          class="d-inline-block btn--fake reset-button"
+          title="Reopen editor"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m27.6 13l6.5-6.6-2.4-2.4-6.5 6.6z m9.9-6.6q0 0.6-0.4 1l-28.7 28.7q-0.4 0.4-1 0.4t-1-0.4l-4.4-4.4q-0.4-0.4-0.4-1t0.4-1l28.7-28.7q0.4-0.4 1-0.4t1 0.4l4.4 4.4q0.4 0.4 0.4 1z m-30.1-4.2l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.1-0.6 2.1-0.7 0.7-2.2z m7.8 3.6l4.4 1.3-4.4 1.4-1.3 4.4-1.4-4.4-4.4-1.4 4.4-1.3 1.4-4.4z m20.8 10.7l2.1 0.6-2.1 0.7-0.7 2.2-0.7-2.2-2.2-0.7 2.2-0.6 0.7-2.2z m-14.3-14.3l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.2-0.6 2.2-0.7 0.7-2.2z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m31.8 14.4q1.3 0 2.3 0.6 3.2 1.4 3.2 5v3.9q0 2.2-0.5 4.2l-1.9 7.6q-0.5 1.9-2 3.1t-3.6 1.2h-14.9q-2.3 0-4-1.7t-1.7-4v-9l-5.3-14q-0.4-1-0.4-2 0-2.4 1.7-4.1t4-1.6q1.8 0 3.3 1t2 2.7l0.4 0.9v-2.5q0-2.4 1.7-4t4-1.7 4.1 1.7 1.7 4v5.8q0.6-0.1 1-0.1 1.6 0 2.9 0.8t1.9 2.2z m-4.9-0.1q-0.7 0-1.3 0.4t-0.9 1.1l-1.7 3.6-1.6 3.5h1.2q1.2 0 2.1 0.7t1.1 1.8l3.4-7.6q0.2-0.4 0.2-1 0-1-0.7-1.8t-1.8-0.7z m5 3q-0.5 0-0.9 0.2t-0.7 0.3-0.5 0.7-0.4 0.7-0.4 0.8l-2.9 6.5q-0.2 0.4-0.2 1 0 1 0.7 1.8t1.8 0.7q0.7 0 1.3-0.4t0.9-1.1l3.6-7.8q0.2-0.4 0.2-0.9 0-1.1-0.7-1.8t-1.8-0.7z m-26-8q0 0.5 0.1 1l5.6 14.5v1.6l2.2-2.5q1-1 2.4-1h4.4l2.4-5.2v-12q0-1.2-0.8-2t-2.1-0.8-2 0.8-0.8 2v14.3h-1.4l-4.5-11.7q-0.3-0.9-1.1-1.4t-1.6-0.5q-1.2 0-2 0.9t-0.8 2z m23.4 27.8q1 0 1.8-0.6t1-1.5l1.9-7.6q0.4-1.6 0.4-3.5v-2l-3.1 6.9q-0.4 0.9-1.2 1.4t-1.7 0.5q-1.2 0-2.1-0.8t-1.1-1.9q-1 1.3-2.6 1.3h-4.6v-0.7h4.6q1.1 0 1.8-0.8t0.8-1.7-0.7-1.8-1.7-0.7h-6.6q-1.1 0-1.8 0.8l-2.8 3v6.9q0 1.2 0.8 2t2 0.8h14.9z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+        </button>
+      </p>
+      <p>
+        If you got sick of reading some (beautiful) code, you can download my 
+        <a
+          class="alternative--link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="PDF CV"
+        >
+          CV in a PDF format
+        </a>
+        .
+      </p>
+      <p>
+        Vincent.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App test animation end function not triggered if editor is open 1`] = `
+<div
+  class="App"
+>
+  <div
+    class="editor fade show"
+    id="editor"
+  >
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+  </div>
+  <div
+    class="alternative d-none fade hide"
+    id="alternative"
+  >
+    <div
+      class="container"
+    >
+      <h2>
+        Oopsie...
+      </h2>
+      <p>
+        Don't worry. I'm not offended. I knew you would try all the buttons. And particularly the closing one :)
+      </p>
+      <p>
+        If you want, you can reopen my life editor by clicking here: 
+        <button
+          class="d-inline-block btn--fake reset-button"
+          title="Reopen editor"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m27.6 13l6.5-6.6-2.4-2.4-6.5 6.6z m9.9-6.6q0 0.6-0.4 1l-28.7 28.7q-0.4 0.4-1 0.4t-1-0.4l-4.4-4.4q-0.4-0.4-0.4-1t0.4-1l28.7-28.7q0.4-0.4 1-0.4t1 0.4l4.4 4.4q0.4 0.4 0.4 1z m-30.1-4.2l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.1-0.6 2.1-0.7 0.7-2.2z m7.8 3.6l4.4 1.3-4.4 1.4-1.3 4.4-1.4-4.4-4.4-1.4 4.4-1.3 1.4-4.4z m20.8 10.7l2.1 0.6-2.1 0.7-0.7 2.2-0.7-2.2-2.2-0.7 2.2-0.6 0.7-2.2z m-14.3-14.3l2.2 0.7-2.2 0.6-0.7 2.2-0.7-2.2-2.2-0.6 2.2-0.7 0.7-2.2z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m36.1 3.1q0.5-0.4 0.8-0.2t0.2 0.7v32.8q0 0.6-0.2 0.7t-0.8-0.2l-15.8-15.9q-0.2-0.2-0.3-0.4v15.8q0 0.6-0.3 0.7t-0.7-0.2l-15.9-15.9q-0.4-0.4-0.4-1t0.4-1l15.9-15.9q0.4-0.4 0.7-0.2t0.3 0.7v15.8q0.1-0.2 0.3-0.4z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style="vertical-align: middle;"
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m31.8 14.4q1.3 0 2.3 0.6 3.2 1.4 3.2 5v3.9q0 2.2-0.5 4.2l-1.9 7.6q-0.5 1.9-2 3.1t-3.6 1.2h-14.9q-2.3 0-4-1.7t-1.7-4v-9l-5.3-14q-0.4-1-0.4-2 0-2.4 1.7-4.1t4-1.6q1.8 0 3.3 1t2 2.7l0.4 0.9v-2.5q0-2.4 1.7-4t4-1.7 4.1 1.7 1.7 4v5.8q0.6-0.1 1-0.1 1.6 0 2.9 0.8t1.9 2.2z m-4.9-0.1q-0.7 0-1.3 0.4t-0.9 1.1l-1.7 3.6-1.6 3.5h1.2q1.2 0 2.1 0.7t1.1 1.8l3.4-7.6q0.2-0.4 0.2-1 0-1-0.7-1.8t-1.8-0.7z m5 3q-0.5 0-0.9 0.2t-0.7 0.3-0.5 0.7-0.4 0.7-0.4 0.8l-2.9 6.5q-0.2 0.4-0.2 1 0 1 0.7 1.8t1.8 0.7q0.7 0 1.3-0.4t0.9-1.1l3.6-7.8q0.2-0.4 0.2-0.9 0-1.1-0.7-1.8t-1.8-0.7z m-26-8q0 0.5 0.1 1l5.6 14.5v1.6l2.2-2.5q1-1 2.4-1h4.4l2.4-5.2v-12q0-1.2-0.8-2t-2.1-0.8-2 0.8-0.8 2v14.3h-1.4l-4.5-11.7q-0.3-0.9-1.1-1.4t-1.6-0.5q-1.2 0-2 0.9t-0.8 2z m23.4 27.8q1 0 1.8-0.6t1-1.5l1.9-7.6q0.4-1.6 0.4-3.5v-2l-3.1 6.9q-0.4 0.9-1.2 1.4t-1.7 0.5q-1.2 0-2.1-0.8t-1.1-1.9q-1 1.3-2.6 1.3h-4.6v-0.7h4.6q1.1 0 1.8-0.8t0.8-1.7-0.7-1.8-1.7-0.7h-6.6q-1.1 0-1.8 0.8l-2.8 3v6.9q0 1.2 0.8 2t2 0.8h14.9z"
+              >
+                
+              </path>
+            </g>
+          </svg>
+        </button>
+      </p>
+      <p>
+        If you got sick of reading some (beautiful) code, you can download my 
+        <a
+          class="alternative--link"
+          href="/assets/Vincent_Audebert_CV.pdf"
+          rel="noreferrer noopener"
+          target="_blank"
+          title="PDF CV"
+        >
+          CV in a PDF format
+        </a>
+        .
+      </p>
+      <p>
+        Vincent.
+      </p>
+    </div>
+  </div>
+</div>
+`;
