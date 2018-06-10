@@ -1,5 +1,13 @@
-[![CircleCI](https://circleci.com/gh/vincentaudebert/vatweb/tree/master.svg?style=svg)](https://circleci.com/gh/vincentaudebert/vatweb/tree/master)
+# VatWeb.fr
+
+[![CircleCI](https://circleci.com/gh/vincentaudebert/vatweb/tree/master.svg?style=shield)](https://circleci.com/gh/vincentaudebert/vatweb/tree/master)
 [![Coverage Status](https://coveralls.io/repos/github/vincentaudebert/vatweb/badge.svg?branch=master)](https://coveralls.io/github/vincentaudebert/vatweb?branch=master)
+[![Twitter URL](https://img.shields.io/badge/Twitter-vatweb-blue.svg)](https://twitter.com/vatweb)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Dependency Status](https://david-dm.org/vincentaudebert/vatweb.svg?theme=shields.io)](https://david-dm.org/vincentaudebert/vatweb)
+[![devDependency Status](https://david-dm.org/vincentaudebert/vatweb/dev-status.svg?theme=shields.io)](https://david-dm.org/vincentaudebert/vatweb#info=devDependencies)
+[![Flow Status](https://img.shields.io/badge/Flow-OK-brightgreen.svg)]
+[![ESLint Status](https://img.shields.io/badge/ESLint-OK-brightgreen.svg)]
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
