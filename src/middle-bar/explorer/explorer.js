@@ -19,7 +19,6 @@ import SetiReact from '../../svg/icons/react.svg';
 import SetiJSON from '../../svg/icons/json.svg';
 import config from '../../config/config';
 import type { fullFileType } from '../../app/app.types';
-import pdfCV from '../../pdf/Vincent_Audebert_CV.pdf';
 
 type ExplorerProps = {
   currentFile: fullFileType,
@@ -81,7 +80,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
           <IconDebug className="icon--explorer" />
           <IconExtensions className="icon--explorer" />
           <a
-            href={pdfCV}
+            href="/assets/Vincent_Audebert_CV.pdf"
             target="_blank"
             className="reset-link pdf-link"
             title="Download my CV"

@@ -14,8 +14,9 @@ export default `{
   ],
   "aint-nobody-got-time-for-that": [
     "Ok if you can't be bothered",
-    "you can download directly my CV in a PDF format",
-    "by clicking on the PDF icon in the menu bar on the left (desktop only)",
+    "you can download directly my CV in a PDF format:",
+    "https://vatweb.fr/assets/Vincent_Audebert_CV.pdf",
+    "or click on the PDF icon in the menu bar on the left (desktop only)",
     "or click on the smiley face in the footer bar."
   ],
   "where-is-da-code": [

@@ -10,7 +10,6 @@ import TopBar from '../top-bar/top-bar.container';
 import MiddleBar from '../middle-bar/middle-bar';
 import FooterBar from '../footer-bar/footer-bar';
 import './app.css';
-import pdfCV from '../pdf/Vincent_Audebert_CV.pdf';
 
 type AppProps = {
   wantedLocation: string,
@@ -114,7 +113,7 @@ class App extends Component<AppProps, AppState> {
               my{' '}
               <a
                 className="alternative--link"
-                href={pdfCV}
+                href="/assets/Vincent_Audebert_CV.pdf"
                 title="PDF CV"
                 target="_blank"
                 rel="noreferrer noopener"
