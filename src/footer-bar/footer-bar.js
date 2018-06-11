@@ -42,7 +42,7 @@ const FooterBar = () => (
         Prettier:<GoCheck className="icon--footer" />
       </span>
       <a
-        href={`${process.env.PUBLIC_URL || ''}/assets/Vincent_Audebert_CV.pdf`}
+        href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
         target="_blank"
         className="reset-link footer-bar__info"
         title="Download my CV"

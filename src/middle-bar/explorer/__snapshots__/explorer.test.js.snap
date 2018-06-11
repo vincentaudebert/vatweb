@@ -175,7 +175,7 @@ exports[`Explorer active file being within a folder 1`] = `
         </SvgComponent>
         <a
           className="reset-link pdf-link"
-          href="/assets/Vincent_Audebert_CV.pdf"
+          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
           rel="noopener noreferrer"
           target="_blank"
           title="Download my CV"
@@ -587,7 +587,7 @@ exports[`Explorer explorer button toggles explorer 1`] = `
           \\"aint-nobody-got-time-for-that\\": [
             \\"Ok if you can't be bothered\\",
             \\"you can download directly my CV in a PDF format:\\",
-            \\"https://vatweb.fr/assets/Vincent_Audebert_CV.pdf\\",
+            \\"https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf\\",
             \\"or click on the PDF icon in the menu bar on the left (desktop only)\\",
             \\"or click on the smiley face in the footer bar.\\"
           ],
@@ -670,7 +670,7 @@ exports[`Explorer explorer button toggles explorer 1`] = `
         </SvgComponent>
         <a
           className="reset-link pdf-link"
-          href="/assets/Vincent_Audebert_CV.pdf"
+          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
           rel="noopener noreferrer"
           target="_blank"
           title="Download my CV"
@@ -1082,7 +1082,7 @@ exports[`Explorer folder button toggles folder 1`] = `
           \\"aint-nobody-got-time-for-that\\": [
             \\"Ok if you can't be bothered\\",
             \\"you can download directly my CV in a PDF format:\\",
-            \\"https://vatweb.fr/assets/Vincent_Audebert_CV.pdf\\",
+            \\"https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf\\",
             \\"or click on the PDF icon in the menu bar on the left (desktop only)\\",
             \\"or click on the smiley face in the footer bar.\\"
           ],
@@ -1165,7 +1165,7 @@ exports[`Explorer folder button toggles folder 1`] = `
         </SvgComponent>
         <a
           className="reset-link pdf-link"
-          href="/assets/Vincent_Audebert_CV.pdf"
+          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
           rel="noopener noreferrer"
           target="_blank"
           title="Download my CV"
@@ -1568,7 +1568,7 @@ Array [
     </svg>
     <a
         className="reset-link pdf-link"
-        href="/assets/Vincent_Audebert_CV.pdf"
+        href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
         rel="noopener noreferrer"
         target="_blank"
         title="Download my CV"
@@ -1887,7 +1887,7 @@ Array [
     </svg>
     <a
         className="reset-link pdf-link"
-        href="/assets/Vincent_Audebert_CV.pdf"
+        href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
         rel="noopener noreferrer"
         target="_blank"
         title="Download my CV"

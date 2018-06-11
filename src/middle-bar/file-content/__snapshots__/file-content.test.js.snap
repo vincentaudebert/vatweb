@@ -662,7 +662,7 @@ exports[`FileContent renders correctly 1`] = `
             }
           }
         >
-          "https://vatweb.fr/assets/Vincent_Audebert_CV.pdf"
+          "https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
         </span>
         <span
           className={undefined}

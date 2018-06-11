@@ -80,8 +80,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
           <IconDebug className="icon--explorer" />
           <IconExtensions className="icon--explorer" />
           <a
-            href={`${process.env.PUBLIC_URL ||
-              ''}/assets/Vincent_Audebert_CV.pdf`}
+            href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
             target="_blank"
             className="reset-link pdf-link"
             title="Download my CV"
