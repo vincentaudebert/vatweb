@@ -7,7 +7,7 @@ import 'normalize.css';
 import './css/base.css';
 import App from './app/app.container';
 import NoMatch from './no-match/no-match';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 import getGaId from './config/analytics';
 
@@ -25,4 +25,4 @@ const router = (
 
 const provider = <Provider store={store}>{router}</Provider>;
 ReactDOM.render(provider, document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
