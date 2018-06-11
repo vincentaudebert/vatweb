@@ -8,6 +8,7 @@ import FaSmile from 'react-icons/lib/fa/smile-o';
 import FaBell from 'react-icons/lib/fa/bell';
 import TiDelete from 'react-icons/lib/ti/delete';
 import './footer-bar.css';
+import pdfCV from '../pdf/Vincent_Audebert_CV.pdf';
 
 const FooterBar = () => (
   <div className="footer-bar row">
@@ -41,7 +42,7 @@ const FooterBar = () => (
         Prettier:<GoCheck className="icon--footer" />
       </span>
       <a
-        href="/assets/Vincent_Audebert_CV.pdf"
+        href={pdfCV}
         target="_blank"
         className="reset-link footer-bar__info"
         title="Download my CV"
