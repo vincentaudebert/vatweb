@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 import GoInfo from 'react-icons/lib/go/info';
 import GoGitBranch from 'react-icons/lib/go/git-branch';
@@ -41,7 +42,7 @@ const FooterBar = () => (
         Prettier:<GoCheck className="icon--footer" />
       </span>
       <a
-        href="/assets/Vincent_Audebert_CV.pdf"
+        href={`${process.env.PUBLIC_URL || ''}/assets/Vincent_Audebert_CV.pdf`}
         target="_blank"
         className="reset-link footer-bar__info"
         title="Download my CV"

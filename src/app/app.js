@@ -113,7 +113,8 @@ class App extends Component<AppProps, AppState> {
               my{' '}
               <a
                 className="alternative--link"
-                href="/assets/Vincent_Audebert_CV.pdf"
+                href={`${process.env.PUBLIC_URL ||
+                  ''}/assets/Vincent_Audebert_CV.pdf`}
                 title="PDF CV"
                 target="_blank"
                 rel="noreferrer noopener"
