@@ -27,6 +27,8 @@ It's just a Create React App
 Git clone to your machine then:
 
 ```
+cd vatweb/
+nvm install
 yarn install
 yarn start
 ```
