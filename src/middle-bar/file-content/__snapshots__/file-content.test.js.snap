@@ -246,13 +246,6 @@ exports[`FileContent renders correctly 1`] = `
           27
           
         </span>
-        <span
-          className="react-syntax-highlighter-line-number"
-          style={Object {}}
-        >
-          28
-          
-        </span>
       </code>
       <code
         style={
@@ -640,7 +633,7 @@ exports[`FileContent renders correctly 1`] = `
             }
           }
         >
-          "you can download directly my CV in a PDF format:"
+          "you can download directly my CV in a PDF format"
         </span>
         <span
           className={undefined}
@@ -662,29 +655,7 @@ exports[`FileContent renders correctly 1`] = `
             }
           }
         >
-          "https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
-        </span>
-        <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
-        >
-          ,
-        </span>
-        
-            
-        <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
-        >
-          "or click on the PDF icon in the menu bar on the left (desktop only)"
+          "by clicking on the PDF icon in the menu bar on the left (desktop only)"
         </span>
         <span
           className={undefined}
