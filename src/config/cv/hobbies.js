@@ -16,7 +16,7 @@ class Hobbies extends Component<Props, State> {
         'Read about Science',
         'Read about Politics',
         'Learn about History',
-        'Keep developping and improving HowWindy.com'
+        'Keep developing and improving HowWindy.com'
         'Travel somewhere the weather is good',
     ];
 
