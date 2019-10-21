@@ -25,6 +25,11 @@
   width: 100%;
   background-color: $color-dark-grey;
   overflow: scroll;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    position: absolute;
+    left: 270px;
+  }
 }
 
 .middle-bar__left-panel__title {
@@ -65,6 +70,9 @@
 
   @media only screen and (min-width: $breakpoint-large) {
     display: block;
+    position: fixed;
+    height: 100vh;
+    top: rem(29px);
   }
 }
 
@@ -77,6 +85,9 @@
     width: rem(230px);
     box-shadow: none;
     margin-bottom: 0;
+    position: fixed;
+    top: rem(29px);
+    left: rem(41px);
   }
 }
 
@@ -123,11 +134,16 @@
 
 .tabs {
   position: sticky;
-  top: 0;
+  top: rem(29px);
   margin: 0;
   width: 100%;
   background-color: $color-grey;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+  @media only screen and (min-width: $breakpoint-large) {
+    position: fixed;
+    top: rem(29px);
+  }
 }
 
 .tab {
@@ -176,6 +192,10 @@
 
 .file-content {
   overflow-y: scroll;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    margin-top: rem(55px);
+  }
 
   pre {
     padding-top: rem(2px) !important;

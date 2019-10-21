@@ -1,4 +1,5 @@
 // @flow
+import * as React from 'react';
 import { connect } from 'react-redux';
 import FileContent from './file-content';
 import type { fullFileType } from '../../app/app.types';
@@ -13,7 +14,8 @@ const mapStateToProps = (state: FileContentState) => ({
 
 const mapDispatchToProps = () => ({});
 
-export default connect(
+// wildcarding the time to get rid of Redux
+export default (connect(
   mapStateToProps,
   mapDispatchToProps
-)(FileContent);
+)(FileContent): React.AbstractComponent<*, *>);

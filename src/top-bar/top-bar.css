@@ -1,6 +1,10 @@
 .top-bar {
   background-color: #3c3c3c;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%; }
   .top-bar .top-bar__left,
   .top-bar .top-bar__right {
     margin-top: 0.25rem;

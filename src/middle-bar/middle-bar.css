@@ -18,6 +18,10 @@
   width: 100%;
   background-color: #1e1e1e;
   overflow: scroll; }
+  @media only screen and (min-width: 60em) {
+    .middle-bar__right-panel {
+      position: absolute;
+      left: 270px; } }
 
 .middle-bar__left-panel__title {
   height: 0.75rem;
@@ -48,7 +52,10 @@
   font-size: 1.5625rem; }
   @media only screen and (min-width: 60em) {
     .middle-bar__left-column {
-      display: block; } }
+      display: block;
+      position: fixed;
+      height: 100vh;
+      top: 1.8125rem; } }
 
 .middle-bar__explorer {
   width: 100%;
@@ -58,7 +65,10 @@
     .middle-bar__explorer {
       width: 14.375rem;
       box-shadow: none;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      position: fixed;
+      top: 1.8125rem;
+      left: 2.5625rem; } }
 
 .seti-icon {
   width: 0.75rem;
@@ -91,11 +101,15 @@
 
 .tabs {
   position: sticky;
-  top: 0;
+  top: 1.8125rem;
   margin: 0;
   width: 100%;
   background-color: #252526;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); }
+  @media only screen and (min-width: 60em) {
+    .tabs {
+      position: fixed;
+      top: 1.8125rem; } }
 
 .tab {
   padding: 0.25rem 0.75rem 0.25rem 0.625rem;
@@ -130,6 +144,9 @@
 
 .file-content {
   overflow-y: scroll; }
+  @media only screen and (min-width: 60em) {
+    .file-content {
+      margin-top: 3.4375rem; } }
   .file-content pre {
     padding-top: 0.125rem !important; }
   .file-content code:first-child {

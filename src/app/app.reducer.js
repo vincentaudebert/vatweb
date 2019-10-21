@@ -71,9 +71,10 @@ const changeFile = (previousState: reduxState, payload: { slug: string }) => {
 const closeFile = (previousState: reduxState, payload: { slug: string }) => {
   const { slug } = payload;
 
-  const newOpenFiles = resetOpenFiles(previousState.openFiles, slug).filter(
-    item => item.name !== slug
-  );
+  const newOpenFiles: Array<fileType> = resetOpenFiles(
+    previousState.openFiles,
+    slug
+  ).filter(item => item.name !== slug);
 
   // we just make sure we activate the last file in the list
   const lastFile = newOpenFiles[newOpenFiles.length - 1];

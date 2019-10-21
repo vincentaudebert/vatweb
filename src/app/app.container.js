@@ -1,5 +1,5 @@
 // @flow
-
+import * as React from 'react';
 import { connect } from 'react-redux';
 import App from './app';
 import { changeFile } from './app.actions';
@@ -14,7 +14,8 @@ const mapDispatchToProps = (dispatch: Function) => ({
   },
 });
 
-export default connect(
+// wildcarding the time to get rid of Redux
+export default (connect(
   mapStateToProps,
   mapDispatchToProps
-)(App);
+)(App): React.AbstractComponent<*, *>);

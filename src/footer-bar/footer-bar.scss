@@ -10,8 +10,9 @@
   padding: rem(5px);
 
   @media only screen and (min-width: $breakpoint-large) {
-    position: inherit;
-    bottom: initial;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
   &::after {
