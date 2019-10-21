@@ -429,6 +429,30 @@ exports[`Explorer active file being within a folder 1`] = `
             </Link>
           </div>
           <div
+            className="file folder--in d-none"
+            key="explorer-6-smooth-code.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/6-smooth-code.js"
+            >
+              <a
+                className="file--link"
+                href="/file/6-smooth-code.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                6-smooth-code.js
+              </a>
+            </Link>
+          </div>
+          <div
             className="file"
             key="explorer-education.js"
           >
@@ -595,6 +619,12 @@ exports[`Explorer explorer button toggles explorer 1`] = `
             \\"You can see it here:\\",
             \\"https://github.com/vincentaudebert/vatweb\\",
             \\"or click on the git icon in the footer bar.\\",
+          ],
+          \\"hey-granpa\\": [
+            \\"Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks...\\",
+            \\"And it's only from june 2018!\\",
+            \\"But it means React is moving fast! So we can't really complain :)\\",
+            \\"I will update it ASAP when I get some spare time\\",
           ]
         }",
           "inFolder": false,
@@ -923,6 +953,30 @@ exports[`Explorer explorer button toggles explorer 1`] = `
             </Link>
           </div>
           <div
+            className="file folder--in"
+            key="explorer-6-smooth-code.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/6-smooth-code.js"
+            >
+              <a
+                className="file--link"
+                href="/file/6-smooth-code.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                6-smooth-code.js
+              </a>
+            </Link>
+          </div>
+          <div
             className="file"
             key="explorer-education.js"
           >
@@ -1089,6 +1143,12 @@ exports[`Explorer folder button toggles folder 1`] = `
             \\"You can see it here:\\",
             \\"https://github.com/vincentaudebert/vatweb\\",
             \\"or click on the git icon in the footer bar.\\",
+          ],
+          \\"hey-granpa\\": [
+            \\"Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks...\\",
+            \\"And it's only from june 2018!\\",
+            \\"But it means React is moving fast! So we can't really complain :)\\",
+            \\"I will update it ASAP when I get some spare time\\",
           ]
         }",
           "inFolder": false,
@@ -1413,6 +1473,30 @@ exports[`Explorer folder button toggles folder 1`] = `
                 />
                  
                 5-springload.js
+              </a>
+            </Link>
+          </div>
+          <div
+            className="file folder--in d-none"
+            key="explorer-6-smooth-code.js"
+          >
+            <Link
+              className="file--link"
+              replace={false}
+              to="/file/6-smooth-code.js"
+            >
+              <a
+                className="file--link"
+                href="/file/6-smooth-code.js"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                6-smooth-code.js
               </a>
             </Link>
           </div>
@@ -1766,6 +1850,23 @@ Array [
             </a>
         </div>
         <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/6-smooth-code.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                6-smooth-code.js
+            </a>
+        </div>
+        <div
             className="file"
         >
             <a
@@ -2082,6 +2183,23 @@ Array [
                 />
                  
                 5-springload.js
+            </a>
+        </div>
+        <div
+            className="file folder--in"
+        >
+            <a
+                className="file--link"
+                href="/file/6-smooth-code.js"
+                onClick={[Function]}
+            >
+                <img
+                    alt="Type Icon"
+                    className="seti-icon seti-icon--big"
+                    src="react.svg"
+                />
+                 
+                6-smooth-code.js
             </a>
         </div>
         <div

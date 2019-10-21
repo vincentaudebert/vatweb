@@ -246,6 +246,48 @@ exports[`FileContent renders correctly 1`] = `
           27
           
         </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          28
+          
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          29
+          
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          30
+          
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          31
+          
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          32
+          
+        </span>
+        <span
+          className="react-syntax-highlighter-line-number"
+          style={Object {}}
+        >
+          33
+          
+        </span>
       </code>
       <code
         style={
@@ -811,6 +853,149 @@ exports[`FileContent renders correctly 1`] = `
           }
         >
           "or click on the git icon in the footer bar."
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ,
+        </span>
+        
+          
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ]
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ,
+        </span>
+        
+          
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#A8FF60",
+            }
+          }
+        >
+          "hey-granpa"
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          :
+        </span>
+         
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          [
+        </span>
+        
+            
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#A8FF60",
+            }
+          }
+        >
+          "Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks..."
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ,
+        </span>
+        
+            
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#A8FF60",
+            }
+          }
+        >
+          "And it's only from june 2018!"
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ,
+        </span>
+        
+            
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#A8FF60",
+            }
+          }
+        >
+          "But it means React is moving fast! So we can't really complain :)"
+        </span>
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#c5c8c6",
+            }
+          }
+        >
+          ,
+        </span>
+        
+            
+        <span
+          className={undefined}
+          style={
+            Object {
+              "color": "#A8FF60",
+            }
+          }
+        >
+          "I will update it ASAP when I get some spare time"
         </span>
         <span
           className={undefined}

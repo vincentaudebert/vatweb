@@ -4,7 +4,13 @@ import appReducer from './app/app.reducer';
 
 const store = createStore(
   appReducer,
-  compose(global.devToolsExtension ? global.devToolsExtension() : fct => fct)
+  compose(
+    // eslint-disable-next-line no-underscore-dangle
+    window.__REDUX_DEVTOOLS_EXTENSION__
+      ? // eslint-disable-next-line no-underscore-dangle
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+      : fct => fct
+  )
 );
 
 export default store;

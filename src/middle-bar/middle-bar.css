@@ -58,17 +58,19 @@
       top: 1.8125rem; } }
 
 .middle-bar__explorer {
+  margin-top: 30px;
   width: 100%;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 0.125rem; }
   @media only screen and (min-width: 60em) {
     .middle-bar__explorer {
+      margin-top: 0;
       width: 14.375rem;
       box-shadow: none;
       margin-bottom: 0;
       position: fixed;
-      top: 1.8125rem;
-      left: 2.5625rem; } }
+      top: 1.625rem;
+      left: 2.625rem; } }
 
 .seti-icon {
   width: 0.75rem;
@@ -101,7 +103,7 @@
 
 .tabs {
   position: sticky;
-  top: 1.8125rem;
+  top: 0;
   margin: 0;
   width: 100%;
   background-color: #252526;
@@ -109,7 +111,8 @@
   @media only screen and (min-width: 60em) {
     .tabs {
       position: fixed;
-      top: 1.8125rem; } }
+      top: 1.8125rem;
+      width: calc(100% - 271px); } }
 
 .tab {
   padding: 0.25rem 0.75rem 0.25rem 0.625rem;

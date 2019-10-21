@@ -39,7 +39,8 @@ const FooterBar = () => (
       <span className="footer-bar__info--lg">LF</span>
       <span className="footer-bar__info">JavaScript</span>
       <span className="footer-bar__info">
-        Prettier:<GoCheck className="icon--footer" />
+        Prettier:
+        <GoCheck className="icon--footer" />
       </span>
       <a
         href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"

@@ -119,7 +119,8 @@ class App extends Component<AppProps, AppState> {
                 rel="noreferrer noopener"
               >
                 CV in a PDF format
-              </a>.
+              </a>
+              .
             </p>
             <p>Vincent.</p>
           </div>

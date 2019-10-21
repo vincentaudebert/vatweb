@@ -6,12 +6,15 @@ const NoMatch = () => (
     <div className="container mt">
       <span className="no-match__neg">ERROR 404</span>
       <p className="left no-match__text">
-        The page is missing or never was written. You can wait and<br />
+        The page is missing or never was written. You can wait and
+        <br />
         see if it becomes available again, or you can restart your computer.
       </p>
       <p className="left no-match__text">
-        * Send us an e-mail to notify this and try it later.<br />
-        * Press CTRL+ALT+DEL to restart your computer. You will<br />
+        * Send us an e-mail to notify this and try it later.
+        <br />
+        * Press CTRL+ALT+DEL to restart your computer. You will
+        <br />
         &nbsp; lose unsaved information in any programs that are running.
       </p>
       <p className="left no-match__text">

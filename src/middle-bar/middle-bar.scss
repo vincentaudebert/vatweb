@@ -77,17 +77,19 @@
 }
 
 .middle-bar__explorer {
+  margin-top: 30px;
   width: 100%;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: rem(2px);
 
   @media only screen and (min-width: $breakpoint-large) {
+    margin-top: 0;
     width: rem(230px);
     box-shadow: none;
     margin-bottom: 0;
     position: fixed;
-    top: rem(29px);
-    left: rem(41px);
+    top: rem(26px);
+    left: rem(42px);
   }
 }
 
@@ -134,7 +136,7 @@
 
 .tabs {
   position: sticky;
-  top: rem(29px);
+  top: 0;
   margin: 0;
   width: 100%;
   background-color: $color-grey;
@@ -143,6 +145,7 @@
   @media only screen and (min-width: $breakpoint-large) {
     position: fixed;
     top: rem(29px);
+    width: calc(100% - 271px);
   }
 }
 
