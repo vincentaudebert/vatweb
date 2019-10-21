@@ -23,5 +23,11 @@ export default `{
     "You can see it here:",
     "https://github.com/vincentaudebert/vatweb",
     "or click on the git icon in the footer bar.",
+  ],
+  "hey-granpa": [
+    "Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks...",
+    "And it's only from june 2018!",
+    "But it means React is moving fast! So we can't really complain :)",
+    "I will update it ASAP when I get some spare time",
   ]
 }`;

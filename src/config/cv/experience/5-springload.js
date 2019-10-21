@@ -37,7 +37,7 @@ class Springload extends Component<Props, *> {
 
   componentWillUnmount() {
     const { setEndDate } = this.props;
-    setEndDate('Still going');
+    setEndDate('June 2018');
   }
 
   render() {
