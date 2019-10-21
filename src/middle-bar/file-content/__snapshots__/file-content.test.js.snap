@@ -9,51 +9,15 @@ exports[`FileContent renders correctly 1`] = `
     <pre
       style={
         Object {
-          "MozHyphens": "none",
-          "MozTabSize": "4",
-          "OTabSize": "4",
-          "WebkitHyphens": "none",
-          "background": "#1d1f21",
-          "borderRadius": "0.3em",
-          "color": "#c5c8c6",
-          "direction": "ltr",
-          "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-          "hyphens": "none",
-          "lineHeight": "1.5",
-          "margin": ".5em 0",
-          "msHyphens": "none",
-          "overflow": "auto",
-          "padding": "1em",
-          "tabSize": "4",
-          "textAlign": "left",
-          "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-          "whiteSpace": "pre",
-          "wordBreak": "normal",
-          "wordSpacing": "normal",
+          "backgroundColor": "#fff",
         }
       }
     >
       <code
         style={
           Object {
-            "MozHyphens": "none",
-            "MozTabSize": "4",
-            "OTabSize": "4",
-            "WebkitHyphens": "none",
-            "color": "#c5c8c6",
-            "direction": "ltr",
             "float": "left",
-            "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-            "hyphens": "none",
-            "lineHeight": "1.5",
-            "msHyphens": "none",
             "paddingRight": "10px",
-            "tabSize": "4",
-            "textAlign": "left",
-            "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-            "whiteSpace": "pre",
-            "wordBreak": "normal",
-            "wordSpacing": "normal",
           }
         }
       >
@@ -62,972 +26,691 @@ exports[`FileContent renders correctly 1`] = `
           style={Object {}}
         >
           1
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           2
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           3
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           4
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           5
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           6
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           7
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           8
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           9
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           10
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           11
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           12
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           13
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           14
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           15
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           16
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           17
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           18
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           19
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           20
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           21
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           22
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           23
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           24
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           25
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           26
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           27
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           28
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           29
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           30
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           31
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           32
-          
+
         </span>
         <span
           className="react-syntax-highlighter-line-number"
           style={Object {}}
         >
           33
-          
+
         </span>
       </code>
-      <code
-        style={
-          Object {
-            "MozHyphens": "none",
-            "MozTabSize": "4",
-            "OTabSize": "4",
-            "WebkitHyphens": "none",
-            "color": "#c5c8c6",
-            "direction": "ltr",
-            "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-            "hyphens": "none",
-            "lineHeight": "1.5",
-            "msHyphens": "none",
-            "tabSize": "4",
-            "textAlign": "left",
-            "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-            "whiteSpace": "pre",
-            "wordBreak": "normal",
-            "wordSpacing": "normal",
-          }
-        }
-      >
+      <code>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           {
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "hello"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Heya! Welcome on my portfolio."
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
          
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "It shows you what I have done and what I can do."
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "wait-what"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Ok, maybe it needs a bit of explanation."
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "You can use the file explorer on your left to open files"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "These describe some of the work I have been doing or what studies I did, etc."
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "are-you-mad"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Hehe, no. I just thought it would be"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "an original way to present myself and relevant with my expertise."
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "aint-nobody-got-time-for-that"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Ok if you can't be bothered"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "you can download directly my CV in a PDF format"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "by clicking on the PDF icon in the menu bar on the left (desktop only)"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "or click on the smiley face in the footer bar."
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "where-is-da-code"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Oh by the way, I made the source code open source."
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "You can see it here:"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "https://github.com/vincentaudebert/vatweb"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "or click on the git icon in the footer bar."
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "hey-granpa"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           :
         </span>
          
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           [
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks..."
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "And it's only from june 2018!"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "But it means React is moving fast! So we can't really complain :)"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-            
+    
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#A8FF60",
-            }
-          }
+          className="token string"
+          style={Object {}}
         >
           "I will update it ASAP when I get some spare time"
         </span>
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ,
         </span>
         
-          
+  
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           ]
         </span>
         
-        
+
         <span
-          className={undefined}
-          style={
-            Object {
-              "color": "#c5c8c6",
-            }
-          }
+          className="token punctuation"
+          style={Object {}}
         >
           }
         </span>
@@ -1046,51 +729,15 @@ exports[`FileContent renders correctly with undefined file 1`] = `
     <pre
       style={
         Object {
-          "MozHyphens": "none",
-          "MozTabSize": "4",
-          "OTabSize": "4",
-          "WebkitHyphens": "none",
-          "background": "#1d1f21",
-          "borderRadius": "0.3em",
-          "color": "#c5c8c6",
-          "direction": "ltr",
-          "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-          "hyphens": "none",
-          "lineHeight": "1.5",
-          "margin": ".5em 0",
-          "msHyphens": "none",
-          "overflow": "auto",
-          "padding": "1em",
-          "tabSize": "4",
-          "textAlign": "left",
-          "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-          "whiteSpace": "pre",
-          "wordBreak": "normal",
-          "wordSpacing": "normal",
+          "backgroundColor": "#fff",
         }
       }
     >
       <code
         style={
           Object {
-            "MozHyphens": "none",
-            "MozTabSize": "4",
-            "OTabSize": "4",
-            "WebkitHyphens": "none",
-            "color": "#c5c8c6",
-            "direction": "ltr",
             "float": "left",
-            "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-            "hyphens": "none",
-            "lineHeight": "1.5",
-            "msHyphens": "none",
             "paddingRight": "10px",
-            "tabSize": "4",
-            "textAlign": "left",
-            "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-            "whiteSpace": "pre",
-            "wordBreak": "normal",
-            "wordSpacing": "normal",
           }
         }
       >
@@ -1099,31 +746,10 @@ exports[`FileContent renders correctly with undefined file 1`] = `
           style={Object {}}
         >
           1
-          
+
         </span>
       </code>
-      <code
-        style={
-          Object {
-            "MozHyphens": "none",
-            "MozTabSize": "4",
-            "OTabSize": "4",
-            "WebkitHyphens": "none",
-            "color": "#c5c8c6",
-            "direction": "ltr",
-            "fontFamily": "Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace",
-            "hyphens": "none",
-            "lineHeight": "1.5",
-            "msHyphens": "none",
-            "tabSize": "4",
-            "textAlign": "left",
-            "textShadow": "0 1px rgba(0, 0, 0, 0.3)",
-            "whiteSpace": "pre",
-            "wordBreak": "normal",
-            "wordSpacing": "normal",
-          }
-        }
-      />
+      <code />
     </pre>
   </div>
 </div>

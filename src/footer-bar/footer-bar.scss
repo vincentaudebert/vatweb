@@ -48,13 +48,10 @@
 
 .icon--footer {
   font-size: rem(14px);
+  vertical-align: sub;
 }
 
 .icon--footer-small {
-  font-size: rem(12px);
-}
-
-.icon--footer-big {
-  font-size: rem(15px);
-  margin-bottom: rem(1px);
+  font-size: rem(11px);
+  vertical-align: text-bottom;
 }

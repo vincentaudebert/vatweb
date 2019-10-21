@@ -1,6 +1,6 @@
 import getGaId from './analytics';
 
-const env = Object.assign({}, process.env);
+const env = { ...process.env };
 
 describe('Analytics', () => {
   it('without env GA ID', () => {

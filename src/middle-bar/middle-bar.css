@@ -123,6 +123,9 @@
   .tab:hover svg {
     color: #fff; }
 
+.icon--tab {
+  vertical-align: bottom; }
+
 .tab--active {
   color: #fff;
   background-color: #1e1e1e; }

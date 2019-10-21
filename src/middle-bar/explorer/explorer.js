@@ -2,10 +2,10 @@
 // ================================
 // eslint comment, please update asap when https://github.com/yannickcr/eslint-plugin-react/issues/1751 is merged
 // ================================
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
-import FaPDF from 'react-icons/lib/fa/file-pdf-o';
+import { FaFilePdf } from 'react-icons/fa';
 import IconFile from '../../svg/file-svg';
 import IconFolder from '../../svg/folder-svg';
 import IconRefresh from '../../svg/refresh-svg';
@@ -72,7 +72,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
     const name = currentFile ? currentFile.name : undefined;
 
     return (
-      <Fragment>
+      <>
         <div className="middle-bar__left-column center">
           <IconFileExplorer className="icon--explorer icon--active" />
           <IconSearch className="icon--explorer" />
@@ -86,7 +86,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
             title="Download my CV"
             rel="noopener noreferrer"
           >
-            <FaPDF />
+            <FaFilePdf />
           </a>
         </div>
         <div className="middle-bar__explorer">
@@ -95,7 +95,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
               'mb-0': !this.state.expandExplorer,
             })}
           >
-            <Fragment>
+            <>
               <div className="float-left font-heavy">
                 <button
                   className={classnames('explorer--open reset-button', {
@@ -122,7 +122,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                   <IconRefresh className="icon--explorer-title" />
                 </span>
               </div>
-            </Fragment>
+            </>
           </div>
           <div
             className={classnames('middle-bar__left-panel__files', {
@@ -135,7 +135,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
               if (item.language === 'json') icon = SetiJSON;
 
               const content = (
-                <Fragment>
+                <>
                   <img
                     className={classnames('seti-icon', {
                       'seti-icon--small': item.type === 'folder',
@@ -145,7 +145,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     alt="Type Icon"
                   />{' '}
                   {item.name}
-                </Fragment>
+                </>
               );
 
               return (
@@ -187,7 +187,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
             })}
           </div>
         </div>
-      </Fragment>
+      </>
     );
   }
 }

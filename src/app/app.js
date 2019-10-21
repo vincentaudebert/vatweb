@@ -2,9 +2,7 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import ReactGA from 'react-ga';
-import FaMagicWand from 'react-icons/lib/fa/magic';
-import FaBackward from 'react-icons/lib/fa/backward';
-import FaHandPeace from 'react-icons/lib/fa/hand-peace-o';
+import { FaMagic, FaBackward, FaHandPeace } from 'react-icons/fa';
 
 import TopBar from '../top-bar/top-bar.container';
 import MiddleBar from '../middle-bar/middle-bar';
@@ -105,7 +103,7 @@ class App extends Component<AppProps, AppState> {
                 }}
                 title="Reopen editor"
               >
-                <FaMagicWand /> <FaBackward /> <FaHandPeace />
+                <FaMagic /> <FaBackward /> <FaHandPeace />
               </button>
             </p>
             <p>

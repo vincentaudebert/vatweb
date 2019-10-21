@@ -1,10 +1,7 @@
 // @flow
 import React from 'react';
-import SyntaxHighlighter, {
-  registerLanguage,
-} from 'react-syntax-highlighter/prism-light';
-import jsx from 'react-syntax-highlighter/languages/prism/jsx';
-import prism from 'react-syntax-highlighter/styles/prism/atom-dark';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Tabs from '../tabs/tabs.container';
 import type { fullFileType } from '../../app/app.types';
 
@@ -16,12 +13,11 @@ const Component = (props: FileContentProps) => {
   const fullActiveFile = props.currentFile;
   const codeString = fullActiveFile ? fullActiveFile.content : '';
 
-  registerLanguage('jsx', jsx);
   return (
     <div>
       <Tabs />
       <div className="file-content">
-        <SyntaxHighlighter showLineNumbers language="jsx" style={prism}>
+        <SyntaxHighlighter language="jsx" showLineNumbers style={atomDark}>
           {codeString}
         </SyntaxHighlighter>
       </div>

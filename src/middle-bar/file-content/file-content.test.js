@@ -4,6 +4,9 @@ import FileContent from './file-content';
 import config from '../../config/config';
 
 jest.mock('../tabs/tabs.container', () => 'div');
+jest.mock('react-syntax-highlighter/dist/esm/styles/prism', () => ({
+  atomDark: undefined,
+}));
 
 describe('FileContent', () => {
   let currentFile;

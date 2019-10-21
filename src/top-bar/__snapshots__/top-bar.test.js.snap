@@ -15,21 +15,20 @@ exports[`TopBar renders correctly 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 24 24"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
-          />
-        </g>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
       </svg>
     </button>
     <button
@@ -40,21 +39,20 @@ exports[`TopBar renders correctly 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 512 512"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m5 22.5v-5h30v5h-30z"
-          />
-        </g>
+        <path
+          d="M368.5 240h-225c-8.8 0-16 7.2-16 16 0 4.4 1.8 8.4 4.7 11.3 2.9 2.9 6.9 4.7 11.3 4.7h225c8.8 0 16-7.2 16-16s-7.2-16-16-16z"
+        />
       </svg>
     </button>
     <button
@@ -65,21 +63,20 @@ exports[`TopBar renders correctly 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 512 512"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m19.9 23.6q0 0.3-0.3 0.5l-7.4 7.4 3.2 3.2q0.5 0.4 0.5 1t-0.5 1-1 0.4h-10q-0.6 0-1-0.4t-0.4-1v-10q0-0.6 0.4-1t1-0.4 1 0.4l3.2 3.2 7.5-7.4q0.2-0.2 0.5-0.2t0.5 0.2l2.5 2.6q0.3 0.2 0.3 0.5z m17.4-19.3v10q0 0.6-0.4 1t-1 0.4-1-0.4l-3.3-3.2-7.4 7.4q-0.2 0.2-0.5 0.2t-0.5-0.2l-2.5-2.6q-0.3-0.2-0.3-0.5t0.3-0.5l7.4-7.4-3.2-3.2q-0.5-0.4-0.5-1t0.5-1 1-0.4h10q0.5 0 1 0.4t0.4 1z"
-          />
-        </g>
+        <path
+          d="M418.3 80H307.8c-7.5 0-13.7 6.1-13.7 13.7v.2c0 7.5 6.1 13.7 13.7 13.7h76.5L107.6 384.3v-76.5c0-7.5-6.1-13.7-13.7-13.7h-.2c-7.5 0-13.7 6.1-13.7 13.7v110.5c0 7.5 6.1 13.7 13.7 13.7h110.5c7.5 0 13.7-6.1 13.7-13.7v-.2c0-7.5-6.1-13.7-13.7-13.7h-76.5l276.7-276.7v76.5c0 7.5 6.1 13.7 13.7 13.7h.2c7.5 0 13.7-6.1 13.7-13.7V93.7c0-7.6-6.1-13.7-13.7-13.7z"
+        />
       </svg>
     </button>
   </div>
@@ -107,21 +104,20 @@ exports[`TopBar renders correctly with undefined currentFile 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 24 24"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
-          />
-        </g>
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
       </svg>
     </button>
     <button
@@ -132,21 +128,20 @@ exports[`TopBar renders correctly with undefined currentFile 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 512 512"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m5 22.5v-5h30v5h-30z"
-          />
-        </g>
+        <path
+          d="M368.5 240h-225c-8.8 0-16 7.2-16 16 0 4.4 1.8 8.4 4.7 11.3 2.9 2.9 6.9 4.7 11.3 4.7h225c8.8 0 16-7.2 16-16s-7.2-16-16-16z"
+        />
       </svg>
     </button>
     <button
@@ -157,21 +152,20 @@ exports[`TopBar renders correctly with undefined currentFile 1`] = `
       <svg
         fill="currentColor"
         height="1em"
-        preserveAspectRatio="xMidYMid meet"
+        stroke="currentColor"
+        strokeWidth="0"
         style={
           Object {
             "color": undefined,
-            "verticalAlign": "middle",
           }
         }
-        viewBox="0 0 40 40"
+        viewBox="0 0 512 512"
         width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <g>
-          <path
-            d="m19.9 23.6q0 0.3-0.3 0.5l-7.4 7.4 3.2 3.2q0.5 0.4 0.5 1t-0.5 1-1 0.4h-10q-0.6 0-1-0.4t-0.4-1v-10q0-0.6 0.4-1t1-0.4 1 0.4l3.2 3.2 7.5-7.4q0.2-0.2 0.5-0.2t0.5 0.2l2.5 2.6q0.3 0.2 0.3 0.5z m17.4-19.3v10q0 0.6-0.4 1t-1 0.4-1-0.4l-3.3-3.2-7.4 7.4q-0.2 0.2-0.5 0.2t-0.5-0.2l-2.5-2.6q-0.3-0.2-0.3-0.5t0.3-0.5l7.4-7.4-3.2-3.2q-0.5-0.4-0.5-1t0.5-1 1-0.4h10q0.5 0 1 0.4t0.4 1z"
-          />
-        </g>
+        <path
+          d="M418.3 80H307.8c-7.5 0-13.7 6.1-13.7 13.7v.2c0 7.5 6.1 13.7 13.7 13.7h76.5L107.6 384.3v-76.5c0-7.5-6.1-13.7-13.7-13.7h-.2c-7.5 0-13.7 6.1-13.7 13.7v110.5c0 7.5 6.1 13.7 13.7 13.7h110.5c7.5 0 13.7-6.1 13.7-13.7v-.2c0-7.5-6.1-13.7-13.7-13.7h-76.5l276.7-276.7v76.5c0 7.5 6.1 13.7 13.7 13.7h.2c7.5 0 13.7-6.1 13.7-13.7V93.7c0-7.6-6.1-13.7-13.7-13.7z"
+        />
       </svg>
     </button>
   </div>
