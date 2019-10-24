@@ -18,8 +18,9 @@ type TabsProps = {
 };
 
 const Tabs = (props: TabsProps) => {
+  const { openFiles } = props;
   const filteredFiles = config.filter(item => item.type === 'file');
-  const fullOpenFiles = props.openFiles.map(item => {
+  const fullOpenFiles = openFiles.map(item => {
     const completeItem = getFromSlug(filteredFiles, item.name);
     if (!completeItem) return undefined;
 
@@ -50,6 +51,7 @@ const Tabs = (props: TabsProps) => {
                 />{' '}
                 {file.name}{' '}
                 <button
+                  type="button"
                   className="reset-button"
                   title={`Close ${file.name}`}
                   onClick={evt => {

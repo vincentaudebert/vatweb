@@ -10,7 +10,7 @@ type FileContentProps = {
 };
 
 const Component = (props: FileContentProps) => {
-  const fullActiveFile = props.currentFile;
+  const { currentFile: fullActiveFile } = props;
   const codeString = fullActiveFile ? fullActiveFile.content : '';
 
   return (

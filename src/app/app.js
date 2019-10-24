@@ -21,13 +21,17 @@ type AppState = {
 };
 
 class App extends Component<AppProps, AppState> {
-  state = {
-    editorOpen: true,
-  };
+  constructor() {
+    super();
+    this.state = {
+      editorOpen: true,
+    };
+  }
 
   componentDidMount() {
-    const slug = this.props.match.params.slug || 'welcome.json';
-    this.props.changeFile(slug);
+    const { match, changeFile } = this.props;
+    const slug = match.params.slug || 'welcome.json';
+    changeFile(slug);
     ReactGA.pageview(slug);
 
     const editorElmt = document.getElementById('editor');
@@ -56,7 +60,8 @@ class App extends Component<AppProps, AppState> {
   };
 
   editorAnimationEnd = (): void => {
-    if (!this.state.editorOpen) {
+    const { editorOpen } = this.state;
+    if (!editorOpen) {
       const alternativeElmt = document.getElementById('alternative');
       const editorElmt = document.getElementById('editor');
       if (editorElmt && alternativeElmt) {
@@ -71,13 +76,14 @@ class App extends Component<AppProps, AppState> {
   };
 
   render() {
+    const { editorOpen } = this.state;
     const editorClass = classnames('editor fade', {
-      hide: !this.state.editorOpen,
-      show: this.state.editorOpen,
+      hide: !editorOpen,
+      show: editorOpen,
     });
     const alternativeClass = classnames('alternative d-none fade', {
-      hide: this.state.editorOpen,
-      show: !this.state.editorOpen,
+      hide: editorOpen,
+      show: !editorOpen,
     });
     return (
       <div className="App">
@@ -96,6 +102,7 @@ class App extends Component<AppProps, AppState> {
             <p>
               If you want, you can reopen my life editor by clicking here:{' '}
               <button
+                type="button"
                 className="d-inline-block btn--fake reset-button"
                 onClick={evt => {
                   evt.preventDefault();

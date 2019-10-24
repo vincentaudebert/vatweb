@@ -31,12 +31,15 @@ type ExplorerState = {
 };
 
 class Explorer extends Component<ExplorerProps, ExplorerState> {
-  state = {
-    expandFolder: true,
-    expandExplorer: true,
-    // eslint-disable-next-line
-    fromExplorer: false,
-  };
+  constructor() {
+    super();
+    this.state = {
+      expandFolder: true,
+      expandExplorer: true,
+      // eslint-disable-next-line
+      fromExplorer: false,
+    };
+  }
 
   static getDerivedStateFromProps(props: ExplorerProps, state: ExplorerState) {
     const newState = state;
@@ -54,20 +57,23 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
   }
 
   toggleFolder = (): void => {
+    const { expandFolder } = this.state;
     this.setState({
-      expandFolder: !this.state.expandFolder,
+      expandFolder: !expandFolder,
       // eslint-disable-next-line
       fromExplorer: true,
     });
   };
 
   toggleExplorer = (): void => {
+    const { expandExplorer } = this.state;
     this.setState({
-      expandExplorer: !this.state.expandExplorer,
+      expandExplorer: !expandExplorer,
     });
   };
 
   render() {
+    const { expandExplorer, expandFolder } = this.state;
     const { currentFile } = this.props;
     const name = currentFile ? currentFile.name : undefined;
 
@@ -92,14 +98,15 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
         <div className="middle-bar__explorer">
           <div
             className={classnames('middle-bar__left-panel__title', {
-              'mb-0': !this.state.expandExplorer,
+              'mb-0': !expandExplorer,
             })}
           >
             <>
               <div className="float-left font-heavy">
                 <button
+                  type="button"
                   className={classnames('explorer--open reset-button', {
-                    'explorer--close': !this.state.expandExplorer,
+                    'explorer--close': !expandExplorer,
                   })}
                   onClick={evt => {
                     evt.preventDefault();
@@ -126,7 +133,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
           </div>
           <div
             className={classnames('middle-bar__left-panel__files', {
-              'd-none': !this.state.expandExplorer,
+              'd-none': !expandExplorer,
             })}
           >
             {config.map(item => {
@@ -155,13 +162,13 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     folder: item.type === 'folder',
                     file: item.type === 'file',
                     'folder--in': item.inFolder === true,
-                    'd-none':
-                      item.inFolder === true && !this.state.expandFolder,
+                    'd-none': item.inFolder === true && !expandFolder,
                     'explorer--active': item.name === name,
                   })}
                 >
                   {item.type === 'folder' ? (
                     <button
+                      type="button"
                       className="reset-button btn--folder"
                       onClick={evt => {
                         evt.preventDefault();
@@ -171,7 +178,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
                     >
                       <div
                         className={classnames('folder--open', {
-                          'folder--close': !this.state.expandFolder,
+                          'folder--close': !expandFolder,
                         })}
                       >
                         {content}
