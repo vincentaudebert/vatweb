@@ -39,7 +39,7 @@ const FooterBar = () => (
         <GoCheck className="icon--footer" />
       </span>
       <a
-        href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+        href="/assets/Vincent_Audebert_CV.pdf"
         target="_blank"
         className="reset-link footer-bar__info"
         title="Download my CV"

@@ -118,7 +118,7 @@ class App extends Component<AppProps, AppState> {
               my{' '}
               <a
                 className="alternative--link"
-                href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+                href="/assets/Vincent_Audebert_CV.pdf"
                 title="PDF CV"
                 target="_blank"
                 rel="noreferrer noopener"
