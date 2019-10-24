@@ -224,6 +224,7 @@ export default Apocope;
               className="explorer--open reset-button"
               onClick={[Function]}
               title="Open/Collapse explorer"
+              type="button"
             >
                
               EXPLORER
@@ -298,6 +299,7 @@ export default Apocope;
               className="reset-button btn--folder"
               onClick={[Function]}
               title="Open/Collapse folder"
+              type="button"
             >
               <div
                 className="folder--open folder--close"
@@ -802,6 +804,7 @@ exports[`Explorer explorer button toggles explorer 1`] = `
               className="explorer--open reset-button explorer--close"
               onClick={[Function]}
               title="Open/Collapse explorer"
+              type="button"
             >
                
               EXPLORER
@@ -876,6 +879,7 @@ exports[`Explorer explorer button toggles explorer 1`] = `
               className="reset-button btn--folder"
               onClick={[Function]}
               title="Open/Collapse folder"
+              type="button"
             >
               <div
                 className="folder--open"
@@ -1380,6 +1384,7 @@ exports[`Explorer folder button toggles folder 1`] = `
               className="explorer--open reset-button"
               onClick={[Function]}
               title="Open/Collapse explorer"
+              type="button"
             >
                
               EXPLORER
@@ -1454,6 +1459,7 @@ exports[`Explorer folder button toggles folder 1`] = `
               className="reset-button btn--folder"
               onClick={[Function]}
               title="Open/Collapse folder"
+              type="button"
             >
               <div
                 className="folder--open folder--close"
@@ -1850,6 +1856,7 @@ Array [
           className="explorer--open reset-button"
           onClick={[Function]}
           title="Open/Collapse explorer"
+          type="button"
         >
            
           EXPLORER
@@ -1911,6 +1918,7 @@ Array [
           className="reset-button btn--folder"
           onClick={[Function]}
           title="Open/Collapse folder"
+          type="button"
         >
           <div
             className="folder--open"
@@ -2185,6 +2193,7 @@ Array [
           className="explorer--open reset-button"
           onClick={[Function]}
           title="Open/Collapse explorer"
+          type="button"
         >
            
           EXPLORER
@@ -2246,6 +2255,7 @@ Array [
           className="reset-button btn--folder"
           onClick={[Function]}
           title="Open/Collapse folder"
+          type="button"
         >
           <div
             className="folder--open"
