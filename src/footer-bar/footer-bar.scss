@@ -2,18 +2,13 @@
 @import '../css/mixins';
 
 .footer-bar {
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
   color: $color-white;
   background-color: $color-blue;
   font-size: rem(10px);
   padding: rem(5px);
-
-  @media only screen and (min-width: $breakpoint-large) {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
 
   &::after {
     content: '';
