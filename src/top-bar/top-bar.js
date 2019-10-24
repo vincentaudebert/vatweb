@@ -1,8 +1,7 @@
 // @flow
 import React from 'react';
-import MdClose from 'react-icons/lib/md/close';
-import IoMinus from 'react-icons/lib/io/minus';
-import FaExpand from 'react-icons/lib/fa/expand';
+import { MdClose } from 'react-icons/md';
+import { IoIosRemove, IoIosResize } from 'react-icons/io';
 import './top-bar.css';
 import type { fullFileType } from '../app/app.types';
 
@@ -30,14 +29,14 @@ const TopBar = (props: TopBarProps) => {
           value="Reduce"
           className="top-bar__btn top-bar__btn--minimize"
         >
-          <IoMinus />
+          <IoIosRemove />
         </button>
         <button
           type="button"
           value="Expand"
           className="top-bar__btn top-bar__btn--expand"
         >
-          <FaExpand />
+          <IoIosResize />
         </button>
       </div>
       <div className="d-inline-block center top-bar__right">

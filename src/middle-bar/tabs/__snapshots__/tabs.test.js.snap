@@ -37,7 +37,198 @@ exports[`Tabs filter out invalid openFiles 1`] = `
     }
   >
     <Tabs
-      closeFile={[Function]}
+      closeFile={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Array [
+                Object {
+                  "active": true,
+                  "content": "{
+  \\"hello\\": [
+    \\"Heya! Welcome on my portfolio.\\", 
+    \\"It shows you what I have done and what I can do.\\"
+  ],
+  \\"wait-what\\": [
+    \\"Ok, maybe it needs a bit of explanation.\\",
+    \\"You can use the file explorer on your left to open files\\",
+    \\"These describe some of the work I have been doing or what studies I did, etc.\\"
+  ],
+  \\"are-you-mad\\": [
+    \\"Hehe, no. I just thought it would be\\",
+    \\"an original way to present myself and relevant with my expertise.\\"
+  ],
+  \\"aint-nobody-got-time-for-that\\": [
+    \\"Ok if you can't be bothered\\",
+    \\"you can download directly my CV in a PDF format\\",
+    \\"by clicking on the PDF icon in the menu bar on the left (desktop only)\\",
+    \\"or click on the smiley face in the footer bar.\\"
+  ],
+  \\"where-is-da-code\\": [
+    \\"Oh by the way, I made the source code open source.\\",
+    \\"You can see it here:\\",
+    \\"https://github.com/vincentaudebert/vatweb\\",
+    \\"or click on the git icon in the footer bar.\\",
+  ],
+  \\"hey-granpa\\": [
+    \\"Yes. I know. This code is fairly old and a bit outdated. Not even using React hooks...\\",
+    \\"And it's only from june 2018!\\",
+    \\"But it means React is moving fast! So we can't really complain :)\\",
+    \\"I will update it ASAP when I get some spare time\\",
+  ]
+}",
+                  "inFolder": false,
+                  "language": "json",
+                  "name": "welcome.json",
+                  "type": "file",
+                },
+                Object {
+                  "active": false,
+                  "content": "import React, { Component } from 'react';
+import type { Props } from './home.flow.js';
+
+class Home extends Component<Props, *> {
+  constructor(props: Props) {
+    super(props);
+    const { setBirthdayDate, setBirthdayLocation } = props;
+    setBirthdayDate('5 may 1989');
+    setBirthdayLocation('Athis-mons, France');
+  }
+
+  componentDidMount() {
+    const {
+      setLocation,
+      setPhoneNumber,
+      setEmail,
+      setLinkedInProfile,
+      setLanguages
+    } = this.props;
+    setLocation('Bonneville, France');
+    setPhoneNumber('+33 7 72 41 88 58');
+    setEmail('vincent@vatweb.fr');
+    setLinkedInProfile('https://www.linkedin.com/in/vincentaudebert/');
+    setGitHubProfile('https://github.com/vincentaudebert');
+    setLanguages(['French', 'English']);
+  }
+
+  componentWillUnmount() {
+    const { useOneLife, transformInto } = this.props;
+    useOneLife();
+    transformInto('eagle');
+  }
+
+  render() {
+    return (
+      <div className=\\"summary\\">
+        <p>
+          I'm a front-end developer with more than 6 years of work experience in
+          web development.
+        </p>
+        <p>
+          I have worked in several projects as a web developer but also as an
+          assistant project manager. This gives me a good knowledge of every
+          aspect of a project and of what can make it a success.
+        </p>
+        <p>
+          I have a strong passion to create cutting-edge and high quality
+          websites, and the technical web development experience required to
+          make it happen.
+        </p>
+        <p>I am working fully remotely since June 2017.</p>
+      </div>
+    );
+  }
+}
+
+export default Home;",
+                  "inFolder": false,
+                  "language": "react",
+                  "name": "me.js",
+                  "type": "file",
+                },
+                Object {
+                  "active": false,
+                  "content": "import React, { Component, Fragment } from 'react';
+import type { Props } from './apocope.flow.js';
+
+class Apocope extends Component<Props, *> {
+  constructor(props: Props) {
+    const { setStartDate, setWorkLocation } = props;
+    setStartDate('September 2008');
+    setWorkLocation('Paris, France');
+  }
+
+  componentDidMount() {
+    const { setSkills } = this.props;
+    setSkills([
+      'PHP',
+      'Zend Framework',
+      'Responsive design',
+      'HTML5',
+      'Unit tests',
+      'R&D',
+      'Geolocation',
+    ]);
+  }
+
+  componentWillUnmount() {
+    const { setEndDate } = this.props;
+    setEndDate('September 2010');
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <p>
+          During this tenure, I was an apprentice, working primarily as a web
+          developer on many mobile website projects.
+        </p>
+
+        <div className=\\"accomplishments\\">
+          <ul>
+            <li>
+              <h3>Conception of mobile internet websites</h3>
+              <p>Nespresso</p>
+              <p>Carrefour</p>
+              <p>Decathlon</p>
+              <p>Nespresso</p>
+            </li>
+            <li>
+              <h3>Research and Development on the company platform</h3>
+              <p>
+                Development of a geolocalization module based on Google Maps
+              </p>
+              <p>Integration of Zend to the company platform</p>
+              <p>Study of HTML5</p>
+            </li>
+            <li>Unit tests</li>
+            <li>Preparation of technical specifications</li>
+          </ul>
+        </div>
+      </Fragment>
+    );
+  }
+}
+
+export default Apocope;
+",
+                  "inFolder": true,
+                  "language": "react",
+                  "name": "1-apocope.js",
+                  "type": "file",
+                },
+              ],
+              "welcome.json",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
       openFiles={
         Array [
           Object {
@@ -64,54 +255,68 @@ exports[`Tabs filter out invalid openFiles 1`] = `
         >
           <Link
             className="file--link"
-            replace={false}
             to="/file/me.js"
           >
-            <a
+            <LinkAnchor
               className="file--link"
               href="/file/me.js"
-              onClick={[Function]}
+              navigate={[Function]}
             >
-              <img
-                alt="Type Icon"
-                className="seti-icon seti-icon--big"
-                src="react.svg"
-              />
-               
-              me.js
-               
-              <button
-                className="reset-button"
+              <a
+                className="file--link"
+                href="/file/me.js"
                 onClick={[Function]}
-                title="Close me.js"
               >
-                <MdClose>
-                  <IconBase
-                    viewBox="0 0 40 40"
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                me.js
+                 
+                <button
+                  className="reset-button"
+                  onClick={[Function]}
+                  title="Close me.js"
+                  type="button"
+                >
+                  <MdClose
+                    className="icon--tab"
                   >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      preserveAspectRatio="xMidYMid meet"
-                      style={
+                    <IconBase
+                      attr={
                         Object {
-                          "color": undefined,
-                          "verticalAlign": "middle",
+                          "viewBox": "0 0 24 24",
                         }
                       }
-                      viewBox="0 0 40 40"
-                      width="1em"
+                      className="icon--tab"
                     >
-                      <g>
+                      <svg
+                        className="icon--tab"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        strokeWidth="0"
+                        style={
+                          Object {
+                            "color": undefined,
+                          }
+                        }
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
-                          d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          key="0"
                         />
-                      </g>
-                    </svg>
-                  </IconBase>
-                </MdClose>
-              </button>
-            </a>
+                      </svg>
+                    </IconBase>
+                  </MdClose>
+                </button>
+              </a>
+            </LinkAnchor>
           </Link>
         </div>
         <div
@@ -120,54 +325,68 @@ exports[`Tabs filter out invalid openFiles 1`] = `
         >
           <Link
             className="file--link"
-            replace={false}
             to="/file/1-apocope.js"
           >
-            <a
+            <LinkAnchor
               className="file--link"
               href="/file/1-apocope.js"
-              onClick={[Function]}
+              navigate={[Function]}
             >
-              <img
-                alt="Type Icon"
-                className="seti-icon seti-icon--big"
-                src="react.svg"
-              />
-               
-              1-apocope.js
-               
-              <button
-                className="reset-button"
+              <a
+                className="file--link"
+                href="/file/1-apocope.js"
                 onClick={[Function]}
-                title="Close 1-apocope.js"
               >
-                <MdClose>
-                  <IconBase
-                    viewBox="0 0 40 40"
+                <img
+                  alt="Type Icon"
+                  className="seti-icon seti-icon--big"
+                  src="react.svg"
+                />
+                 
+                1-apocope.js
+                 
+                <button
+                  className="reset-button"
+                  onClick={[Function]}
+                  title="Close 1-apocope.js"
+                  type="button"
+                >
+                  <MdClose
+                    className="icon--tab"
                   >
-                    <svg
-                      fill="currentColor"
-                      height="1em"
-                      preserveAspectRatio="xMidYMid meet"
-                      style={
+                    <IconBase
+                      attr={
                         Object {
-                          "color": undefined,
-                          "verticalAlign": "middle",
+                          "viewBox": "0 0 24 24",
                         }
                       }
-                      viewBox="0 0 40 40"
-                      width="1em"
+                      className="icon--tab"
                     >
-                      <g>
+                      <svg
+                        className="icon--tab"
+                        fill="currentColor"
+                        height="1em"
+                        stroke="currentColor"
+                        strokeWidth="0"
+                        style={
+                          Object {
+                            "color": undefined,
+                          }
+                        }
+                        viewBox="0 0 24 24"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
-                          d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+                          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                          key="0"
                         />
-                      </g>
-                    </svg>
-                  </IconBase>
-                </MdClose>
-              </button>
-            </a>
+                      </svg>
+                    </IconBase>
+                  </MdClose>
+                </button>
+              </a>
+            </LinkAnchor>
           </Link>
         </div>
       </div>
@@ -200,25 +419,26 @@ exports[`Tabs renders correctly 1`] = `
         className="reset-button"
         onClick={[Function]}
         title="Close welcome.json"
+        type="button"
       >
         <svg
+          className="icon--tab"
           fill="currentColor"
           height="1em"
-          preserveAspectRatio="xMidYMid meet"
+          stroke="currentColor"
+          strokeWidth="0"
           style={
             Object {
               "color": undefined,
-              "verticalAlign": "middle",
             }
           }
-          viewBox="0 0 40 40"
+          viewBox="0 0 24 24"
           width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <g>
-            <path
-              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
-            />
-          </g>
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
         </svg>
       </button>
     </a>
@@ -243,25 +463,26 @@ exports[`Tabs renders correctly 1`] = `
         className="reset-button"
         onClick={[Function]}
         title="Close me.js"
+        type="button"
       >
         <svg
+          className="icon--tab"
           fill="currentColor"
           height="1em"
-          preserveAspectRatio="xMidYMid meet"
+          stroke="currentColor"
+          strokeWidth="0"
           style={
             Object {
               "color": undefined,
-              "verticalAlign": "middle",
             }
           }
-          viewBox="0 0 40 40"
+          viewBox="0 0 24 24"
           width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <g>
-            <path
-              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
-            />
-          </g>
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
         </svg>
       </button>
     </a>
@@ -286,25 +507,26 @@ exports[`Tabs renders correctly 1`] = `
         className="reset-button"
         onClick={[Function]}
         title="Close 1-apocope.js"
+        type="button"
       >
         <svg
+          className="icon--tab"
           fill="currentColor"
           height="1em"
-          preserveAspectRatio="xMidYMid meet"
+          stroke="currentColor"
+          strokeWidth="0"
           style={
             Object {
               "color": undefined,
-              "verticalAlign": "middle",
             }
           }
-          viewBox="0 0 40 40"
+          viewBox="0 0 24 24"
           width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <g>
-            <path
-              d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
-            />
-          </g>
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
         </svg>
       </button>
     </a>

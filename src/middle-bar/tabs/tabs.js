@@ -1,6 +1,6 @@
 // @flow
-import React, { Fragment } from 'react';
-import MdClose from 'react-icons/lib/md/close';
+import React from 'react';
+import { MdClose } from 'react-icons/md';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
 
@@ -18,8 +18,9 @@ type TabsProps = {
 };
 
 const Tabs = (props: TabsProps) => {
+  const { openFiles } = props;
   const filteredFiles = config.filter(item => item.type === 'file');
-  const fullOpenFiles = props.openFiles.map(item => {
+  const fullOpenFiles = openFiles.map(item => {
     const completeItem = getFromSlug(filteredFiles, item.name);
     if (!completeItem) return undefined;
 
@@ -42,7 +43,7 @@ const Tabs = (props: TabsProps) => {
             })}
           >
             <Link to={`/file/${file.name}`} className="file--link">
-              <Fragment>
+              <>
                 <img
                   className="seti-icon seti-icon--big"
                   src={icon}
@@ -50,6 +51,7 @@ const Tabs = (props: TabsProps) => {
                 />{' '}
                 {file.name}{' '}
                 <button
+                  type="button"
                   className="reset-button"
                   title={`Close ${file.name}`}
                   onClick={evt => {
@@ -57,9 +59,9 @@ const Tabs = (props: TabsProps) => {
                     props.closeFile(fullOpenFiles, file.name);
                   }}
                 >
-                  <MdClose />
+                  <MdClose className="icon--tab" />
                 </button>
-              </Fragment>
+              </>
             </Link>
           </div>
         );
