@@ -163,7 +163,7 @@ exports[`App hidden editor 1`] = `
            
           <a
             className="alternative--link"
-            href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+            href="/assets/Vincent_Audebert_CV.pdf"
             rel="noreferrer noopener"
             target="_blank"
             title="PDF CV"
@@ -280,7 +280,7 @@ exports[`App renders correctly 1`] = `
          
         <a
           className="alternative--link"
-          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+          href="/assets/Vincent_Audebert_CV.pdf"
           rel="noreferrer noopener"
           target="_blank"
           title="PDF CV"
@@ -396,7 +396,7 @@ exports[`App renders correctly with no slug 1`] = `
          
         <a
           className="alternative--link"
-          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+          href="/assets/Vincent_Audebert_CV.pdf"
           rel="noreferrer noopener"
           target="_blank"
           title="PDF CV"
@@ -492,7 +492,7 @@ exports[`App test animation end function 1`] = `
         If you got sick of reading some (beautiful) code, you can download my 
         <a
           class="alternative--link"
-          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+          href="/assets/Vincent_Audebert_CV.pdf"
           rel="noreferrer noopener"
           target="_blank"
           title="PDF CV"
@@ -588,7 +588,7 @@ exports[`App test animation end function not triggered if editor is open 1`] = `
         If you got sick of reading some (beautiful) code, you can download my 
         <a
           class="alternative--link"
-          href="https://github.com/vincentaudebert/vatweb/raw/master/public/assets/Vincent_Audebert_CV.pdf"
+          href="/assets/Vincent_Audebert_CV.pdf"
           rel="noreferrer noopener"
           target="_blank"
           title="PDF CV"
