@@ -180,15 +180,19 @@ export default Apocope;
           target="_blank"
           title="Download my CV"
         >
-          <FaFilePdf>
+          <FaFilePdf
+            className="icon--explorer-pdf"
+          >
             <IconBase
               attr={
                 Object {
                   "viewBox": "0 0 384 512",
                 }
               }
+              className="icon--explorer-pdf"
             >
               <svg
+                className="icon--explorer-pdf"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -760,15 +764,19 @@ exports[`Explorer explorer button toggles explorer 1`] = `
           target="_blank"
           title="Download my CV"
         >
-          <FaFilePdf>
+          <FaFilePdf
+            className="icon--explorer-pdf"
+          >
             <IconBase
               attr={
                 Object {
                   "viewBox": "0 0 384 512",
                 }
               }
+              className="icon--explorer-pdf"
             >
               <svg
+                className="icon--explorer-pdf"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -1340,15 +1348,19 @@ exports[`Explorer folder button toggles folder 1`] = `
           target="_blank"
           title="Download my CV"
         >
-          <FaFilePdf>
+          <FaFilePdf
+            className="icon--explorer-pdf"
+          >
             <IconBase
               attr={
                 Object {
                   "viewBox": "0 0 384 512",
                 }
               }
+              className="icon--explorer-pdf"
             >
               <svg
+                className="icon--explorer-pdf"
                 fill="currentColor"
                 height="1em"
                 stroke="currentColor"
@@ -1824,6 +1836,7 @@ Array [
       title="Download my CV"
     >
       <svg
+        className="icon--explorer-pdf"
         fill="currentColor"
         height="1em"
         stroke="currentColor"
@@ -2161,6 +2174,7 @@ Array [
       title="Download my CV"
     >
       <svg
+        className="icon--explorer-pdf"
         fill="currentColor"
         height="1em"
         stroke="currentColor"

@@ -34,11 +34,15 @@
   height: rem(14px);
   width: rem(14px);
   border-radius: 50%;
-  margin-left: $spacing;
+  margin-left: $spacing / 3;
   border: 0;
   font-size: rem(10px);
   padding-left: rem(1px);
   padding-top: rem(1px);
+
+  @media only screen and (min-width: $breakpoint-med) {
+    margin-left: $spacing;
+  }
 
   &:first-child {
     margin-left: 0;
