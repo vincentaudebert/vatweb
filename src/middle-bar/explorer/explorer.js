@@ -92,7 +92,7 @@ class Explorer extends Component<ExplorerProps, ExplorerState> {
             title="Download my CV"
             rel="noopener noreferrer"
           >
-            <FaFilePdf />
+            <FaFilePdf className="icon--explorer-pdf" />
           </a>
         </div>
         <div className="middle-bar__explorer">
